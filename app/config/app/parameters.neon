@@ -1,0 +1,13 @@
+# Parameters
+#
+parameters:
+
+	# System
+	system:
+		error:
+			email: nutella@localhost
+			presenter: Front:Error
+
+	# Database
+	database:
+		driver: pdo_pgsql

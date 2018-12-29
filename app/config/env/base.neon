@@ -1,0 +1,23 @@
+# Core Config
+includes:
+	# Application
+	- ../app/parameters.neon
+	- ../app/services.neon
+
+	# Extensions
+	- ../ext/apitte.neon
+	- ../ext/contributte.neon
+	- ../ext/nettrine.neon
+
+php:
+	date.timezone: Europe/Prague
+	output_buffering: 4096
+
+# Nette section
+di:
+	debugger: false
+
+tracy:
+	email: %system.error.email%
+	logSeverity: E_ALL
+	strictMode: yes

@@ -1,0 +1,6 @@
+# Services
+#
+services:
+	# Domain =================
+	- App\Domain\Api\Facade\UsersFacade
+	- App\Domain\User\CreateUserFacade
