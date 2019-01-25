@@ -63,10 +63,10 @@ Focused on:
     Take a look at: 
     - http://localhost:8000/api/public/v1/openapi/meta (Swagger format)
     - http://localhost:8000/api/v1/users
-    - http://localhost:8000/api/v1/users?access_token=admin
-    - http://localhost:8000/api/v1/users/1?access_token=admin
-    - http://localhost:8000/api/v1/users/999?access_token=admin
-    - http://localhost:8000/api/v1/users/email?email=admin@admin.cz&access_token=admin
+    - http://localhost:8000/api/v1/users?_access_token=admin
+    - http://localhost:8000/api/v1/users/1?_access_token=admin
+    - http://localhost:8000/api/v1/users/999?_access_token=admin
+    - http://localhost:8000/api/v1/users/email?email=admin@admin.cz&_access_token=admin
 
 ## Features
 
@@ -74,9 +74,9 @@ Here is a list of all features you can find in this project.
 
 - :package: Packages
     - Nette 2.4
+    - Apitte
     - Contributte
     - Nettrine
-    - Apitte
 - :deciduous_tree: Structure
     - `app`
         - `config` - configuration files

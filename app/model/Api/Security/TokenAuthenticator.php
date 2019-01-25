@@ -10,7 +10,7 @@ class TokenAuthenticator extends AbstractAuthenticator
 {
 
 	private const HEADER_TOKEN = 'X-Token';
-	private const QUERY_TOKEN = 'access_token';
+	private const QUERY_TOKEN = '_access_token';
 
 	/** @var EntityManager */
 	private $em;
