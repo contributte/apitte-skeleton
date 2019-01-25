@@ -58,3 +58,4 @@ services:
 				Doctrine\Common\Cache\FilesystemCache(%tempDir%/cache/Symfony.Validator)
 			)
 		)
+		autowired: off
