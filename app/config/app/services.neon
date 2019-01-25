@@ -3,4 +3,58 @@
 services:
 	# Domain =================
 	- App\Domain\Api\Facade\UsersFacade
-	- App\Domain\User\CreateUserFacade
+
+	## Serialize =============
+	symfony.serializer.serializer:
+		class: Symfony\Component\Serializer\Serializer
+		arguments:
+			normalizers:
+				- Symfony\Component\Serializer\Normalizer\DateTimeNormalizer()
+				- Symfony\Component\Serializer\Normalizer\ArrayDenormalizer()
+				- @symfony.serializer.objectNormalizer
+			encoders:
+				- Symfony\Component\Serializer\Encoder\JsonEncoder()
+
+	symfony.serializer.objectNormalizer:
+		class: Symfony\Component\Serializer\Normalizer\ObjectNormalizer(
+			classMetadataFactory: @symfony.serializer.classMetadataFactory,
+			nameConverter: Symfony\Component\Serializer\NameConverter\CamelCaseToSnakeCaseNameConverter(),
+			propertyAccessor: null,
+			propertyTypeExtractor: Symfony\Component\PropertyInfo\Extractor\ReflectionExtractor()
+		)
+		autowired: off
+		setup:
+			- setCircularReferenceLimit(1)
+
+	symfony.serializer.classMetadataFactory:
+		class: Symfony\Component\Serializer\Mapping\Factory\ClassMetadataFactory(@symfony.serializer.annotationLoader)
+		autowired: off
+
+	symfony.serializer.annotationLoader:
+		class: Symfony\Component\Serializer\Mapping\Loader\AnnotationLoader(
+			Doctrine\Common\Annotations\CachedReader(
+				@symfony.serializer.annotationReader,
+				Doctrine\Common\Cache\FilesystemCache(%tempDir%/cache/Symfony.Serializer)
+			)
+		)
+		autowired: off
+
+	symfony.serializer.annotationReader:
+		class: Doctrine\Common\Annotations\AnnotationReader
+		autowired: off
+		setup:
+			- addGlobalIgnoredName(phpcsSuppress)
+
+	## Validator =============
+	symfony.validator:
+		class: Symfony\Component\Validator\Validator\ValidatorInterface
+		factory: @symfony.validator.builder::getValidator()
+
+	symfony.validator.builder:
+		class: Symfony\Component\Validator\ValidatorBuilder
+		factory: Symfony\Component\Validator\Validation::createValidatorBuilder()::enableAnnotationMapping(
+			Doctrine\Common\Annotations\CachedReader(
+				@symfony.serializer.annotationReader,
+				Doctrine\Common\Cache\FilesystemCache(%tempDir%/cache/Symfony.Validator)
+			)
+		)

@@ -9,8 +9,8 @@ use Apitte\Core\Annotation\Controller\Path;
 use Apitte\Core\Annotation\Controller\RequestParameter;
 use Apitte\Core\Annotation\Controller\RequestParameters;
 use Apitte\Core\Http\ApiRequest;
-use App\Domain\Api\Dto\UserDto;
 use App\Domain\Api\Facade\UsersFacade;
+use App\Domain\Api\Response\UserResDto;
 
 /**
  * @Controller()
@@ -34,7 +34,7 @@ class UsersController extends BaseV1Controller
 	 * 		@RequestParameter(name="limit", type="int", in="query", required=false, description="Data limit"),
 	 * 		@RequestParameter(name="offset", type="int", in="query", required=false, description="Data offset")
 	 * })
-	 * @return UserDto[]
+	 * @return UserResDto[]
 	 */
 	public function index(ApiRequest $request): array
 	{

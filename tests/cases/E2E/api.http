@@ -1,0 +1,34 @@
+# List users
+
+GET http://0.0.0.0:8000/api/v1/users?_access_token=admin
+
+###
+
+# Find user by ID
+
+GET http://0.0.0.0:8000/api/v1/users/1?_access_token=admin
+
+###
+
+# Find user by e-mail
+
+GET http://0.0.0.0:8000/api/v1/users/email?email=felix@nette.org&_access_token=admin
+
+###
+
+# Try to create user
+
+POST http://0.0.0.0:8000/api/v1/users/create?_access_token=admin
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{
+  "email": "felix@nette.org",
+  "name": "Felix",
+  "surname": "Felicis",
+  "username": "felix"
+}
+
+###
+

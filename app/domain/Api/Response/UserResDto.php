@@ -1,11 +1,11 @@
 <?php declare(strict_types = 1);
 
-namespace App\Domain\Api\Dto;
+namespace App\Domain\Api\Response;
 
 use App\Model\Database\Entity\User;
 use DateTimeInterface;
 
-final class UserDto
+final class UserResDto
 {
 
 	/** @var int */

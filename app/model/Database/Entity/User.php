@@ -8,6 +8,7 @@ use App\Model\Database\Entity\Attributes\TUpdatedAt;
 use App\Model\Exception\Logic\InvalidArgumentException;
 use App\Model\Utils\DateTime;
 use Doctrine\ORM\Mapping as ORM;
+use Nette\Utils\Random;
 
 /**
  * @ORM\Entity(repositoryClass="App\Model\Database\Repository\UserRepository")
@@ -94,6 +95,7 @@ class User extends AbstractEntity
 
 		$this->role = self::ROLE_USER;
 		$this->state = self::STATE_FRESH;
+		$this->apikey = Random::generate(100);
 	}
 
 	public function changeLoggedAt(): void

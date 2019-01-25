@@ -61,12 +61,13 @@ Focused on:
 6) Open http://localhost and enjoy it!
 
     Take a look at: 
-    - http://localhost:8000/api/public/v1/openapi/meta (Swagger format)
-    - http://localhost:8000/api/v1/users
-    - http://localhost:8000/api/v1/users?_access_token=admin
-    - http://localhost:8000/api/v1/users/1?_access_token=admin
-    - http://localhost:8000/api/v1/users/999?_access_token=admin
-    - http://localhost:8000/api/v1/users/email?email=admin@admin.cz&_access_token=admin
+    - [GET] http://localhost:8000/api/public/v1/openapi/meta (Swagger format)
+    - [GET] http://localhost:8000/api/v1/users
+    - [GET] http://localhost:8000/api/v1/users?_access_token=admin
+    - [GET] http://localhost:8000/api/v1/users/1?_access_token=admin
+    - [GET] http://localhost:8000/api/v1/users/999?_access_token=admin
+    - [GET] http://localhost:8000/api/v1/users/email?email=admin@admin.cz&_access_token=admin
+    - [POST] http://localhost:8000/api/v1/users/create
 
 ## Features
 
@@ -97,7 +98,10 @@ Here is a list of all features you can find in this project.
     - `docs` - documentation
     - `log` - runtime and error logs
     - `temp` - temp files and cache
-    - `tests` - test engine and unit/integration tests
+    - `tests` - test engine and many cases
+        - `tests/cases/E2E` - PhpStorm's requests files (`api.http`)
+        - `tests/cases/Integration`
+        - `tests/cases/Unit`
     - `vendor` - composer's folder
     - `www` - public content
 - :exclamation: Tracy
@@ -136,6 +140,11 @@ Take a detail look :eyes: at each single package.
 
 - [nette/finder](https://github.com/nette/finder)
 - [nette/robot-loader](https://github.com/nette/robot-loader)
+
+**Symfony**
+
+- [symfony/serializer](https://github.com/symfony/serializer)
+- [symfony/validator](https://github.com/symfony/validator)
 
 ## Demo
 

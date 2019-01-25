@@ -28,7 +28,11 @@
 		"nettrine/dbal": "^0.3.0",
 		"nettrine/migrations": "^0.4.0",
 		"nettrine/fixtures": "^0.4.0",
-		"nettrine/extensions": "^0.3.0"
+		"nettrine/extensions": "^0.3.0",
+
+		"symfony/serializer": "^4.2.2",
+		"symfony/validator": "^4.2.2",
+		"symfony/property-info": "^4.2.2"
 	},
 	"require-dev": {
 		"ninjify/qa": "^0.9.0",

@@ -2,9 +2,12 @@
 
 namespace App\Domain\Api\Facade;
 
-use App\Domain\Api\Dto\UserDto;
+use App\Domain\Api\Request\CreateUserReqDto;
+use App\Domain\Api\Response\UserResDto;
+use App\Model\Database\Entity\User;
 use App\Model\Database\EntityManager;
 use App\Model\Exception\Runtime\Database\EntityNotFoundException;
+use App\Model\Security\Passwords;
 
 final class UsersFacade
 {
@@ -20,7 +23,7 @@ final class UsersFacade
 	/**
 	 * @param mixed[] $criteria
 	 * @param string[] $orderBy
-	 * @return UserDto[]
+	 * @return UserResDto[]
 	 */
 	public function findBy(array $criteria = [], array $orderBy = ['id' => 'ASC'], int $limit = 10, int $offset = 0): array
 	{
@@ -28,14 +31,14 @@ final class UsersFacade
 		$result = [];
 
 		foreach ($entities as $entity) {
-			$result[] = UserDto::from($entity);
+			$result[] = UserResDto::from($entity);
 		}
 
 		return $result;
 	}
 
 	/**
-	 * @return UserDto[]
+	 * @return UserResDto[]
 	 */
 	public function findAll(int $limit = 10, int $offset = 0): array
 	{
@@ -46,18 +49,34 @@ final class UsersFacade
 	 * @param mixed[] $criteria
 	 * @param string[] $orderBy
 	 */
-	public function findOneBy(array $criteria, ?array $orderBy = null): UserDto
+	public function findOneBy(array $criteria, ?array $orderBy = null): UserResDto
 	{
 		$entity = $this->em->getUserRepository()->findOneBy($criteria, $orderBy);
 
 		if (!$entity) throw new EntityNotFoundException();
 
-		return UserDto::from($entity);
+		return UserResDto::from($entity);
 	}
 
-	public function findOne(int $id): UserDto
+	public function findOne(int $id): UserResDto
 	{
 		return $this->findOneBy(['id' => $id]);
+	}
+
+	public function create(CreateUserReqDto $dto): User
+	{
+		$user = new User(
+			$dto->name,
+			$dto->surname,
+			$dto->email,
+			$dto->username,
+			Passwords::hash($dto->password ?? md5(microtime()))
+		);
+
+		$this->em->persist($user);
+		$this->em->flush($user);
+
+		return $user;
 	}
 
 }
