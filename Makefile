@@ -17,3 +17,7 @@ loc-api:
 
 loc-api-prod:
 	NETTE_ENV=prod php -S 0.0.0.0:8000 www/index.php
+
+app-init:
+	NETTE_DEBUG=1 bin/console migrations:migrate
+	NETTE_DEBUG=1 bin/console doctrine:fixtures:load --append
