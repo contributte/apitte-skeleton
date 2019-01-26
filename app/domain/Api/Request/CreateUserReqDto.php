@@ -10,13 +10,13 @@ final class CreateUserReqDto
 	/**
 	 * @var string
 	 * @Assert\NotBlank
+	 * @Assert\Email
 	 */
 	public $email;
 
 	/**
 	 * @var string
 	 * @Assert\NotBlank
-	 * @Assert\Email
 	 */
 	public $name;
 
