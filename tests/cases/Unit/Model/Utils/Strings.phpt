@@ -1,5 +1,7 @@
 <?php declare(strict_types = 1);
 
+namespace Tests\Cases\Unit\Model\Utils;
+
 use App\Model\Utils\Strings;
 use Tester\Assert;
 
