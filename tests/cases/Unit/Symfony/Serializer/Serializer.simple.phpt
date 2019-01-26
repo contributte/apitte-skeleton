@@ -31,6 +31,10 @@ test(function (): void {
 
 	$json = $serializer->serialize($order, 'json');
 	Assert::equal('{"id":1}', $json);
+
+	/** @var Order $obj */
+	$obj = $serializer->deserialize($json, Order::class, 'json');
+	Assert::equal($order->getId(), $obj->getId());
 });
 
 test(function (): void {
@@ -45,6 +49,10 @@ test(function (): void {
 
 	$json = $serializer->serialize($user, 'json');
 	Assert::equal('{"orders":[{"id":1},{"id":2}]}', $json);
+
+	/** @var User $obj */
+	$obj = $serializer->deserialize($json, User::class, 'json');
+	Assert::equal(count($user->getOrders()), count($obj->getOrders()));
 });
 
 test(function (): void {
