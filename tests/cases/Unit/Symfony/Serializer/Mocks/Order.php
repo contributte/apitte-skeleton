@@ -2,10 +2,15 @@
 
 namespace Tests\Cases\Unit\Symfony\Serializer\Mocks;
 
+use Symfony\Component\Serializer\Annotation\Groups;
+
 class Order
 {
 
-	/** @var int */
+	/**
+	 * @var int
+	 * @Groups({"admin", "user"})
+	 */
 	private $id;
 
 	public function __construct(int $id)
