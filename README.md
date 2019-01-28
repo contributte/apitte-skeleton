@@ -17,6 +17,10 @@ Focused on:
 - static analysing via **phpstan**
 - unit / integration tests via **Nette Tester** and `ninjify/*`
 
+## Demo
+
+http://examples.planette.io/planette/forest-project/
+
 ## Install
 
 1) At first, use composer to install this project.
