@@ -39,8 +39,8 @@ class UsersController extends BaseV1Controller
 	public function index(ApiRequest $request): array
 	{
 		return $this->usersFacade->findAll(
-			$request->getParameter('limit', 10),
-			$request->getParameter('offset', 0)
+			intval($request->getParameter('limit', 10)),
+			intval($request->getParameter('offset', 0))
 		);
 	}
 

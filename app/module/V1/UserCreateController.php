@@ -35,7 +35,7 @@ class UserCreateController extends BaseV1Controller
 	 * @Method("POST")
 	 * @Tag(name="request.dto", value="App\Domain\Api\Request\CreateUserReqDto")
 	 */
-	public function byEmail(ApiRequest $request, ApiResponse $response): ApiResponse
+	public function create(ApiRequest $request, ApiResponse $response): ApiResponse
 	{
 		/** @var CreateUserReqDto $dto */
 		$dto = $request->getParsedBody();
