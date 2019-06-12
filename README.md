@@ -50,8 +50,10 @@ Focused on:
     composer create-project planette/forest-project
     ```
 
-2) After that, you have to setup Postgres >= 10 database. You can start it manually or use docker image `postgres:10`.
+2) After that, you can simply run project with `docker-compose up` and ignore steps 3 - 5
 
+3) Or if you don't prefer docker-compose you need to setup Postgres >= 10 database. You can start it manually or use docker image `postgres:10`.
+     
     ```
     docker run -it -p 5432:5432 -e POSTGRES_PASSWORD=forest -e POSTGRES_USER=forest postgres:10
     ```
