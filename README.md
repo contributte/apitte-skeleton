@@ -74,18 +74,18 @@ Focused on:
             password: forest
     ```
 
-4) Ok database is now running and application is configured to connect to it. Let's create initial data.
+5) Ok database is now running and application is configured to connect to it. Let's create initial data.
 
     Run `NETTE_DEBUG=1 bin/console migrations:migrate` to create tables.
     Run `NETTE_DEBUG=1 bin/console doctrine:fixtures:load --append` to create first user(s).
 
     Or via task `make build`.
 
-5) Start your devstack or use PHP local development server.
+6) Start your devstack or use PHP local development server.
 
     You can start PHP server by running `php -S localhost:8000 -t www` or use prepared make task `make loc-api`.
 
-6) Open http://localhost and enjoy!
+7) Open http://localhost and enjoy!
 
     Take a look at:
     - [GET] http://localhost:8000/api/public/v1/openapi/meta (Swagger format)
