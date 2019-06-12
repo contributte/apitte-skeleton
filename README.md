@@ -58,7 +58,7 @@ Focused on:
 
     Or use make task, `make loc-postgres`.
 
-3) Custom configuration file is located at `app/config/config.local.neon`. Edit it if you want.
+4) Custom configuration file is located at `app/config/config.local.neon`. Edit it if you want.
 
     Default configuration should look like:
 
@@ -95,6 +95,8 @@ Focused on:
     - [GET] http://localhost:8000/api/v1/users/999?_access_token=admin
     - [GET] http://localhost:8000/api/v1/users/email?email=admin@admin.cz&_access_token=admin
     - [POST] http://localhost:8000/api/v1/users/create
+    
+    If you're using docker-compose your application is running on port 80 so you don't need to specify port 8000 un the URLs.
 
 ## Features
 
