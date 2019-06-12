@@ -96,7 +96,7 @@ Focused on:
     - [GET] http://localhost:8000/api/v1/users/email?email=admin@admin.cz&_access_token=admin
     - [POST] http://localhost:8000/api/v1/users/create
     
-    If you're using docker-compose your application is running on port 80 so you don't need to specify port 8000 un the URLs.
+    If you're using docker-compose your application is running on port 80 so you don't need to specify port 8000 in the URLs.
 
 ## Features
 
