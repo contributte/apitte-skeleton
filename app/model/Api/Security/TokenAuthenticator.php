@@ -30,13 +30,17 @@ class TokenAuthenticator extends AbstractAuthenticator
 			$token = $this->tryQuery($request);
 		}
 
-		if (!$token) return null;
+		if (!$token) {
+			return null;
+		}
 
 		// Lookup user in DB
 		$user = $this->em->getUserRepository()->findOneBy(['apikey' => $token]);
 
 		// User not found
-		if (!$user) return null;
+		if (!$user) {
+			return null;
+		}
 
 		return $user;
 	}

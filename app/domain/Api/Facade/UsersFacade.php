@@ -53,7 +53,9 @@ final class UsersFacade
 	{
 		$entity = $this->em->getUserRepository()->findOneBy($criteria, $orderBy);
 
-		if (!$entity) throw new EntityNotFoundException();
+		if (!$entity) {
+			throw new EntityNotFoundException();
+		}
 
 		return UserResDto::from($entity);
 	}
@@ -70,7 +72,7 @@ final class UsersFacade
 			$dto->surname,
 			$dto->email,
 			$dto->username,
-			Passwords::hash($dto->password ?? md5(microtime()))
+			Passwords::create()->hash($dto->password ?? md5(microtime()))
 		);
 
 		$this->em->persist($user);

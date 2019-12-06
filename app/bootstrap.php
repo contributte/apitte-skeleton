@@ -10,7 +10,7 @@ $configurator = new ExtraConfigurator();
 $configurator->setTempDirectory(__DIR__ . '/../temp');
 
 // Disable default extensions
-$configurator->defaultExtensions['security'] = false;
+unset($configurator->defaultExtensions['security']);
 
 $configurator->onCompile[] = function (ExtraConfigurator $configurator, Compiler $compiler): void {
 	// Add env variables to config structure

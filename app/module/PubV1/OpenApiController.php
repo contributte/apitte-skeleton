@@ -2,29 +2,26 @@
 
 namespace App\Module\PubV1;
 
-use Apitte\Core\Annotation\Controller\Controller;
-use Apitte\Core\Annotation\Controller\ControllerPath;
 use Apitte\Core\Annotation\Controller\Method;
 use Apitte\Core\Annotation\Controller\Path;
 use Apitte\Core\Http\ApiRequest;
 use Apitte\Core\Http\ApiResponse;
-use Apitte\OpenApi\OpenApiService;
+use Apitte\OpenApi\ISchemaBuilder;
 use Contributte\Psr7\Psr7Response;
 use Psr\Http\Message\ResponseInterface;
 
 /**
- * @Controller()
- * @ControllerPath("/openapi")
+ * @Path("/openapi")
  */
 class OpenApiController extends BasePubV1Controller
 {
 
-	/** @var OpenApiService */
-	private $openApiService;
+	/** @var ISchemaBuilder */
+	private $schemaBuilder;
 
-	public function __construct(OpenApiService $openApiService)
+	public function __construct(ISchemaBuilder $schemaBuilder)
 	{
-		$this->openApiService = $openApiService;
+		$this->schemaBuilder = $schemaBuilder;
 	}
 
 	/**
@@ -35,9 +32,9 @@ class OpenApiController extends BasePubV1Controller
 	{
 		/** @var Psr7Response $response */
 		return $response
-			->withAddedHeader('Access-Control-Allow-Origin', 'https://petstore.swagger.io')
+			->withAddedHeader('Access-Control-Allow-Origin', '*')
 			->writeJsonBody(
-				$this->openApiService->createSchema()->toArray()
+				$this->schemaBuilder->build()->toArray()
 			);
 	}
 

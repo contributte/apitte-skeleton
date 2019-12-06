@@ -2,13 +2,13 @@
 
 namespace App\Module\V1;
 
-use Apitte\Core\Annotation\Controller\GroupId;
-use Apitte\Core\Annotation\Controller\GroupPath;
+use Apitte\Core\Annotation\Controller\Id;
+use Apitte\Core\Annotation\Controller\Path;
 use App\Module\BaseController;
 
 /**
- * @GroupPath("/v1")
- * @GroupId("v1")
+ * @Path("/v1")
+ * @Id("v1")
  */
 abstract class BaseV1Controller extends BaseController
 {

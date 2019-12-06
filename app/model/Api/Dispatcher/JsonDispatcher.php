@@ -7,12 +7,12 @@ use Apitte\Core\Exception\Api\ClientErrorException;
 use Apitte\Core\Exception\Api\ServerErrorException;
 use Apitte\Core\Exception\Api\ValidationException;
 use Apitte\Core\Handler\IHandler;
+use Apitte\Core\Http\ApiRequest;
+use Apitte\Core\Http\ApiResponse;
 use Apitte\Core\Http\RequestAttributes;
 use Apitte\Core\Router\IRouter;
 use Apitte\Core\Schema\Endpoint;
-use App\Model\Utils\Json;
-use Psr\Http\Message\ResponseInterface;
-use Psr\Http\Message\ServerRequestInterface;
+use Nette\Utils\Json;
 use RuntimeException;
 use Symfony\Component\Serializer\Exception\ExtraAttributesException;
 use Symfony\Component\Serializer\SerializerInterface;
@@ -34,14 +34,14 @@ class JsonDispatcher extends ApitteJsonDispatcher
 		$this->validator = $validator;
 	}
 
-	protected function handle(ServerRequestInterface $request, ResponseInterface $response): ResponseInterface
+	protected function handle(ApiRequest $request, ApiResponse $response): ApiResponse
 	{
 		try {
 			$request = $this->transformRequest($request);
 			$result = $this->handler->handle($request, $response);
 
 			// Except ResponseInterface convert all to json
-			if (!($result instanceof ResponseInterface)) {
+			if (!($result instanceof ApiResponse)) {
 				$response = $this->transformResponse($result, $response);
 			} else {
 				$response = $result;
@@ -76,14 +76,20 @@ class JsonDispatcher extends ApitteJsonDispatcher
 	/**
 	 * Transform incoming request to request DTO, if needed.
 	 */
-	protected function transformRequest(ServerRequestInterface $request): ServerRequestInterface
+	protected function transformRequest(ApiRequest $request): ApiRequest
 	{
 		// If Apitte endpoint is not provided, skip transforming.
-		/** @var Endpoint $endpoint */
-		if (!($endpoint = $request->getAttribute(RequestAttributes::ATTR_ENDPOINT))) return $request;
+		if (!($endpoint = $request->getAttribute(RequestAttributes::ATTR_ENDPOINT))) {
+			return $request;
+		}
+
+		// @safety
+		assert($endpoint instanceof Endpoint);
 
 		// Get incoming request entity class, if defined. Otherwise, skip transforming.
-		if (!($entity = $endpoint->getTag('request.dto'))) return $request;
+		if (!($entity = $endpoint->getTag('request.dto'))) {
+			return $request;
+		}
 
 		try {
 			// Create request DTO from incoming request, using serializer.
@@ -122,7 +128,7 @@ class JsonDispatcher extends ApitteJsonDispatcher
 	 *
 	 * @param mixed $data
 	 */
-	protected function transformResponse($data, ResponseInterface $response): ResponseInterface
+	protected function transformResponse($data, ApiResponse $response): ApiResponse
 	{
 		$response = $response->withStatus(200)
 			->withHeader('Content-Type', 'application/json');

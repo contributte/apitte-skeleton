@@ -10,7 +10,6 @@ class Environment
 {
 
 	public const TEMP_DIR = 'TEMP_DIR';
-	public const CACHE_DIR = 'CACHE_DIR';
 
 	/**
 	 * Magic setup method
@@ -100,14 +99,18 @@ class Environment
 
 	public static function rmdir(string $dir): void
 	{
-		if (!is_dir($dir)) return;
+		if (!is_dir($dir)) {
+			return;
+		}
 		self::purge($dir);
 		@rmdir($dir);
 	}
 
 	private static function purge(string $dir): void
 	{
-		if (!is_dir($dir)) self::mkdir($dir);
+		if (!is_dir($dir)) {
+			self::mkdir($dir);
+		}
 		THelpers::purge($dir);
 	}
 

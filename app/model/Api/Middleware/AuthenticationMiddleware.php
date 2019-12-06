@@ -3,10 +3,10 @@
 namespace App\Model\Api\Middleware;
 
 use App\Model\Api\RequestAttributes;
-use App\Model\Utils\Json;
 use App\Model\Utils\Strings;
 use Contributte\Middlewares\IMiddleware;
 use Contributte\Middlewares\Security\IAuthenticator;
+use Nette\Utils\Json;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 
@@ -28,7 +28,9 @@ class AuthenticationMiddleware implements IMiddleware
 	 */
 	public function __invoke(ServerRequestInterface $request, ResponseInterface $response, callable $next): ResponseInterface
 	{
-		if ($this->isWhitelisted($request)) return $next($request, $response);
+		if ($this->isWhitelisted($request)) {
+			return $next($request, $response);
+		}
 
 		$user = $this->authenticator->authenticate($request);
 
@@ -61,7 +63,9 @@ class AuthenticationMiddleware implements IMiddleware
 	protected function isWhitelisted(ServerRequestInterface $request): bool
 	{
 		foreach (self::WHITELIST_PATHS as $whitelist) {
-			if (Strings::startsWith($request->getUri()->getPath(), $whitelist)) return true;
+			if (Strings::startsWith($request->getUri()->getPath(), $whitelist)) {
+				return true;
+			}
 		}
 
 		return false;

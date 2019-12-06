@@ -2,8 +2,6 @@
 
 namespace App\Module\V1;
 
-use Apitte\Core\Annotation\Controller\Controller;
-use Apitte\Core\Annotation\Controller\ControllerPath;
 use Apitte\Core\Annotation\Controller\Method;
 use Apitte\Core\Annotation\Controller\Path;
 use Apitte\Core\Annotation\Controller\RequestParameter;
@@ -13,8 +11,7 @@ use App\Domain\Api\Facade\UsersFacade;
 use App\Domain\Api\Response\UserResDto;
 
 /**
- * @Controller()
- * @ControllerPath("/users")
+ * @Path("/users")
  */
 class UsersController extends BaseV1Controller
 {

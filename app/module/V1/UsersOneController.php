@@ -2,8 +2,6 @@
 
 namespace App\Module\V1;
 
-use Apitte\Core\Annotation\Controller\Controller;
-use Apitte\Core\Annotation\Controller\ControllerPath;
 use Apitte\Core\Annotation\Controller\Method;
 use Apitte\Core\Annotation\Controller\Path;
 use Apitte\Core\Annotation\Controller\RequestParameter;
@@ -16,8 +14,7 @@ use App\Model\Exception\Runtime\Database\EntityNotFoundException;
 use Nette\Http\IResponse;
 
 /**
- * @Controller()
- * @ControllerPath("/users")
+ * @Path("/users")
  */
 class UsersOneController extends BaseV1Controller
 {

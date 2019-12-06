@@ -1,8 +1,32 @@
-# Forest Project
+<h1 align=center>Forest Project</h1>
 
-**Forest project** is an example project based on Nette Framework and many useful packages by [@f3l1x](https://github.com/f3l1x).
+<p align=center>
+    <strong>Forest project</strong> is an example project based on Nette Framework and many useful packages by <a href="https://github.com/f3l1x">@f3l1x</a>.
+</p>
 
-Why **forest**? Because we are building (fo)REST API.
+<p align=center>
+    Why <strong>forest</strong>? Because we are building (fo)REST API.
+</p>
+
+<p align=center>
+🕹 <a href="https://f3l1x.io">f3l1x.io</a> | 💻 <a href="https://github.com/f3l1x">f3l1x</a> | 🐦 <a href="https://twitter.com/xf3l1x">@xf3l1x</a>
+</p>
+
+<p align=center>
+    <code>composer create-project -s dev planette/forest-project acme</code>
+</p>
+<p align=center>
+    Take a look at demo <a href="https://examples.planette.io/planette/forest-project/api/v1/users/?_access_token=admin">examples.planette.io/planette/forest-project/</a>
+</p>
+
+<p align=center>
+    <img src="https://raw.githubusercontent.com/planette/forest-project/master/.docs/assets/screenshot1.png">
+</p>
+
+[![Build Status](https://img.shields.io/travis/planette/forest-project.svg?style=flat-square)](https://travis-ci.org/planette/forest-project)
+[![Join the chat](https://img.shields.io/gitter/room/contributte/contributte.svg?style=flat-square)](http://bit.ly/ctteg)
+
+-----
 
 ## Goal
 
@@ -11,15 +35,12 @@ Main goal is to provide best prepared API starter-kit project for Nette-Apitte d
 Focused on:
 
 - `nette/*` packages
+- build PSR-7 API via `apitte/*`
 - Doctrine ORM via `nettrine/*`
 - Symfony components via `contributte/*`
 - codestyle checking via **CodeSniffer** and `ninjify/*`
 - static analysing via **phpstan**
 - unit / integration tests via **Nette Tester** and `ninjify/*`
-
-## Demo
-
-http://examples.planette.io/planette/forest-project/
 
 ## Install
 
@@ -30,11 +51,11 @@ http://examples.planette.io/planette/forest-project/
     ```
 
 2) After that, you have to setup Postgres >= 10 database. You can start it manually or use docker image `postgres:10`.
-     
+
     ```
     docker run -it -p 5432:5432 -e POSTGRES_PASSWORD=forest -e POSTGRES_USER=forest postgres:10
     ```
-    
+
     Or use make task, `make loc-postgres`.
 
 3) Custom configuration file is located at `app/config/config.local.neon`. Edit it if you want.
@@ -44,7 +65,7 @@ http://examples.planette.io/planette/forest-project/
     ```yaml
     # Host Config
     parameters:
-    
+
         # Database
         database:
             host: localhost
@@ -58,15 +79,15 @@ http://examples.planette.io/planette/forest-project/
     Run `NETTE_DEBUG=1 bin/console migrations:migrate` to create tables.
     Run `NETTE_DEBUG=1 bin/console doctrine:fixtures:load --append` to create first user(s).
 
-    Or via task `make app-init`.
+    Or via task `make build`.
 
 5) Start your devstack or use PHP local development server.
 
-    You can start PHP server by running `php -S localhost:8000 -t www` or use prepared make task `make loc-web`.
+    You can start PHP server by running `php -S localhost:8000 -t www` or use prepared make task `make loc-api`.
 
 6) Open http://localhost and enjoy!
 
-    Take a look at: 
+    Take a look at:
     - [GET] http://localhost:8000/api/public/v1/openapi/meta (Swagger format)
     - [GET] http://localhost:8000/api/v1/users
     - [GET] http://localhost:8000/api/v1/users?_access_token=admin
@@ -80,7 +101,7 @@ http://examples.planette.io/planette/forest-project/
 Here is a list of all features you can find in this project.
 
 - :package: Packages
-    - Nette 2.4
+    - Nette 3.0
     - Apitte
     - Contributte
     - Nettrine
@@ -154,6 +175,6 @@ Take a detailed look :eyes: at each single package.
 
 ## Demo
 
-![](docs/assets/screenshot1.png)
-![](docs/assets/screenshot2.png)
-![](docs/assets/screenshot3.png)
+![](.docs/assets/screenshot1.png)
+![](.docs/assets/screenshot2.png)
+![](.docs/assets/screenshot3.png)
