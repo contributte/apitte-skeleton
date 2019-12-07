@@ -3,9 +3,6 @@ parameters:
 		- /tests/tmp/*
 		- /db/*
 
-	autoload_files:
-		- %currentWorkingDirectory%/app/bootstrap.php
-
 	fileExtensions:
 		- php
 
