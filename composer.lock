@@ -5125,17 +5125,57 @@
             "time": "2019-06-07T19:13:52+00:00"
         },
         {
-            "name": "phpstan/phpstan-doctrine",
-            "version": "0.12.0",
+            "name": "phpstan/phpstan",
+            "version": "0.12.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/phpstan/phpstan-doctrine.git",
-                "reference": "1822c4d69d978a7753cd5be47c8b777a42084d6f"
+                "url": "https://github.com/phpstan/phpstan.git",
+                "reference": "15a2c2b7d4195aa712506e14763ef7646ac6a08c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan-doctrine/zipball/1822c4d69d978a7753cd5be47c8b777a42084d6f",
-                "reference": "1822c4d69d978a7753cd5be47c8b777a42084d6f",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/15a2c2b7d4195aa712506e14763ef7646ac6a08c",
+                "reference": "15a2c2b7d4195aa712506e14763ef7646ac6a08c",
+                "shasum": ""
+            },
+            "require": {
+                "nikic/php-parser": "^4.3.0",
+                "php": "^7.1"
+            },
+            "bin": [
+                "phpstan",
+                "phpstan.phar"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.12-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "PHPStan - PHP Static Analysis Tool",
+            "time": "2019-12-09T09:13:49+00:00"
+        },
+        {
+            "name": "phpstan/phpstan-doctrine",
+            "version": "0.12.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpstan/phpstan-doctrine.git",
+                "reference": "cab43df5287c3c142210704dbc3f1ea62d6dfd06"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpstan/phpstan-doctrine/zipball/cab43df5287c3c142210704dbc3f1ea62d6dfd06",
+                "reference": "cab43df5287c3c142210704dbc3f1ea62d6dfd06",
                 "shasum": ""
             },
             "require": {
@@ -5186,7 +5226,7 @@
                 "MIT"
             ],
             "description": "Doctrine extensions for PHPStan",
-            "time": "2019-12-03T08:29:26+00:00"
+            "time": "2019-12-07T20:33:11+00:00"
         },
         {
             "name": "phpstan/phpstan-nette",
@@ -5312,49 +5352,6 @@
             ],
             "description": "PHPUnit extensions and rules for PHPStan",
             "time": "2019-11-27T16:24:02+00:00"
-        },
-        {
-            "name": "phpstan/phpstan-shim",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/phpstan/phpstan-shim.git",
-                "reference": "f36a4374cc3d6ee0fbf4bccbd409674b807a1b0d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan-shim/zipball/f36a4374cc3d6ee0fbf4bccbd409674b807a1b0d",
-                "reference": "f36a4374cc3d6ee0fbf4bccbd409674b807a1b0d",
-                "shasum": ""
-            },
-            "require": {
-                "nikic/php-parser": "^4.2.3",
-                "php": "~7.1"
-            },
-            "replace": {
-                "phpstan/phpstan": "self.version"
-            },
-            "bin": [
-                "phpstan",
-                "phpstan.phar"
-            ],
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.12-dev"
-                }
-            },
-            "autoload": {
-                "files": [
-                    "bootstrap.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "PHPStan Phar distribution",
-            "time": "2019-11-03T16:38:15+00:00"
         },
         {
             "name": "sebastian/comparator",
