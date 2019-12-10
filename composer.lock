@@ -659,16 +659,16 @@
         },
         {
             "name": "contributte/neonizer",
-            "version": "v0.4.0",
+            "version": "v0.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/neonizer.git",
-                "reference": "831ee0d0d0d058f8e851db7670590b4002a5f5d8"
+                "reference": "8a8e5bc31c19285107bf6ee7d260b671f68d7542"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/neonizer/zipball/831ee0d0d0d058f8e851db7670590b4002a5f5d8",
-                "reference": "831ee0d0d0d058f8e851db7670590b4002a5f5d8",
+                "url": "https://api.github.com/repos/contributte/neonizer/zipball/8a8e5bc31c19285107bf6ee7d260b671f68d7542",
+                "reference": "8a8e5bc31c19285107bf6ee7d260b671f68d7542",
                 "shasum": ""
             },
             "require": {
@@ -716,7 +716,7 @@
                 "nette",
                 "parameters"
             ],
-            "time": "2019-06-17T17:59:52+00:00"
+            "time": "2019-12-10T08:41:04+00:00"
         },
         {
             "name": "contributte/psr7-http-message",
@@ -5126,16 +5126,16 @@
         },
         {
             "name": "phpstan/phpstan-doctrine",
-            "version": "0.12.0",
+            "version": "0.12.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan-doctrine.git",
-                "reference": "1822c4d69d978a7753cd5be47c8b777a42084d6f"
+                "reference": "8151e1a258897809dd73806f2070ea0def787c39"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan-doctrine/zipball/1822c4d69d978a7753cd5be47c8b777a42084d6f",
-                "reference": "1822c4d69d978a7753cd5be47c8b777a42084d6f",
+                "url": "https://api.github.com/repos/phpstan/phpstan-doctrine/zipball/8151e1a258897809dd73806f2070ea0def787c39",
+                "reference": "8151e1a258897809dd73806f2070ea0def787c39",
                 "shasum": ""
             },
             "require": {
@@ -5186,7 +5186,7 @@
                 "MIT"
             ],
             "description": "Doctrine extensions for PHPStan",
-            "time": "2019-12-03T08:29:26+00:00"
+            "time": "2019-12-10T14:51:21+00:00"
         },
         {
             "name": "phpstan/phpstan-nette",
@@ -5259,16 +5259,16 @@
         },
         {
             "name": "phpstan/phpstan-phpunit",
-            "version": "0.12.0",
+            "version": "0.12.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan-phpunit.git",
-                "reference": "a9790e1bee7feea2a9dac7e1f39fc9e6aac0b703"
+                "reference": "cc14b74ba437bb08ce189aada455946890a8414b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan-phpunit/zipball/a9790e1bee7feea2a9dac7e1f39fc9e6aac0b703",
-                "reference": "a9790e1bee7feea2a9dac7e1f39fc9e6aac0b703",
+                "url": "https://api.github.com/repos/phpstan/phpstan-phpunit/zipball/cc14b74ba437bb08ce189aada455946890a8414b",
+                "reference": "cc14b74ba437bb08ce189aada455946890a8414b",
                 "shasum": ""
             },
             "require": {
@@ -5311,7 +5311,7 @@
                 "MIT"
             ],
             "description": "PHPUnit extensions and rules for PHPStan",
-            "time": "2019-11-27T16:24:02+00:00"
+            "time": "2019-12-07T20:34:22+00:00"
         },
         {
             "name": "phpstan/phpstan-shim",
@@ -5328,11 +5328,7 @@
                 "shasum": ""
             },
             "require": {
-                "nikic/php-parser": "^4.2.3",
                 "php": "~7.1"
-            },
-            "replace": {
-                "phpstan/phpstan": "self.version"
             },
             "bin": [
                 "phpstan",
