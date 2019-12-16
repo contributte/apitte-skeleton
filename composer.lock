@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/apitte/core.git",
-                "reference": "051ae4a5e6cd65ffb622ebb55981bd4d4de79aac"
+                "reference": "02390f26188929916e08522f10b684633dfe6e5c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apitte/core/zipball/051ae4a5e6cd65ffb622ebb55981bd4d4de79aac",
-                "reference": "051ae4a5e6cd65ffb622ebb55981bd4d4de79aac",
+                "url": "https://api.github.com/repos/apitte/core/zipball/02390f26188929916e08522f10b684633dfe6e5c",
+                "reference": "02390f26188929916e08522f10b684633dfe6e5c",
                 "shasum": ""
             },
             "require": {
@@ -82,7 +82,7 @@
                 "nette",
                 "rest"
             ],
-            "time": "2019-11-26T17:12:22+00:00"
+            "time": "2019-12-10T16:48:10+00:00"
         },
         {
             "name": "apitte/debug",
@@ -5166,16 +5166,16 @@
         },
         {
             "name": "phpstan/phpstan-doctrine",
-            "version": "0.12.2",
+            "version": "0.12.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan-doctrine.git",
-                "reference": "8151e1a258897809dd73806f2070ea0def787c39"
+                "reference": "a497a383bd970117b0680557ae12444d72d09095"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan-doctrine/zipball/8151e1a258897809dd73806f2070ea0def787c39",
-                "reference": "8151e1a258897809dd73806f2070ea0def787c39",
+                "url": "https://api.github.com/repos/phpstan/phpstan-doctrine/zipball/a497a383bd970117b0680557ae12444d72d09095",
+                "reference": "a497a383bd970117b0680557ae12444d72d09095",
                 "shasum": ""
             },
             "require": {
@@ -5226,7 +5226,7 @@
                 "MIT"
             ],
             "description": "Doctrine extensions for PHPStan",
-            "time": "2019-12-10T14:51:21+00:00"
+            "time": "2019-12-13T18:24:11+00:00"
         },
         {
             "name": "phpstan/phpstan-nette",
