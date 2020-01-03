@@ -4263,6 +4263,7 @@
                 "code",
                 "zf"
             ],
+            "abandoned": "laminas/laminas-code",
             "time": "2019-10-05T23:18:22+00:00"
         },
         {
@@ -4317,6 +4318,7 @@
                 "events",
                 "zf2"
             ],
+            "abandoned": "laminas/laminas-eventmanager",
             "time": "2018-04-25T15:33:34+00:00"
         }
     ],
@@ -5167,20 +5169,19 @@
         },
         {
             "name": "phpstan/phpstan-doctrine",
-            "version": "0.12.6",
+            "version": "0.12.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan-doctrine.git",
-                "reference": "c1bf25ed5d90f7ee83bcead0ca84c28b0f9fe259"
+                "reference": "c9eed44d72b6f48d2dad2bf45d6b9f42a773f196"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan-doctrine/zipball/c1bf25ed5d90f7ee83bcead0ca84c28b0f9fe259",
-                "reference": "c1bf25ed5d90f7ee83bcead0ca84c28b0f9fe259",
+                "url": "https://api.github.com/repos/phpstan/phpstan-doctrine/zipball/c9eed44d72b6f48d2dad2bf45d6b9f42a773f196",
+                "reference": "c9eed44d72b6f48d2dad2bf45d6b9f42a773f196",
                 "shasum": ""
             },
             "require": {
-                "nikic/php-parser": "^4.0",
                 "php": "~7.1",
                 "phpstan/phpstan": "^0.12.3"
             },
@@ -5228,7 +5229,7 @@
                 "MIT"
             ],
             "description": "Doctrine extensions for PHPStan",
-            "time": "2019-12-21T18:55:30+00:00"
+            "time": "2020-01-01T17:31:42+00:00"
         },
         {
             "name": "phpstan/phpstan-nette",
