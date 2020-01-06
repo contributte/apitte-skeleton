@@ -2982,23 +2982,23 @@
         },
         {
             "name": "nettrine/migrations",
-            "version": "v0.6.0",
+            "version": "v0.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nettrine/migrations.git",
-                "reference": "75ad213d6d98e6371d9f6590c5ed2b7627492270"
+                "reference": "bc7a2cb8831d4197cb1f69c1b0c9553efc8d68f7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nettrine/migrations/zipball/75ad213d6d98e6371d9f6590c5ed2b7627492270",
-                "reference": "75ad213d6d98e6371d9f6590c5ed2b7627492270",
+                "url": "https://api.github.com/repos/nettrine/migrations/zipball/bc7a2cb8831d4197cb1f69c1b0c9553efc8d68f7",
+                "reference": "bc7a2cb8831d4197cb1f69c1b0c9553efc8d68f7",
                 "shasum": ""
             },
             "require": {
                 "doctrine/migrations": "^2.0.0",
                 "nette/di": "~3.0.0",
                 "php": "^7.2",
-                "symfony/console": "^4.2.5"
+                "symfony/console": "^4.2.5|^5.0.0"
             },
             "require-dev": {
                 "doctrine/orm": "^2.6",
@@ -3043,7 +3043,7 @@
                 "migrations",
                 "nette"
             ],
-            "time": "2019-08-06T14:20:59+00:00"
+            "time": "2020-01-05T01:14:13+00:00"
         },
         {
             "name": "nettrine/orm",
@@ -3948,7 +3948,7 @@
         },
         {
             "name": "symfony/stopwatch",
-            "version": "v5.0.1",
+            "version": "v5.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/stopwatch.git",
@@ -4217,24 +4217,27 @@
         },
         {
             "name": "zendframework/zend-code",
-            "version": "3.4.0",
+            "version": "3.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-code.git",
-                "reference": "46feaeecea14161734b56c1ace74f28cb329f194"
+                "reference": "268040548f92c2bfcba164421c1add2ba43abaaa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-code/zipball/46feaeecea14161734b56c1ace74f28cb329f194",
-                "reference": "46feaeecea14161734b56c1ace74f28cb329f194",
+                "url": "https://api.github.com/repos/zendframework/zend-code/zipball/268040548f92c2bfcba164421c1add2ba43abaaa",
+                "reference": "268040548f92c2bfcba164421c1add2ba43abaaa",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.1",
                 "zendframework/zend-eventmanager": "^2.6 || ^3.0"
             },
+            "conflict": {
+                "phpspec/prophecy": "<1.9.0"
+            },
             "require-dev": {
-                "doctrine/annotations": "^1.0",
+                "doctrine/annotations": "^1.7",
                 "ext-phar": "*",
                 "phpunit/phpunit": "^7.5.16 || ^8.4",
                 "zendframework/zend-coding-standard": "^1.0",
@@ -4248,7 +4251,8 @@
             "extra": {
                 "branch-alias": {
                     "dev-master": "3.4.x-dev",
-                    "dev-develop": "3.5.x-dev"
+                    "dev-develop": "3.5.x-dev",
+                    "dev-dev-4.0": "4.0.x-dev"
                 }
             },
             "autoload": {
@@ -4267,7 +4271,7 @@
                 "zf"
             ],
             "abandoned": "laminas/laminas-code",
-            "time": "2019-10-05T23:18:22+00:00"
+            "time": "2019-12-10T19:21:15+00:00"
         },
         {
             "name": "zendframework/zend-eventmanager",
