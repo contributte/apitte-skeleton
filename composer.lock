@@ -394,21 +394,21 @@
         },
         {
             "name": "contributte/di",
-            "version": "v0.4.1",
+            "version": "v0.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/di.git",
-                "reference": "89dfa32b0181e67342f0323449f61ff5e8f957fa"
+                "reference": "9ec21373c037838a61bac5a1b1833b84b9d1e7d3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/di/zipball/89dfa32b0181e67342f0323449f61ff5e8f957fa",
-                "reference": "89dfa32b0181e67342f0323449f61ff5e8f957fa",
+                "url": "https://api.github.com/repos/contributte/di/zipball/9ec21373c037838a61bac5a1b1833b84b9d1e7d3",
+                "reference": "9ec21373c037838a61bac5a1b1833b84b9d1e7d3",
                 "shasum": ""
             },
             "require": {
-                "nette/di": "~3.0.0",
-                "nette/utils": "~3.0.1",
+                "nette/di": "~3.0.2",
+                "nette/utils": "~3.0.3|~3.1.0",
                 "php": "^7.2"
             },
             "conflict": {
@@ -416,7 +416,7 @@
             },
             "require-dev": {
                 "nette/bootstrap": "~3.0.0",
-                "nette/robot-loader": "~3.0.4|~3.1.0|~3.2.0",
+                "nette/robot-loader": "~3.0.4|~3.1.0|~3.2.1",
                 "ninjify/nunjuck": "^0.3.0",
                 "ninjify/qa": "^0.10.0",
                 "phpstan/extension-installer": "^1.0",
@@ -457,7 +457,7 @@
                 "inject",
                 "nette"
             ],
-            "time": "2019-12-04T00:04:58+00:00"
+            "time": "2020-01-05T18:11:45+00:00"
         },
         {
             "name": "contributte/http",
