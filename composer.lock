@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c08c4f97cd0104cd47034cb7f5821b4c",
+    "content-hash": "fb4f29db64175eb0ced48f1ee4e403c2",
     "packages": [
         {
             "name": "apitte/core",
@@ -12,19 +12,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/apitte/core.git",
-                "reference": "02390f26188929916e08522f10b684633dfe6e5c"
+                "reference": "e07dc240aa677d05c166bc5c12629141d5e65d05"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apitte/core/zipball/02390f26188929916e08522f10b684633dfe6e5c",
-                "reference": "02390f26188929916e08522f10b684633dfe6e5c",
+                "url": "https://api.github.com/repos/apitte/core/zipball/e07dc240aa677d05c166bc5c12629141d5e65d05",
+                "reference": "e07dc240aa677d05c166bc5c12629141d5e65d05",
                 "shasum": ""
             },
             "require": {
                 "contributte/psr7-http-message": "~0.6.0",
                 "doctrine/annotations": "^1.8.0",
                 "ext-json": "*",
-                "nette/utils": "~3.0.0",
+                "nette/utils": "~3.0.0|~3.1.0",
                 "php": "^7.2"
             },
             "conflict": {
@@ -45,7 +45,7 @@
                 "phpstan/phpstan-shim": "^0.11",
                 "phpstan/phpstan-strict-rules": "^0.11",
                 "psr/log": "^1.1",
-                "symfony/validator": "^4.1.1"
+                "symfony/validator": "^4.1.1|^5.0.0"
             },
             "type": "library",
             "extra": {
@@ -82,7 +82,7 @@
                 "nette",
                 "rest"
             ],
-            "time": "2019-12-10T16:48:10+00:00"
+            "time": "2020-01-05T18:46:26+00:00"
         },
         {
             "name": "apitte/debug",
@@ -210,17 +210,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/apitte/openapi.git",
-                "reference": "28f4e35d8b068ecf75ca94e5087a36f0b6f87689"
+                "reference": "5c9b2d9b0104fe5c796c6ba13186c62f2a9e5ff5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apitte/openapi/zipball/28f4e35d8b068ecf75ca94e5087a36f0b6f87689",
-                "reference": "28f4e35d8b068ecf75ca94e5087a36f0b6f87689",
+                "url": "https://api.github.com/repos/apitte/openapi/zipball/5c9b2d9b0104fe5c796c6ba13186c62f2a9e5ff5",
+                "reference": "5c9b2d9b0104fe5c796c6ba13186c62f2a9e5ff5",
                 "shasum": ""
             },
             "require": {
                 "apitte/core": "^0.7.0",
-                "nette/utils": "~3.0.1",
+                "nette/utils": "~3.0.1|~3.1.0",
                 "php": "^7.2"
             },
             "require-dev": {
@@ -232,7 +232,7 @@
                 "phpstan/phpstan-nette": "^0.11",
                 "phpstan/phpstan-shim": "^0.11",
                 "phpstan/phpstan-strict-rules": "^0.11",
-                "symfony/yaml": "^4.2",
+                "symfony/yaml": "^4.4.0|^5.0.0",
                 "tracy/tracy": "~2.6.0|~2.7.0"
             },
             "suggest": {
@@ -271,7 +271,7 @@
                 "openapi",
                 "rest"
             ],
-            "time": "2019-11-18T11:40:01+00:00"
+            "time": "2020-01-05T19:34:00+00:00"
         },
         {
             "name": "contributte/bootstrap",
@@ -334,27 +334,27 @@
         },
         {
             "name": "contributte/console",
-            "version": "v0.7.1",
+            "version": "v0.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/console.git",
-                "reference": "a676e1a395ec48ff647abdbdc697dd0e55fdd6e7"
+                "reference": "5bf019e2df77683a2473129f8aa6af32c8ab7c3e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/console/zipball/a676e1a395ec48ff647abdbdc697dd0e55fdd6e7",
-                "reference": "a676e1a395ec48ff647abdbdc697dd0e55fdd6e7",
+                "url": "https://api.github.com/repos/contributte/console/zipball/5bf019e2df77683a2473129f8aa6af32c8ab7c3e",
+                "reference": "5bf019e2df77683a2473129f8aa6af32c8ab7c3e",
                 "shasum": ""
             },
             "require": {
                 "contributte/di": "^0.4.0",
                 "php": "^7.2",
-                "symfony/console": "^4.2.9"
+                "symfony/console": "^4.2.9|^5.0.0"
             },
             "require-dev": {
                 "nette/http": "~3.0.1",
                 "ninjify/nunjuck": "^0.3.0",
-                "ninjify/qa": "^0.9.0",
+                "ninjify/qa": "^0.10.0",
                 "phpstan/extension-installer": "^1.0",
                 "phpstan/phpstan-deprecation-rules": "^0.11.2",
                 "phpstan/phpstan-nette": "^0.11.1",
@@ -390,7 +390,7 @@
                 "nette",
                 "symfony"
             ],
-            "time": "2019-07-29T16:34:33+00:00"
+            "time": "2020-01-03T18:18:33+00:00"
         },
         {
             "name": "contributte/di",
@@ -600,18 +600,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/monolog.git",
-                "reference": "8e0a33999194bf7cdd8d8b09799537de5accdffb"
+                "reference": "44b1f9e84f5ccd2c43e010f07d78226baa54fe15"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/monolog/zipball/8e0a33999194bf7cdd8d8b09799537de5accdffb",
-                "reference": "8e0a33999194bf7cdd8d8b09799537de5accdffb",
+                "url": "https://api.github.com/repos/contributte/monolog/zipball/44b1f9e84f5ccd2c43e010f07d78226baa54fe15",
+                "reference": "44b1f9e84f5ccd2c43e010f07d78226baa54fe15",
                 "shasum": ""
             },
             "require": {
                 "contributte/di": "^0.4.0",
                 "monolog/monolog": "^2.0.0",
-                "nette/utils": "~3.0.0",
+                "nette/utils": "~3.0.0 || ~3.1.0",
                 "php": "^7.2.0"
             },
             "conflict": {
@@ -620,12 +620,12 @@
             "require-dev": {
                 "ninjify/qa": "^0.10.0",
                 "phpstan/extension-installer": "^1.0",
-                "phpstan/phpstan-deprecation-rules": "^0.11",
-                "phpstan/phpstan-nette": "^0.11",
-                "phpstan/phpstan-shim": "^0.11",
-                "phpstan/phpstan-strict-rules": "^0.11",
+                "phpstan/phpstan": "^0.12",
+                "phpstan/phpstan-deprecation-rules": "^0.12",
+                "phpstan/phpstan-nette": "^0.12",
+                "phpstan/phpstan-strict-rules": "^0.12",
                 "phpunit/phpunit": "^8.1.3",
-                "tracy/tracy": "~2.6.2"
+                "tracy/tracy": "~2.6.2 || ~2.7.0"
             },
             "type": "library",
             "extra": {
@@ -655,7 +655,7 @@
                 "monolog",
                 "nette"
             ],
-            "time": "2019-09-19T18:42:05+00:00"
+            "time": "2020-01-05T18:13:01+00:00"
         },
         {
             "name": "contributte/neonizer",
@@ -3420,16 +3420,16 @@
         },
         {
             "name": "symfony/console",
-            "version": "v4.4.1",
+            "version": "v4.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "f0aea3df20d15635b3cb9730ca5eea1c65b7f201"
+                "reference": "82437719dab1e6bdd28726af14cb345c2ec816d0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/f0aea3df20d15635b3cb9730ca5eea1c65b7f201",
-                "reference": "f0aea3df20d15635b3cb9730ca5eea1c65b7f201",
+                "url": "https://api.github.com/repos/symfony/console/zipball/82437719dab1e6bdd28726af14cb345c2ec816d0",
+                "reference": "82437719dab1e6bdd28726af14cb345c2ec816d0",
                 "shasum": ""
             },
             "require": {
@@ -3492,7 +3492,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2019-12-01T10:06:17+00:00"
+            "time": "2019-12-17T10:32:23+00:00"
         },
         {
             "name": "symfony/inflector",
