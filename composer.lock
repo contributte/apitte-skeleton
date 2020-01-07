@@ -5176,21 +5176,21 @@
         },
         {
             "name": "phpstan/phpstan-doctrine",
-            "version": "0.12.7",
+            "version": "0.12.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan-doctrine.git",
-                "reference": "c9eed44d72b6f48d2dad2bf45d6b9f42a773f196"
+                "reference": "116392a861fb6b4741606448d8d6b07c09fee1ee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan-doctrine/zipball/c9eed44d72b6f48d2dad2bf45d6b9f42a773f196",
-                "reference": "c9eed44d72b6f48d2dad2bf45d6b9f42a773f196",
+                "url": "https://api.github.com/repos/phpstan/phpstan-doctrine/zipball/116392a861fb6b4741606448d8d6b07c09fee1ee",
+                "reference": "116392a861fb6b4741606448d8d6b07c09fee1ee",
                 "shasum": ""
             },
             "require": {
                 "php": "~7.1",
-                "phpstan/phpstan": "^0.12.3"
+                "phpstan/phpstan": "^0.12.4"
             },
             "conflict": {
                 "doctrine/collections": "<1.0",
@@ -5236,7 +5236,7 @@
                 "MIT"
             ],
             "description": "Doctrine extensions for PHPStan",
-            "time": "2020-01-01T17:31:42+00:00"
+            "time": "2020-01-05T20:56:24+00:00"
         },
         {
             "name": "phpstan/phpstan-nette",
