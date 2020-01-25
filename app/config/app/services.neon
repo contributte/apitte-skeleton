@@ -22,11 +22,11 @@ services:
 			propertyAccessor: null,
 			propertyTypeExtractor: Symfony\Component\PropertyInfo\Extractor\ReflectionExtractor()
 		)
-		autowired: off
+		autowired: false
 
 	symfony.serializer.classMetadataFactory:
 		factory: Symfony\Component\Serializer\Mapping\Factory\ClassMetadataFactory(@symfony.serializer.annotationLoader)
-		autowired: off
+		autowired: false
 
 	symfony.serializer.annotationLoader:
 		factory: Symfony\Component\Serializer\Mapping\Loader\AnnotationLoader(
@@ -35,11 +35,11 @@ services:
 				Doctrine\Common\Cache\FilesystemCache(%tempDir%/cache/Symfony.Serializer)
 			)
 		)
-		autowired: off
+		autowired: false
 
 	symfony.serializer.annotationReader:
 		factory: Doctrine\Common\Annotations\AnnotationReader
-		autowired: off
+		autowired: false
 		setup:
 			- addGlobalIgnoredName(phpcsSuppress)
 
@@ -56,4 +56,4 @@ services:
 				Doctrine\Common\Cache\FilesystemCache(%tempDir%/cache/Symfony.Validator)
 			)
 		)
-		autowired: off
+		autowired: false
