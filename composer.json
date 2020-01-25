@@ -24,8 +24,8 @@
 		"nette/finder": "~2.5.1",
 		"nette/robot-loader": "~3.2.0",
 
-		"nettrine/orm": "^0.4.1",
-		"nettrine/dbal": "^0.5.1",
+		"nettrine/orm": "^0.5.0",
+		"nettrine/dbal": "^0.6.0",
 		"nettrine/migrations": "^0.6.0",
 		"nettrine/fixtures": "^0.5.0",
 

@@ -4,5 +4,4 @@ includes:
 
 
 # Nettrine ===================
-orm.cache:
-	defaultDriver: filesystem
+nettrine.orm.cache:

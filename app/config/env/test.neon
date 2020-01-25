@@ -4,16 +4,12 @@ includes:
 
 
 # Nettrine ===================
-orm:
+nettrine.orm:
 	configuration:
 		autoGenerateProxyClasses: ::constant(Doctrine\Common\Proxy\AbstractProxyFactory::AUTOGENERATE_FILE_NOT_EXISTS)
 
-orm.cache:
-	defaultDriver: array
-
-orm.annotations:
-	cache: Doctrine\Common\Cache\ArrayCache
-
+nettrine.cache:
+	driver: Doctrine\Common\Cache\ArrayCache
 
 # Parameters =================
 parameters:
