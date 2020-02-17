@@ -210,12 +210,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/apitte/openapi.git",
-                "reference": "5c9b2d9b0104fe5c796c6ba13186c62f2a9e5ff5"
+                "reference": "ae3928cd2efbe1df8dd74a42b57afd9593d48ace"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apitte/openapi/zipball/5c9b2d9b0104fe5c796c6ba13186c62f2a9e5ff5",
-                "reference": "5c9b2d9b0104fe5c796c6ba13186c62f2a9e5ff5",
+                "url": "https://api.github.com/repos/apitte/openapi/zipball/ae3928cd2efbe1df8dd74a42b57afd9593d48ace",
+                "reference": "ae3928cd2efbe1df8dd74a42b57afd9593d48ace",
                 "shasum": ""
             },
             "require": {
@@ -271,7 +271,7 @@
                 "openapi",
                 "rest"
             ],
-            "time": "2020-01-05T19:34:00+00:00"
+            "time": "2020-02-10T19:01:23+00:00"
         },
         {
             "name": "contributte/bootstrap",
@@ -5212,16 +5212,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "0.12.9",
+            "version": "0.12.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "297cb2458a96ea96d5e9d6ef38f1b7305c071f32"
+                "reference": "ca5f2b7cf81c6d8fba74f9576970399c5817e03b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/297cb2458a96ea96d5e9d6ef38f1b7305c071f32",
-                "reference": "297cb2458a96ea96d5e9d6ef38f1b7305c071f32",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/ca5f2b7cf81c6d8fba74f9576970399c5817e03b",
+                "reference": "ca5f2b7cf81c6d8fba74f9576970399c5817e03b",
                 "shasum": ""
             },
             "require": {
@@ -5247,7 +5247,7 @@
                 "MIT"
             ],
             "description": "PHPStan - PHP Static Analysis Tool",
-            "time": "2020-02-04T22:30:27+00:00"
+            "time": "2020-02-16T14:00:29+00:00"
         },
         {
             "name": "phpstan/phpstan-doctrine",
