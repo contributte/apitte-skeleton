@@ -16,7 +16,7 @@
     <code>composer create-project -s dev planette/forest-project acme</code>
 </p>
 <p align=center>
-    Take a look at demo <a href="https://examples.planette.io/planette/forest-project/api/v1/users/?_access_token=admin">examples.planette.io/planette/forest-project/</a>
+    Take a look at demo <a href="https://examples.contributte.org/planette/forest-project/api/v1/users/?_access_token=admin">examples.contributte.org/planette/forest-project/</a>
 </p>
 
 <p align=center>
