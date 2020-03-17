@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/apitte/core.git",
-                "reference": "56281eda1a087e6c54ba28e81111207cfe7d3056"
+                "reference": "e02d76fbb86905bd3576ccda4762823c1d834c8b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apitte/core/zipball/56281eda1a087e6c54ba28e81111207cfe7d3056",
-                "reference": "56281eda1a087e6c54ba28e81111207cfe7d3056",
+                "url": "https://api.github.com/repos/apitte/core/zipball/e02d76fbb86905bd3576ccda4762823c1d834c8b",
+                "reference": "e02d76fbb86905bd3576ccda4762823c1d834c8b",
                 "shasum": ""
             },
             "require": {
@@ -82,7 +82,7 @@
                 "nette",
                 "rest"
             ],
-            "time": "2020-02-21T18:07:10+00:00"
+            "time": "2020-03-13T16:21:09+00:00"
         },
         {
             "name": "apitte/debug",
@@ -90,12 +90,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/apitte/debug.git",
-                "reference": "3f5297f5333ccd97814624a6875d8ace4961d24c"
+                "reference": "ae2e696e9ac45af5ba578dbf0d48ab9e9e7afde3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apitte/debug/zipball/3f5297f5333ccd97814624a6875d8ace4961d24c",
-                "reference": "3f5297f5333ccd97814624a6875d8ace4961d24c",
+                "url": "https://api.github.com/repos/apitte/debug/zipball/ae2e696e9ac45af5ba578dbf0d48ab9e9e7afde3",
+                "reference": "ae2e696e9ac45af5ba578dbf0d48ab9e9e7afde3",
                 "shasum": ""
             },
             "require": {
@@ -105,13 +105,15 @@
             },
             "require-dev": {
                 "apitte/negotiation": "^0.7.0",
-                "ninjify/nunjuck": "^0.2.0",
-                "ninjify/qa": "^0.8.0",
+                "nette/di": "^3.0",
+                "nette/schema": "^1.0",
+                "ninjify/nunjuck": "^0.3",
+                "ninjify/qa": "^0.10",
                 "phpstan/extension-installer": "^1.0",
-                "phpstan/phpstan-deprecation-rules": "^0.11",
-                "phpstan/phpstan-nette": "^0.11",
-                "phpstan/phpstan-shim": "^0.11",
-                "phpstan/phpstan-strict-rules": "^0.11"
+                "phpstan/phpstan": "^0.12",
+                "phpstan/phpstan-deprecation-rules": "^0.12",
+                "phpstan/phpstan-nette": "^0.12",
+                "phpstan/phpstan-strict-rules": "^0.12"
             },
             "type": "library",
             "extra": {
@@ -142,7 +144,7 @@
                 "debugging",
                 "tracy"
             ],
-            "time": "2019-11-17T22:04:12+00:00"
+            "time": "2020-03-13T16:34:50+00:00"
         },
         {
             "name": "apitte/middlewares",
@@ -210,12 +212,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/apitte/openapi.git",
-                "reference": "ae3928cd2efbe1df8dd74a42b57afd9593d48ace"
+                "reference": "8e99cb2f924d7dbfca764144d61d05f0beb76805"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apitte/openapi/zipball/ae3928cd2efbe1df8dd74a42b57afd9593d48ace",
-                "reference": "ae3928cd2efbe1df8dd74a42b57afd9593d48ace",
+                "url": "https://api.github.com/repos/apitte/openapi/zipball/8e99cb2f924d7dbfca764144d61d05f0beb76805",
+                "reference": "8e99cb2f924d7dbfca764144d61d05f0beb76805",
                 "shasum": ""
             },
             "require": {
@@ -271,7 +273,7 @@
                 "openapi",
                 "rest"
             ],
-            "time": "2020-02-10T19:01:23+00:00"
+            "time": "2020-03-13T16:36:26+00:00"
         },
         {
             "name": "contributte/bootstrap",
@@ -4741,6 +4743,7 @@
             ],
             "description": "This tool check syntax of PHP files about 20x faster than serial check.",
             "homepage": "https://github.com/JakubOnderka/PHP-Parallel-Lint",
+            "abandoned": "php-parallel-lint/php-parallel-lint",
             "time": "2018-02-24T15:31:20+00:00"
         },
         {
@@ -5213,16 +5216,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "0.12.14",
+            "version": "0.12.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "37bdd26a80235d0f9045b49f4151102b7831cbe2"
+                "reference": "3928a303954338eb8ed201cfe69134950318b470"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/37bdd26a80235d0f9045b49f4151102b7831cbe2",
-                "reference": "37bdd26a80235d0f9045b49f4151102b7831cbe2",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/3928a303954338eb8ed201cfe69134950318b470",
+                "reference": "3928a303954338eb8ed201cfe69134950318b470",
                 "shasum": ""
             },
             "require": {
@@ -5248,7 +5251,7 @@
                 "MIT"
             ],
             "description": "PHPStan - PHP Static Analysis Tool",
-            "time": "2020-03-02T22:29:43+00:00"
+            "time": "2020-03-16T15:27:38+00:00"
         },
         {
             "name": "phpstan/phpstan-doctrine",
