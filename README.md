@@ -56,17 +56,17 @@ You can try it out yourself either by running it with docker, or more easily wit
 
     Default configuration should look like this:
 
-        ```yaml
-        # Host Config
-        parameters:
+    ```yaml
+    # Host Config
+    parameters:
 
-            # Database
-            database:
-                host: database
-                dbname: forest
-                user: forest
-                password: forest
-        ```
+        # Database
+        database:
+            host: database
+            dbname: forest
+            user: forest
+            password: forest
+    ```
 
 3) Run `docker-compose up`
 
