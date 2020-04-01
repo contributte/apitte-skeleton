@@ -3,7 +3,7 @@ parameters:
 
 	# Database
 	database:
-		host: database
+		host: localhost
 		dbname: forest
 		user: forest
 		password: forest
