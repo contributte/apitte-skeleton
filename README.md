@@ -42,7 +42,9 @@ Focused on:
 - static analysing via **phpstan**
 - unit / integration tests via **Nette Tester** and `ninjify/*`
 
-## Install
+You can try it out yourself either by running it with docker, or more easily with docker-compose.
+
+## Install with docker compose
 
 1) At first, use composer to install this project.
 
@@ -50,17 +52,52 @@ Focused on:
     composer create-project planette/forest-project
     ```
 
-2) After that, you can simply run project with `docker-compose up` and ignore steps 3 - 5
+2) Modify `app/config/config.local.neon` and set host to `database`
 
-3) Or if you don't prefer docker-compose you need to setup Postgres >= 10 database. You can start it manually or use docker image `postgres:10`.
-     
+    Default configuration should look like this:
+
+        ```yaml
+        # Host Config
+        parameters:
+
+            # Database
+            database:
+                host: database
+                dbname: forest
+                user: forest
+                password: forest
+        ```
+
+3) Run `docker-compose up`
+
+4) Open http://localhost and enjoy!
+
+    Take a look at:
+    - [GET] http://localhost/api/public/v1/openapi/meta (Swagger format)
+    - [GET] http://localhost/api/v1/users
+    - [GET] http://localhost/api/v1/users?_access_token=admin
+    - [GET] http://localhost/api/v1/users/1?_access_token=admin
+    - [GET] http://localhost/api/v1/users/999?_access_token=admin
+    - [GET] http://localhost/api/v1/users/email?email=admin@admin.cz&_access_token=admin
+    - [POST] http://localhost/api/v1/users/create
+
+## Install with docker
+
+1) At first, use composer to install this project.
+
+    ```
+    composer create-project planette/forest-project
+    ```
+
+2) Or if you don't prefer docker-compose you need to setup Postgres >= 10 database. You can start it manually or use docker image `postgres:10`.
+
     ```
     docker run -it -p 5432:5432 -e POSTGRES_PASSWORD=forest -e POSTGRES_USER=forest postgres:10
     ```
 
     Or use make task, `make loc-postgres`.
 
-4) Custom configuration file is located at `app/config/config.local.neon`. Edit it if you want.
+3) Custom configuration file is located at `app/config/config.local.neon`. Edit it if you want.
 
     Default configuration should look like:
 
@@ -76,18 +113,18 @@ Focused on:
             password: forest
     ```
 
-5) Ok database is now running and application is configured to connect to it. Let's create initial data.
+4) Ok database is now running and application is configured to connect to it. Let's create initial data.
 
     Run `NETTE_DEBUG=1 bin/console migrations:migrate` to create tables.
     Run `NETTE_DEBUG=1 bin/console doctrine:fixtures:load --append` to create first user(s).
 
     Or via task `make build`.
 
-6) Start your devstack or use PHP local development server.
+5) Start your devstack or use PHP local development server.
 
     You can start PHP server by running `php -S localhost:8000 -t www` or use prepared make task `make loc-api`.
 
-7) Open http://localhost and enjoy!
+6) Open http://localhost and enjoy!
 
     Take a look at:
     - [GET] http://localhost:8000/api/public/v1/openapi/meta (Swagger format)
@@ -97,8 +134,6 @@ Focused on:
     - [GET] http://localhost:8000/api/v1/users/999?_access_token=admin
     - [GET] http://localhost:8000/api/v1/users/email?email=admin@admin.cz&_access_token=admin
     - [POST] http://localhost:8000/api/v1/users/create
-    
-    If you're using docker-compose your application is running on port 80 so you don't need to specify port 8000 in the URLs.
 
 ## Features
 

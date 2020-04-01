@@ -1,4 +1,4 @@
-FROM thecodingmachine/php:7.3-v2-fpm-node10
+FROM thecodingmachine/php:7.4-v3-fpm
 
 COPY ./ /var/www/html/
 
