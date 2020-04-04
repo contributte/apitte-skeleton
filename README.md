@@ -42,7 +42,9 @@ Focused on:
 - static analysing via **phpstan**
 - unit / integration tests via **Nette Tester** and `ninjify/*`
 
-## Install
+You can try it out yourself either by running it with docker, or more easily with docker-compose.
+
+## Install with [docker](https://github.com/docker/docker/)
 
 1) At first, use composer to install this project.
 
@@ -95,6 +97,43 @@ Focused on:
     - [GET] http://localhost:8000/api/v1/users/999?_access_token=admin
     - [GET] http://localhost:8000/api/v1/users/email?email=admin@admin.cz&_access_token=admin
     - [POST] http://localhost:8000/api/v1/users/create
+
+## Install with [docker compose](https://github.com/docker/compose)
+
+1) At first, use composer to install this project.
+
+    ```
+    composer create-project planette/forest-project
+    ```
+
+2) Modify `app/config/config.local.neon` and set host to `database`
+
+    Default configuration should look like this:
+
+    ```yaml
+    # Host Config
+    parameters:
+
+        # Database
+        database:
+            host: database
+            dbname: forest
+            user: forest
+            password: forest
+    ```
+
+3) Run `docker-compose up`
+
+4) Open http://localhost and enjoy!
+
+    Take a look at:
+    - [GET] http://localhost/api/public/v1/openapi/meta (Swagger format)
+    - [GET] http://localhost/api/v1/users
+    - [GET] http://localhost/api/v1/users?_access_token=admin
+    - [GET] http://localhost/api/v1/users/1?_access_token=admin
+    - [GET] http://localhost/api/v1/users/999?_access_token=admin
+    - [GET] http://localhost/api/v1/users/email?email=admin@admin.cz&_access_token=admin
+    - [POST] http://localhost/api/v1/users/create
 
 ## Features
 
