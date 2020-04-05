@@ -1,5 +1,16 @@
 {
 	"name": "planette/forest-project",
+	"description": "Nutella project is opinionated API-based kit based on Nette Framework + Apitte and many useful packages by @f3l1x.",
+	"keywords": [
+    "php",
+    "nette",
+    "planette",
+    "contributte",
+    "apitte",
+    "sandbox",
+    "project",
+    "api"
+  ],
 	"license": "MIT",
 	"type": "project",
 	"require": {
