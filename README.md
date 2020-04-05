@@ -1,7 +1,7 @@
 <h1 align=center>Forest Project</h1>
 
 <p align=center>
-    <strong>Forest project</strong> is an example project based on Nette Framework and many useful packages by <a href="https://github.com/f3l1x">@f3l1x</a>.
+    <strong>Nutella project</strong> is opinionated API-based kit based on Nette Framework + Apitte and many useful packages by <a href="https://github.com/f3l1x">@f3l1x</a>.
 </p>
 
 <p align=center>
@@ -217,3 +217,18 @@ Take a detailed look :eyes: at each single package.
 ![](.docs/assets/screenshot1.png)
 ![](.docs/assets/screenshot2.png)
 ![](.docs/assets/screenshot3.png)
+
+## Development
+
+See [how to contribute](https://contributte.org/contributing.html) to this package.
+
+This package is currently maintaining by these authors.
+
+<a href="https://github.com/f3l1x">
+    <img width="80" height="80" src="https://avatars2.githubusercontent.com/u/538058?v=3&s=80">
+</a>
+
+-----
+
+Consider to [support](https://contributte.org/partners.html) **planette** development team.
+Also thank you for using this project.
