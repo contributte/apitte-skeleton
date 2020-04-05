@@ -1,7 +1,7 @@
 <h1 align=center>Forest Project</h1>
 
 <p align=center>
-    <strong>Nutella project</strong> is opinionated API-based kit based on Nette Framework + Apitte and many useful packages by <a href="https://github.com/f3l1x">@f3l1x</a>.
+    <strong>Forest project</strong> is opinionated API-based kit based on Nette Framework + Apitte and many useful packages by <a href="https://github.com/f3l1x">@f3l1x</a>.
 </p>
 
 <p align=center>
