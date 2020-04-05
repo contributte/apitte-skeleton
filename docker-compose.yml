@@ -20,9 +20,9 @@ services:
       context: .
       dockerfile: ./.docker/php/Dockerfile
     volumes:
-          - ./:/var/www/html/
+      - ./:/var/www/html/
     depends_on:
-          - database
+      - database
     environment:
       NETTE_DEBUG: 1
       PHP_EXTENSION_XDEBUG: 1
@@ -35,11 +35,11 @@ services:
   database:
     image: dockette/postgres:10
     environment:
-      - POSTGRES_PASSWORD=forest
-      - POSTGRES_USER=forest
-      - POSTGRES_DB=forest
+      - POSTGRES_PASSWORD=nutella
+      - POSTGRES_USER=nutella
+      - POSTGRES_DB=nutella
     volumes:
-          - database-volume:/var/lib/mysql
+      - database-volume:/var/lib/postgresql/data
   adminer:
     image: dockette/adminer:dg
     ports:
