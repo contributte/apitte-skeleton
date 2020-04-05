@@ -44,6 +44,10 @@ Focused on:
 
 You can try it out yourself either by running it with docker, or more easily with docker-compose.
 
+## Demo
+
+https://examples.contributte.org/planette/forest-project/
+
 ## Install with [docker](https://github.com/docker/docker/)
 
 1) At first, use composer to install this project.
