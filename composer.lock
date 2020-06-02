@@ -4472,12 +4472,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/dev.git",
-                "reference": "e758c323c3dad2c460e3e25b1193b8d72e269542"
+                "reference": "221848fda1ddc3d682b335ee53c74345e26f7732"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/dev/zipball/e758c323c3dad2c460e3e25b1193b8d72e269542",
-                "reference": "e758c323c3dad2c460e3e25b1193b8d72e269542",
+                "url": "https://api.github.com/repos/contributte/dev/zipball/221848fda1ddc3d682b335ee53c74345e26f7732",
+                "reference": "221848fda1ddc3d682b335ee53c74345e26f7732",
                 "shasum": ""
             },
             "require": {
@@ -4505,7 +4505,7 @@
             ],
             "authors": [
                 {
-                    "name": "Milan Felix Šulc",
+                    "name": "Milan Felix Sulc",
                     "homepage": "https://f3l1x.io"
                 }
             ],
@@ -4516,7 +4516,7 @@
                 "nette",
                 "shortcuts"
             ],
-            "time": "2019-07-09T13:39:29+00:00"
+            "time": "2020-05-14T17:59:39+00:00"
         },
         {
             "name": "fzaninotto/faker",
@@ -5271,16 +5271,16 @@
         },
         {
             "name": "phpstan/phpstan-doctrine",
-            "version": "0.12.10",
+            "version": "0.12.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan-doctrine.git",
-                "reference": "601f343b05875074454ca72702204592f8844f7d"
+                "reference": "5fab376975c2f2d99865837cfe693dc258ca9e61"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan-doctrine/zipball/601f343b05875074454ca72702204592f8844f7d",
-                "reference": "601f343b05875074454ca72702204592f8844f7d",
+                "url": "https://api.github.com/repos/phpstan/phpstan-doctrine/zipball/5fab376975c2f2d99865837cfe693dc258ca9e61",
+                "reference": "5fab376975c2f2d99865837cfe693dc258ca9e61",
                 "shasum": ""
             },
             "require": {
@@ -5331,7 +5331,7 @@
                 "MIT"
             ],
             "description": "Doctrine extensions for PHPStan",
-            "time": "2020-03-13T13:03:08+00:00"
+            "time": "2020-05-13T17:45:51+00:00"
         },
         {
             "name": "phpstan/phpstan-nette",
