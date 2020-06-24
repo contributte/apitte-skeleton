@@ -2098,6 +2098,20 @@
                 "orm",
                 "persistence"
             ],
+            "funding": [
+                {
+                    "url": "https://www.doctrine-project.org/sponsorship.html",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://www.patreon.com/phpdoctrine",
+                    "type": "patreon"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/doctrine%2Fpersistence",
+                    "type": "tidelift"
+                }
+            ],
             "time": "2020-03-21T15:13:52+00:00"
         },
         {
@@ -3274,18 +3288,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nettrine/migrations.git",
-                "reference": "04bcca7d3a81d9fdd276b22b9b5b6d41728c8d5f"
+                "reference": "aaa09b80b329a021c750aa061d4702ffa4d5f72e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nettrine/migrations/zipball/04bcca7d3a81d9fdd276b22b9b5b6d41728c8d5f",
-                "reference": "04bcca7d3a81d9fdd276b22b9b5b6d41728c8d5f",
+                "url": "https://api.github.com/repos/nettrine/migrations/zipball/aaa09b80b329a021c750aa061d4702ffa4d5f72e",
+                "reference": "aaa09b80b329a021c750aa061d4702ffa4d5f72e",
                 "shasum": ""
             },
             "require": {
                 "contributte/di": "^0.4.2",
                 "doctrine/migrations": "^2.0.0",
-                "php": "^7.2",
+                "php": ">=7.2",
                 "symfony/console": "^4.2.5|^5.0.0"
             },
             "require-dev": {
@@ -3331,7 +3345,7 @@
                 "migrations",
                 "nette"
             ],
-            "time": "2020-01-30T08:35:29+00:00"
+            "time": "2020-06-18T11:35:01+00:00"
         },
         {
             "name": "nettrine/orm",
@@ -5859,16 +5873,16 @@
         },
         {
             "name": "phpstan/phpstan-doctrine",
-            "version": "0.12.16",
+            "version": "0.12.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan-doctrine.git",
-                "reference": "65146e35905478bfb4e2ba078ffca1a16029d4ee"
+                "reference": "5eed42b2815f100f25bd45fe8c1a9b01f3e41657"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan-doctrine/zipball/65146e35905478bfb4e2ba078ffca1a16029d4ee",
-                "reference": "65146e35905478bfb4e2ba078ffca1a16029d4ee",
+                "url": "https://api.github.com/repos/phpstan/phpstan-doctrine/zipball/5eed42b2815f100f25bd45fe8c1a9b01f3e41657",
+                "reference": "5eed42b2815f100f25bd45fe8c1a9b01f3e41657",
                 "shasum": ""
             },
             "require": {
@@ -5921,7 +5935,7 @@
                 "MIT"
             ],
             "description": "Doctrine extensions for PHPStan",
-            "time": "2020-06-14T11:03:59+00:00"
+            "time": "2020-06-23T08:50:27+00:00"
         },
         {
             "name": "phpstan/phpstan-nette",
