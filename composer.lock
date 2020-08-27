@@ -212,12 +212,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/apitte/openapi.git",
-                "reference": "7668e9598d4df0f5a5cef6f12f39336e29bd29ec"
+                "reference": "8dc56cf16348e0cc950ef201f674c94c2ce23385"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apitte/openapi/zipball/7668e9598d4df0f5a5cef6f12f39336e29bd29ec",
-                "reference": "7668e9598d4df0f5a5cef6f12f39336e29bd29ec",
+                "url": "https://api.github.com/repos/apitte/openapi/zipball/8dc56cf16348e0cc950ef201f674c94c2ce23385",
+                "reference": "8dc56cf16348e0cc950ef201f674c94c2ce23385",
                 "shasum": ""
             },
             "require": {
@@ -227,13 +227,13 @@
             },
             "require-dev": {
                 "contributte/di": "^0.4.0",
-                "ninjify/nunjuck": "^0.2.0",
-                "ninjify/qa": "^0.8.0",
+                "ninjify/nunjuck": "^0.3",
+                "ninjify/qa": "^0.11",
                 "phpstan/extension-installer": "^1.0",
-                "phpstan/phpstan-deprecation-rules": "^0.11",
-                "phpstan/phpstan-nette": "^0.11",
-                "phpstan/phpstan-shim": "^0.11",
-                "phpstan/phpstan-strict-rules": "^0.11",
+                "phpstan/phpstan": "^0.12",
+                "phpstan/phpstan-deprecation-rules": "^0.12",
+                "phpstan/phpstan-nette": "^0.12",
+                "phpstan/phpstan-strict-rules": "^0.12",
                 "symfony/yaml": "^4.4.0|^5.0.0",
                 "tracy/tracy": "~2.6.0|~2.7.0"
             },
@@ -273,7 +273,7 @@
                 "openapi",
                 "rest"
             ],
-            "time": "2020-04-03T16:20:19+00:00"
+            "time": "2020-08-18T15:17:25+00:00"
         },
         {
             "name": "contributte/bootstrap",
@@ -5885,16 +5885,16 @@
         },
         {
             "name": "phpstan/phpstan-nette",
-            "version": "0.12.8",
+            "version": "0.12.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan-nette.git",
-                "reference": "ff3e7c05d7cd1648b1c1bd5f50f5265255a520a9"
+                "reference": "7a3a35b71e4ee131126972be4475da603e74453a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan-nette/zipball/ff3e7c05d7cd1648b1c1bd5f50f5265255a520a9",
-                "reference": "ff3e7c05d7cd1648b1c1bd5f50f5265255a520a9",
+                "url": "https://api.github.com/repos/phpstan/phpstan-nette/zipball/7a3a35b71e4ee131126972be4475da603e74453a",
+                "reference": "7a3a35b71e4ee131126972be4475da603e74453a",
                 "shasum": ""
             },
             "require": {
@@ -5945,7 +5945,7 @@
                 "MIT"
             ],
             "description": "Nette Framework class reflection extension for PHPStan",
-            "time": "2020-07-21T14:47:32+00:00"
+            "time": "2020-08-26T07:54:37+00:00"
         },
         {
             "name": "phpstan/phpstan-phpunit",
