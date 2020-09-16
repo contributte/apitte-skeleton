@@ -212,12 +212,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/apitte/openapi.git",
-                "reference": "8dc56cf16348e0cc950ef201f674c94c2ce23385"
+                "reference": "77bd0fb8ca4bce90499fa1ad3c55a19e9f9dfa35"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apitte/openapi/zipball/8dc56cf16348e0cc950ef201f674c94c2ce23385",
-                "reference": "8dc56cf16348e0cc950ef201f674c94c2ce23385",
+                "url": "https://api.github.com/repos/apitte/openapi/zipball/77bd0fb8ca4bce90499fa1ad3c55a19e9f9dfa35",
+                "reference": "77bd0fb8ca4bce90499fa1ad3c55a19e9f9dfa35",
                 "shasum": ""
             },
             "require": {
@@ -273,7 +273,7 @@
                 "openapi",
                 "rest"
             ],
-            "time": "2020-08-18T15:17:25+00:00"
+            "time": "2020-09-15T20:01:41+00:00"
         },
         {
             "name": "contributte/bootstrap",
@@ -2768,16 +2768,16 @@
         },
         {
             "name": "nette/robot-loader",
-            "version": "v3.3.0",
+            "version": "v3.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/robot-loader.git",
-                "reference": "737ff8ee1709eff053d9cc27e6c661d82395bd8b"
+                "reference": "15c1ecd0e6e69e8d908dfc4cca7b14f3b850a96b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/robot-loader/zipball/737ff8ee1709eff053d9cc27e6c661d82395bd8b",
-                "reference": "737ff8ee1709eff053d9cc27e6c661d82395bd8b",
+                "url": "https://api.github.com/repos/nette/robot-loader/zipball/15c1ecd0e6e69e8d908dfc4cca7b14f3b850a96b",
+                "reference": "15c1ecd0e6e69e8d908dfc4cca7b14f3b850a96b",
                 "shasum": ""
             },
             "require": {
@@ -2827,7 +2827,7 @@
                 "nette",
                 "trait"
             ],
-            "time": "2020-07-28T13:34:12+00:00"
+            "time": "2020-09-15T15:14:17+00:00"
         },
         {
             "name": "nette/schema",
@@ -2952,16 +2952,16 @@
         },
         {
             "name": "nette/utils",
-            "version": "v3.1.2",
+            "version": "v3.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/utils.git",
-                "reference": "488f58378bba71767e7831c83f9e0fa808bf83b9"
+                "reference": "c09937fbb24987b2a41c6022ebe84f4f1b8eec0f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/utils/zipball/488f58378bba71767e7831c83f9e0fa808bf83b9",
-                "reference": "488f58378bba71767e7831c83f9e0fa808bf83b9",
+                "url": "https://api.github.com/repos/nette/utils/zipball/c09937fbb24987b2a41c6022ebe84f4f1b8eec0f",
+                "reference": "c09937fbb24987b2a41c6022ebe84f4f1b8eec0f",
                 "shasum": ""
             },
             "require": {
@@ -3026,7 +3026,7 @@
                 "utility",
                 "validation"
             ],
-            "time": "2020-05-27T09:58:51+00:00"
+            "time": "2020-08-07T10:34:21+00:00"
         },
         {
             "name": "nettrine/annotations",
