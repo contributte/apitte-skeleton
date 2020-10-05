@@ -1,6 +1,8 @@
 # Extension > Nettrine
 #
 extensions:
+	# Common
+	nettrine.annotations: Nettrine\Annotations\DI\AnnotationsExtension
 
 	# Dbal
 	nettrine.dbal: Nettrine\DBAL\DI\DbalExtension
@@ -15,7 +17,6 @@ extensions:
 	nettrine.migrations: Nettrine\Migrations\DI\MigrationsExtension
 	nettrine.fixtures: Nettrine\Fixtures\DI\FixturesExtension
 	nettrine.cache: Nettrine\Cache\DI\CacheExtension
-	nettrine.annotations: Nettrine\Annotations\DI\AnnotationsExtension
 
 nettrine.dbal:
 	debug:
@@ -35,10 +36,9 @@ nettrine.orm:
 		autoGenerateProxyClasses: %debugMode%
 
 nettrine.orm.annotations:
-	namespaces:
-		- App\Model\Database\Entity
-	paths:
-		- %appDir%/model/Database/Entity
+	mapping: [
+		App\Model\Database\Entity: %appDir%/model/Database/Entity
+	]
 
 nettrine.orm.cache:
 
