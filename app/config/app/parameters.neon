@@ -11,3 +11,4 @@ parameters:
 	# Database
 	database:
 		driver: pdo_pgsql
+		port: 5432
