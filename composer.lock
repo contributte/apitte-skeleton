@@ -862,16 +862,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/tracy.git",
-                "reference": "7495e7cef3bf22aa514cf62546034da0226258b1"
+                "reference": "85ad301a58b72e46b939a0d984e9bed3bac40195"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/tracy/zipball/7495e7cef3bf22aa514cf62546034da0226258b1",
-                "reference": "7495e7cef3bf22aa514cf62546034da0226258b1",
+                "url": "https://api.github.com/repos/contributte/tracy/zipball/85ad301a58b72e46b939a0d984e9bed3bac40195",
+                "reference": "85ad301a58b72e46b939a0d984e9bed3bac40195",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.2",
+                "php": ">=7.2",
                 "tracy/tracy": "~2.7.0"
             },
             "conflict": {
@@ -881,7 +881,7 @@
                 "nette/application": "~3.0.0",
                 "nette/di": "~3.0.0",
                 "nette/http": "~3.0.1",
-                "ninjify/nunjuck": "^0.3.0",
+                "ninjify/nunjuck": "^0.4.0",
                 "ninjify/qa": "^0.10.0",
                 "phpstan/extension-installer": "^1.0",
                 "phpstan/phpstan-deprecation-rules": "^0.11",
@@ -924,7 +924,7 @@
                 "profile",
                 "tracy"
             ],
-            "time": "2019-11-17T21:40:29+00:00"
+            "time": "2020-11-18T23:08:47+00:00"
         },
         {
             "name": "contributte/utils",
@@ -5820,16 +5820,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "0.12.56",
+            "version": "0.12.57",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "007fd5d700c41e1bb27795fae15a2383f8fa4ba1"
+                "reference": "f9909d1d0c44b4cbaf72babcf80e8f14d6fdd55b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/007fd5d700c41e1bb27795fae15a2383f8fa4ba1",
-                "reference": "007fd5d700c41e1bb27795fae15a2383f8fa4ba1",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/f9909d1d0c44b4cbaf72babcf80e8f14d6fdd55b",
+                "reference": "f9909d1d0c44b4cbaf72babcf80e8f14d6fdd55b",
                 "shasum": ""
             },
             "require": {
@@ -5872,7 +5872,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-11-16T22:59:18+00:00"
+            "time": "2020-11-21T12:53:28+00:00"
         },
         {
             "name": "phpstan/phpstan-doctrine",
