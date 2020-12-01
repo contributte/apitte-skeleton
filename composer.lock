@@ -90,18 +90,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/apitte/debug.git",
-                "reference": "4448fbb07405ba490f184cec8e98bf217c34e566"
+                "reference": "3813a30cb7dda3bba7927c1e164b6aa053425bb2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apitte/debug/zipball/4448fbb07405ba490f184cec8e98bf217c34e566",
-                "reference": "4448fbb07405ba490f184cec8e98bf217c34e566",
+                "url": "https://api.github.com/repos/apitte/debug/zipball/3813a30cb7dda3bba7927c1e164b6aa053425bb2",
+                "reference": "3813a30cb7dda3bba7927c1e164b6aa053425bb2",
                 "shasum": ""
             },
             "require": {
                 "apitte/core": "^0.7.0",
                 "php": ">=7.2",
-                "tracy/tracy": "~2.6.0|~2.7.0"
+                "tracy/tracy": "^2.6.0"
             },
             "require-dev": {
                 "apitte/negotiation": "^0.7.0",
@@ -144,7 +144,7 @@
                 "debugging",
                 "tracy"
             ],
-            "time": "2020-11-24T07:55:20+00:00"
+            "time": "2020-11-30T20:03:26+00:00"
         },
         {
             "name": "apitte/middlewares",
@@ -602,18 +602,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/monolog.git",
-                "reference": "11ff1d42b474559d513e1bf5c98524c40ef33cf8"
+                "reference": "126f5a6eb212ee39858d0ed1cb3a7060a17c0ff0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/monolog/zipball/11ff1d42b474559d513e1bf5c98524c40ef33cf8",
-                "reference": "11ff1d42b474559d513e1bf5c98524c40ef33cf8",
+                "url": "https://api.github.com/repos/contributte/monolog/zipball/126f5a6eb212ee39858d0ed1cb3a7060a17c0ff0",
+                "reference": "126f5a6eb212ee39858d0ed1cb3a7060a17c0ff0",
                 "shasum": ""
             },
             "require": {
                 "contributte/di": "^0.4.0",
                 "monolog/monolog": "^2.0.0",
-                "nette/utils": "~3.0.0 || ~3.1.0",
+                "nette/utils": "^3.0.0",
                 "php": ">=7.2"
             },
             "conflict": {
@@ -657,7 +657,7 @@
                 "monolog",
                 "nette"
             ],
-            "time": "2020-11-13T20:21:39+00:00"
+            "time": "2020-11-30T17:00:41+00:00"
         },
         {
             "name": "contributte/neonizer",
@@ -4445,16 +4445,16 @@
         },
         {
             "name": "symfony/serializer",
-            "version": "v5.1.9",
+            "version": "v5.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/serializer.git",
-                "reference": "5bc62ff6cd4678363ae19a633667fd318b1a72f7"
+                "reference": "bfb225b1bf797f9d6a3b6a8501927cc72e92b549"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/serializer/zipball/5bc62ff6cd4678363ae19a633667fd318b1a72f7",
-                "reference": "5bc62ff6cd4678363ae19a633667fd318b1a72f7",
+                "url": "https://api.github.com/repos/symfony/serializer/zipball/bfb225b1bf797f9d6a3b6a8501927cc72e92b549",
+                "reference": "bfb225b1bf797f9d6a3b6a8501927cc72e92b549",
                 "shasum": ""
             },
             "require": {
@@ -4472,16 +4472,21 @@
             "require-dev": {
                 "doctrine/annotations": "~1.0",
                 "doctrine/cache": "~1.0",
-                "phpdocumentor/reflection-docblock": "^3.2|^4.0",
+                "phpdocumentor/reflection-docblock": "^3.0|^4.0|^5.0",
                 "symfony/cache": "^4.4|^5.0",
                 "symfony/config": "^4.4|^5.0",
                 "symfony/dependency-injection": "^4.4|^5.0",
                 "symfony/error-handler": "^4.4|^5.0",
+                "symfony/filesystem": "^4.4|^5.0",
+                "symfony/form": "^4.4|^5.0",
                 "symfony/http-foundation": "^4.4|^5.0",
+                "symfony/http-kernel": "^4.4|^5.0",
                 "symfony/mime": "^4.4|^5.0",
                 "symfony/property-access": "^4.4|^5.0",
                 "symfony/property-info": "^4.4|^5.0",
+                "symfony/uid": "^5.1",
                 "symfony/validator": "^4.4|^5.0",
+                "symfony/var-exporter": "^4.4|^5.0",
                 "symfony/yaml": "^4.4|^5.0"
             },
             "suggest": {
@@ -4492,6 +4497,7 @@
                 "symfony/mime": "For using a MIME type guesser within the DataUriNormalizer.",
                 "symfony/property-access": "For using the ObjectNormalizer.",
                 "symfony/property-info": "To deserialize relations.",
+                "symfony/var-exporter": "For using the metadata compiler.",
                 "symfony/yaml": "For using the default YAML mapping loader."
             },
             "type": "library",
@@ -4533,7 +4539,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-11-27T05:53:16+00:00"
+            "time": "2020-11-27T10:27:27+00:00"
         },
         {
             "name": "symfony/service-contracts",
