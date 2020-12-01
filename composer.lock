@@ -90,18 +90,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/apitte/debug.git",
-                "reference": "4448fbb07405ba490f184cec8e98bf217c34e566"
+                "reference": "3813a30cb7dda3bba7927c1e164b6aa053425bb2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apitte/debug/zipball/4448fbb07405ba490f184cec8e98bf217c34e566",
-                "reference": "4448fbb07405ba490f184cec8e98bf217c34e566",
+                "url": "https://api.github.com/repos/apitte/debug/zipball/3813a30cb7dda3bba7927c1e164b6aa053425bb2",
+                "reference": "3813a30cb7dda3bba7927c1e164b6aa053425bb2",
                 "shasum": ""
             },
             "require": {
                 "apitte/core": "^0.7.0",
                 "php": ">=7.2",
-                "tracy/tracy": "~2.6.0|~2.7.0"
+                "tracy/tracy": "^2.6.0"
             },
             "require-dev": {
                 "apitte/negotiation": "^0.7.0",
@@ -144,7 +144,7 @@
                 "debugging",
                 "tracy"
             ],
-            "time": "2020-11-24T07:55:20+00:00"
+            "time": "2020-11-30T20:03:26+00:00"
         },
         {
             "name": "apitte/middlewares",
@@ -602,18 +602,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/monolog.git",
-                "reference": "11ff1d42b474559d513e1bf5c98524c40ef33cf8"
+                "reference": "126f5a6eb212ee39858d0ed1cb3a7060a17c0ff0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/monolog/zipball/11ff1d42b474559d513e1bf5c98524c40ef33cf8",
-                "reference": "11ff1d42b474559d513e1bf5c98524c40ef33cf8",
+                "url": "https://api.github.com/repos/contributte/monolog/zipball/126f5a6eb212ee39858d0ed1cb3a7060a17c0ff0",
+                "reference": "126f5a6eb212ee39858d0ed1cb3a7060a17c0ff0",
                 "shasum": ""
             },
             "require": {
                 "contributte/di": "^0.4.0",
                 "monolog/monolog": "^2.0.0",
-                "nette/utils": "~3.0.0 || ~3.1.0",
+                "nette/utils": "^3.0.0",
                 "php": ">=7.2"
             },
             "conflict": {
@@ -657,7 +657,7 @@
                 "monolog",
                 "nette"
             ],
-            "time": "2020-11-13T20:21:39+00:00"
+            "time": "2020-11-30T17:00:41+00:00"
         },
         {
             "name": "contributte/neonizer",
@@ -4359,20 +4359,21 @@
         },
         {
             "name": "symfony/property-info",
-            "version": "v5.1.9",
+            "version": "v5.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/property-info.git",
-                "reference": "5bc012adfe3d365db3cec3b050513950b19966b3"
+                "reference": "69ca096d096a0a58457818a5a2d1ce51f5f14909"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/property-info/zipball/5bc012adfe3d365db3cec3b050513950b19966b3",
-                "reference": "5bc012adfe3d365db3cec3b050513950b19966b3",
+                "url": "https://api.github.com/repos/symfony/property-info/zipball/69ca096d096a0a58457818a5a2d1ce51f5f14909",
+                "reference": "69ca096d096a0a58457818a5a2d1ce51f5f14909",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.2.5",
+                "symfony/deprecation-contracts": "^2.1",
                 "symfony/polyfill-php80": "^1.15",
                 "symfony/string": "^5.1"
             },
@@ -4441,7 +4442,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-10-28T21:31:18+00:00"
+            "time": "2020-10-28T21:46:03+00:00"
         },
         {
             "name": "symfony/serializer",
@@ -4677,16 +4678,16 @@
         },
         {
             "name": "symfony/string",
-            "version": "v5.1.9",
+            "version": "v5.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/string.git",
-                "reference": "a97573e960303db71be0dd8fda9be3bca5e0feea"
+                "reference": "40e975edadd4e32cd16f3753b3bad65d9ac48242"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/string/zipball/a97573e960303db71be0dd8fda9be3bca5e0feea",
-                "reference": "a97573e960303db71be0dd8fda9be3bca5e0feea",
+                "url": "https://api.github.com/repos/symfony/string/zipball/40e975edadd4e32cd16f3753b3bad65d9ac48242",
+                "reference": "40e975edadd4e32cd16f3753b3bad65d9ac48242",
                 "shasum": ""
             },
             "require": {
@@ -4753,7 +4754,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-10-24T12:01:57+00:00"
+            "time": "2020-10-24T12:08:07+00:00"
         },
         {
             "name": "symfony/translation-contracts",
