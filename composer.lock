@@ -90,18 +90,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/apitte/debug.git",
-                "reference": "4448fbb07405ba490f184cec8e98bf217c34e566"
+                "reference": "3813a30cb7dda3bba7927c1e164b6aa053425bb2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apitte/debug/zipball/4448fbb07405ba490f184cec8e98bf217c34e566",
-                "reference": "4448fbb07405ba490f184cec8e98bf217c34e566",
+                "url": "https://api.github.com/repos/apitte/debug/zipball/3813a30cb7dda3bba7927c1e164b6aa053425bb2",
+                "reference": "3813a30cb7dda3bba7927c1e164b6aa053425bb2",
                 "shasum": ""
             },
             "require": {
                 "apitte/core": "^0.7.0",
                 "php": ">=7.2",
-                "tracy/tracy": "~2.6.0|~2.7.0"
+                "tracy/tracy": "^2.6.0"
             },
             "require-dev": {
                 "apitte/negotiation": "^0.7.0",
@@ -144,7 +144,7 @@
                 "debugging",
                 "tracy"
             ],
-            "time": "2020-11-24T07:55:20+00:00"
+            "time": "2020-11-30T20:03:26+00:00"
         },
         {
             "name": "apitte/middlewares",
@@ -602,18 +602,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/monolog.git",
-                "reference": "11ff1d42b474559d513e1bf5c98524c40ef33cf8"
+                "reference": "126f5a6eb212ee39858d0ed1cb3a7060a17c0ff0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/monolog/zipball/11ff1d42b474559d513e1bf5c98524c40ef33cf8",
-                "reference": "11ff1d42b474559d513e1bf5c98524c40ef33cf8",
+                "url": "https://api.github.com/repos/contributte/monolog/zipball/126f5a6eb212ee39858d0ed1cb3a7060a17c0ff0",
+                "reference": "126f5a6eb212ee39858d0ed1cb3a7060a17c0ff0",
                 "shasum": ""
             },
             "require": {
                 "contributte/di": "^0.4.0",
                 "monolog/monolog": "^2.0.0",
-                "nette/utils": "~3.0.0 || ~3.1.0",
+                "nette/utils": "^3.0.0",
                 "php": ">=7.2"
             },
             "conflict": {
@@ -657,7 +657,7 @@
                 "monolog",
                 "nette"
             ],
-            "time": "2020-11-13T20:21:39+00:00"
+            "time": "2020-11-30T17:00:41+00:00"
         },
         {
             "name": "contributte/neonizer",
@@ -4832,23 +4832,24 @@
         },
         {
             "name": "symfony/validator",
-            "version": "v5.1.9",
+            "version": "v5.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/validator.git",
-                "reference": "acf84937b932fe575e4e4892eecee5a6c5ca8b78"
+                "reference": "7b2583e2c4cb82b23fcb37730981c868efefd2c0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/validator/zipball/acf84937b932fe575e4e4892eecee5a6c5ca8b78",
-                "reference": "acf84937b932fe575e4e4892eecee5a6c5ca8b78",
+                "url": "https://api.github.com/repos/symfony/validator/zipball/7b2583e2c4cb82b23fcb37730981c868efefd2c0",
+                "reference": "7b2583e2c4cb82b23fcb37730981c868efefd2c0",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.2.5",
-                "symfony/deprecation-contracts": "^2.0",
+                "symfony/deprecation-contracts": "^2.1",
                 "symfony/polyfill-ctype": "~1.8",
                 "symfony/polyfill-mbstring": "~1.0",
+                "symfony/polyfill-php73": "~1.0",
                 "symfony/polyfill-php80": "^1.15",
                 "symfony/translation-contracts": "^1.1|^2"
             },
@@ -4868,8 +4869,10 @@
                 "egulias/email-validator": "^2.1.10",
                 "symfony/cache": "^4.4|^5.0",
                 "symfony/config": "^4.4|^5.0",
+                "symfony/console": "^4.4|^5.0",
                 "symfony/dependency-injection": "^4.4|^5.0",
                 "symfony/expression-language": "^5.1",
+                "symfony/finder": "^4.4|^5.0",
                 "symfony/http-client": "^4.4|^5.0",
                 "symfony/http-foundation": "^4.4|^5.0",
                 "symfony/http-kernel": "^4.4|^5.0",
@@ -4933,7 +4936,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-11-28T10:57:20+00:00"
+            "time": "2020-11-28T11:24:18+00:00"
         },
         {
             "name": "tracy/tracy",
