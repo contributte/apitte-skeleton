@@ -20,7 +20,7 @@
 		"contributte/di": "^0.4.0",
 		"contributte/http": "^0.3.0",
 		"contributte/security": "^0.3.0",
-		"contributte/utils": "^0.4.1",
+		"contributte/utils": "^0.5.0",
 		"contributte/tracy": "^0.5.0",
 
 		"contributte/console": "^0.8.0",
