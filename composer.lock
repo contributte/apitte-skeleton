@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bf53ae4b19ad9083c33fd313189e7c7d",
+    "content-hash": "e26c0520dc497bf27c350a3f3ecb7118",
     "packages": [
         {
             "name": "apitte/core",
@@ -463,34 +463,33 @@
         },
         {
             "name": "contributte/http",
-            "version": "v0.3.0",
+            "version": "v0.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/http.git",
-                "reference": "7ebc43afe521b9a877686046ec5c2a8450057571"
+                "reference": "b2d5b4144fbc23076f7e53df996afeb1a47639d5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/http/zipball/7ebc43afe521b9a877686046ec5c2a8450057571",
-                "reference": "7ebc43afe521b9a877686046ec5c2a8450057571",
+                "url": "https://api.github.com/repos/contributte/http/zipball/b2d5b4144fbc23076f7e53df996afeb1a47639d5",
+                "reference": "b2d5b4144fbc23076f7e53df996afeb1a47639d5",
                 "shasum": ""
             },
             "require": {
                 "nette/http": "~3.0.1",
-                "php": "^7.2"
+                "php": ">=7.2"
             },
             "conflict": {
                 "nette/di": "<3.0.0"
             },
             "require-dev": {
                 "nette/di": "~3.0.0",
-                "ninjify/nunjuck": "^0.2.0",
-                "ninjify/qa": "^0.8.0",
-                "phpstan/extension-installer": "^1.0",
-                "phpstan/phpstan-deprecation-rules": "^0.11",
-                "phpstan/phpstan-nette": "^0.11",
-                "phpstan/phpstan-shim": "^0.11",
-                "phpstan/phpstan-strict-rules": "^0.11",
+                "ninjify/nunjuck": "^0.4",
+                "ninjify/qa": "^0.12",
+                "phpstan/phpstan": "^0.12",
+                "phpstan/phpstan-deprecation-rules": "^0.12",
+                "phpstan/phpstan-nette": "^0.12",
+                "phpstan/phpstan-strict-rules": "^0.12",
                 "tracy/tracy": "~2.5.1"
             },
             "suggest": {
@@ -499,7 +498,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.4.x-dev"
+                    "dev-master": "0.5.x-dev"
                 }
             },
             "autoload": {
@@ -527,7 +526,7 @@
                 "request",
                 "response"
             ],
-            "time": "2019-06-16T14:00:48+00:00"
+            "time": "2020-12-15T15:52:06+00:00"
         },
         {
             "name": "contributte/middlewares",
@@ -2567,16 +2566,16 @@
         },
         {
             "name": "nette/http",
-            "version": "v3.0.4",
+            "version": "v3.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/http.git",
-                "reference": "e4d8d360c66c8af9512ca13ab629d312af2b3ce3"
+                "reference": "24647c6c52a9ed008b2d39494a8c4fc23c48e487"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/http/zipball/e4d8d360c66c8af9512ca13ab629d312af2b3ce3",
-                "reference": "e4d8d360c66c8af9512ca13ab629d312af2b3ce3",
+                "url": "https://api.github.com/repos/nette/http/zipball/24647c6c52a9ed008b2d39494a8c4fc23c48e487",
+                "reference": "24647c6c52a9ed008b2d39494a8c4fc23c48e487",
                 "shasum": ""
             },
             "require": {
@@ -2637,7 +2636,7 @@
                 "session",
                 "url"
             ],
-            "time": "2020-03-31T13:31:41+00:00"
+            "time": "2020-11-02T15:42:36+00:00"
         },
         {
             "name": "nette/neon",
