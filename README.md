@@ -1,20 +1,9 @@
 <h1 align=center>Forest Project</h1>
 
 <p align=center>
-    <strong>Forest project</strong> is opinionated API-based kit based on Nette Framework + Apitte and many useful packages by <a href="https://github.com/f3l1x">@f3l1x</a>.
+    <strong>Forest project</strong> is opinionated API-based kit based on Nette Framework + Apitte and many useful packages by <a href="https://github.com/f3l1x">@f3l1x</a>. Why <strong>forest</strong>? Because we are building (fo)REST API.
 </p>
 
-<p align=center>
-    Why <strong>forest</strong>? Because we are building (fo)REST API.
-</p>
-
-<p align=center>
-🕹 <a href="https://f3l1x.io">f3l1x.io</a> | 💻 <a href="https://github.com/f3l1x">f3l1x</a> | 🐦 <a href="https://twitter.com/xf3l1x">@xf3l1x</a>
-</p>
-
-<p align=center>
-    <code>composer create-project -s dev planette/forest-project acme</code>
-</p>
 <p align=center>
     Take a look at demo <a href="https://examples.contributte.org/planette/forest-project/api/v1/users/?_access_token=admin">examples.contributte.org/planette/forest-project/</a>
 </p>
@@ -23,8 +12,18 @@
     <img src="https://raw.githubusercontent.com/planette/forest-project/master/.docs/assets/screenshot1.png">
 </p>
 
-[![Build Status](https://img.shields.io/travis/planette/forest-project.svg?style=flat-square)](https://travis-ci.org/planette/forest-project)
-[![Join the chat](https://img.shields.io/gitter/room/contributte/contributte.svg?style=flat-square)](http://bit.ly/ctteg)
+<p align=center>
+  <a href="https://github.com/planette/forest-project/actions"><img src="https://badgen.net/github/checks/planette/forest-project/master?cache=300"></a>
+  <a href="https://packagist.org/packages/planette/forest-project"><img src="https://badgen.net/packagist/php/planette/forest-project"></a>
+  <a href="https://github.com/planette/forest-project"><img src="https://badgen.net/github/license/planette/forest-project"></a>
+  <a href="https://bit.ly/ctteg"><img src="https://badgen.net/badge/support/gitter/cyan"></a>
+  <a href="https://bit.ly/cttfo"><img src="https://badgen.net/badge/support/forum/yellow"></a>
+  <a href="https://contributte.org/partners.html"><img src="https://badgen.net/badge/sponsor/donations/F96854"></a>
+</p>
+
+<p align=center>
+Website 🚀 <a href="https://contributte.org">contributte.org</a> | Contact 👨🏻‍💻 <a href="https://f3l1x.io">f3l1x.io</a> | Twitter 🐦 <a href="https://twitter.com/contributte">@contributte</a>
+</p>
 
 -----
 
@@ -34,6 +33,7 @@ Main goal is to provide best prepared API starter-kit project for Nette-Apitte d
 
 Focused on:
 
+- latest PHP 7.4 & 8.0
 - `nette/*` packages
 - build PSR-7 API via `apitte/*`
 - Doctrine ORM via `nettrine/*`
@@ -143,6 +143,7 @@ https://examples.contributte.org/planette/forest-project/
 
 Here is a list of all features you can find in this project.
 
+- PHP 7.4+
 - :package: Packages
     - Nette 3.0
     - Apitte
