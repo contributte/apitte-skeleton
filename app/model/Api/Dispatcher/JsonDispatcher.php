@@ -52,9 +52,11 @@ class JsonDispatcher extends ApitteJsonDispatcher
 			if ($e->getMessage()) {
 				$data['message'] = $e->getMessage();
 			}
+
 			if ($e->getContext()) {
 				$data['context'] = $e->getContext();
 			}
+
 			if ($e->getCode()) {
 				$data['code'] = $e->getCode();
 			}

@@ -7,7 +7,6 @@ use Apitte\Core\Annotation\Controller\Path;
 use Apitte\Core\Http\ApiRequest;
 use Apitte\Core\Http\ApiResponse;
 use Apitte\OpenApi\ISchemaBuilder;
-use Contributte\Psr7\Psr7Response;
 use Psr\Http\Message\ResponseInterface;
 
 /**
@@ -30,7 +29,6 @@ class OpenApiController extends BasePubV1Controller
 	 */
 	public function meta(ApiRequest $request, ApiResponse $response): ResponseInterface
 	{
-		/** @var Psr7Response $response */
 		return $response
 			->withAddedHeader('Access-Control-Allow-Origin', '*')
 			->writeJsonBody(

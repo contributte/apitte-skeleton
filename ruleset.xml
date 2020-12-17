@@ -4,11 +4,7 @@
     <!-- Extending rulesets -->
     <rule ref="./vendor/ninjify/coding-standard/ruleset.xml">
         <exclude name="Squiz.Commenting.FunctionComment.InvalidTypeHint"/>
-        <exclude name="SlevomatCodingStandard.ControlStructures.ControlStructureSpacing"/>
         <exclude name="SlevomatCodingStandard.ControlStructures.RequireTernaryOperator"/>
-        <exclude name="SlevomatCodingStandard.ControlStructures.EarlyExit"/>
-        <exclude name="SlevomatCodingStandard.Operators.RequireOnlyStandaloneIncrementAndDecrementOperators"/>
-        <exclude name="SlevomatCodingStandard.ControlStructures.RequireMultiLineTernaryOperator"/>
     </rule>
 
     <!-- Specific rules -->

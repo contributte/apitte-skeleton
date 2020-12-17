@@ -102,6 +102,7 @@ class Environment
 		if (!is_dir($dir)) {
 			return;
 		}
+
 		self::purge($dir);
 		@rmdir($dir);
 	}
@@ -111,6 +112,7 @@ class Environment
 		if (!is_dir($dir)) {
 			self::mkdir($dir);
 		}
+
 		THelpers::purge($dir);
 	}
 
