@@ -53,7 +53,7 @@ https://examples.contributte.org/planette/forest-project/
 1) At first, use composer to install this project.
 
     ```
-    composer create-project planette/forest-project
+    composer create-project -s dev planette/forest-project
     ```
 
 2) After that, you have to setup Postgres >= 10 database. You can start it manually or use docker image `postgres:10`.
