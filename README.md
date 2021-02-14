@@ -107,7 +107,7 @@ https://examples.contributte.org/planette/forest-project/
 1) At first, use composer to install this project.
 
     ```
-    composer create-project planette/forest-project
+    composer create-project -s dev planette/forest-project
     ```
 
 2) Modify `app/config/config.local.neon` and set host to `database`
