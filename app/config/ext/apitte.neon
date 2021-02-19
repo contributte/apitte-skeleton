@@ -18,7 +18,7 @@ api:
 		Apitte\Debug\DI\DebugPlugin:
 		Apitte\Middlewares\DI\MiddlewaresPlugin:
 			tracy: false
-			autobasepath: false
+			autobasepath: true
 		Apitte\OpenApi\DI\OpenApiPlugin:
 
 services:
