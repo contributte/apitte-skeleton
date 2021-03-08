@@ -33,7 +33,7 @@
 		"apitte/openapi": "^0.7.0",
 
 		"nette/finder": "~2.5.1",
-		"nette/robot-loader": "~3.3.0",
+		"nette/robot-loader": "~3.4.0",
 
 		"nettrine/annotations": "^0.7.0",
 		"nettrine/orm": "^0.8.0",
