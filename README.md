@@ -68,17 +68,17 @@ https://examples.contributte.org/planette/forest-project/
 
     Default configuration should look like:
 
-    ```yaml
-    # Host Config
-    parameters:
+	```neon
+	# Host Config
+	parameters:
 
-        # Database
-        database:
-            host: localhost
-            dbname: forest
-            user: forest
-            password: forest
-    ```
+		# Database
+		database:
+			host: localhost
+			dbname: forest
+			user: forest
+			password: forest
+	```
 
 4) Ok database is now running and application is configured to connect to it. Let's create initial data.
 
@@ -114,17 +114,17 @@ https://examples.contributte.org/planette/forest-project/
 
     Default configuration should look like this:
 
-    ```yaml
-    # Host Config
-    parameters:
+	```neon
+	# Host Config
+	parameters:
 
-        # Database
-        database:
-            host: database
-            dbname: forest
-            user: forest
-            password: forest
-    ```
+		# Database
+		database:
+			host: database
+			dbname: forest
+			user: forest
+			password: forest
+	```
 
 3) Run `docker-compose up`
 
