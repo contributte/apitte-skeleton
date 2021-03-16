@@ -52,15 +52,15 @@ https://examples.contributte.org/planette/forest-project/
 
 1) At first, use composer to install this project.
 
-    ```
-    composer create-project -s dev planette/forest-project
-    ```
+	```bash
+	composer create-project -s dev planette/forest-project
+	```
 
 2) After that, you have to setup Postgres >= 10 database. You can start it manually or use docker image `postgres:10`.
 
-    ```
-    docker run -it -p 5432:5432 -e POSTGRES_PASSWORD=forest -e POSTGRES_USER=forest postgres:10
-    ```
+	```bash
+	docker run -it -p 5432:5432 -e POSTGRES_PASSWORD=forest -e POSTGRES_USER=forest postgres:10
+	```
 
     Or use make task, `make loc-postgres`.
 
@@ -68,17 +68,17 @@ https://examples.contributte.org/planette/forest-project/
 
     Default configuration should look like:
 
-    ```yaml
-    # Host Config
-    parameters:
+	```neon
+	# Host Config
+	parameters:
 
-        # Database
-        database:
-            host: localhost
-            dbname: forest
-            user: forest
-            password: forest
-    ```
+		# Database
+		database:
+			host: localhost
+			dbname: forest
+			user: forest
+			password: forest
+	```
 
 4) Ok database is now running and application is configured to connect to it. Let's create initial data.
 
@@ -114,17 +114,17 @@ https://examples.contributte.org/planette/forest-project/
 
     Default configuration should look like this:
 
-    ```yaml
-    # Host Config
-    parameters:
+	```neon
+	# Host Config
+	parameters:
 
-        # Database
-        database:
-            host: database
-            dbname: forest
-            user: forest
-            password: forest
-    ```
+		# Database
+		database:
+			host: database
+			dbname: forest
+			user: forest
+			password: forest
+	```
 
 3) Run `docker-compose up`
 
