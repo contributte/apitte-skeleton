@@ -44,7 +44,7 @@ nettrine.orm.annotations:
 nettrine.orm.cache:
 
 nettrine.cache:
-	driver: Doctrine\Common\Cache\ApcuCache
+#	driver: Doctrine\Common\Cache\ApcuCache
 
 nettrine.migrations:
 	table: doctrine_migrations
