@@ -3,9 +3,11 @@
 namespace App\Module\V1;
 
 use Apitte\Core\Annotation\Controller\Method;
+use Apitte\Core\Annotation\Controller\OpenApi;
 use Apitte\Core\Annotation\Controller\Path;
 use Apitte\Core\Annotation\Controller\RequestParameter;
 use Apitte\Core\Annotation\Controller\RequestParameters;
+use Apitte\Core\Annotation\Controller\Tag;
 use Apitte\Core\Exception\Api\ClientErrorException;
 use Apitte\Core\Http\ApiRequest;
 use App\Domain\Api\Facade\UsersFacade;
@@ -15,6 +17,7 @@ use Nette\Http\IResponse;
 
 /**
  * @Path("/users")
+ * @Tag("Users")
  */
 class UsersOneController extends BaseV1Controller
 {
@@ -28,6 +31,9 @@ class UsersOneController extends BaseV1Controller
 	}
 
 	/**
+	 * @OpenApi("
+	 *   summary: Get user by email.
+	 * ")
 	 * @Path("/email")
 	 * @Method("GET")
 	 * @RequestParameters({
@@ -46,6 +52,9 @@ class UsersOneController extends BaseV1Controller
 	}
 
 	/**
+	 * @OpenApi("
+	 *   summary: Get user by id.
+	 * ")
 	 * @Path("/{id}")
 	 * @Method("GET")
 	 * @RequestParameters({

@@ -3,6 +3,7 @@
 namespace App\Module\V1;
 
 use Apitte\Core\Annotation\Controller\Method;
+use Apitte\Core\Annotation\Controller\OpenApi;
 use Apitte\Core\Annotation\Controller\Path;
 use Apitte\Core\Annotation\Controller\Tag;
 use Apitte\Core\Exception\Api\ServerErrorException;
@@ -15,6 +16,7 @@ use Nette\Http\IResponse;
 
 /**
  * @Path("/users")
+ * @Tag("Users")
  */
 class UserCreateController extends BaseV1Controller
 {
@@ -28,6 +30,9 @@ class UserCreateController extends BaseV1Controller
 	}
 
 	/**
+	 * @OpenApi("
+	 *   summary: Create new user.
+	 * ")
 	 * @Path("/create")
 	 * @Method("POST")
 	 * @Tag(name="request.dto", value="App\Domain\Api\Request\CreateUserReqDto")

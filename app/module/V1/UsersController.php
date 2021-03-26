@@ -3,15 +3,18 @@
 namespace App\Module\V1;
 
 use Apitte\Core\Annotation\Controller\Method;
+use Apitte\Core\Annotation\Controller\OpenApi;
 use Apitte\Core\Annotation\Controller\Path;
 use Apitte\Core\Annotation\Controller\RequestParameter;
 use Apitte\Core\Annotation\Controller\RequestParameters;
+use Apitte\Core\Annotation\Controller\Tag;
 use Apitte\Core\Http\ApiRequest;
 use App\Domain\Api\Facade\UsersFacade;
 use App\Domain\Api\Response\UserResDto;
 
 /**
  * @Path("/users")
+ * @Tag("Users")
  */
 class UsersController extends BaseV1Controller
 {
@@ -25,6 +28,9 @@ class UsersController extends BaseV1Controller
 	}
 
 	/**
+	 * @OpenApi("
+	 *   summary: List users.
+	 * ")
 	 * @Path("/")
 	 * @Method("GET")
 	 * @RequestParameters({

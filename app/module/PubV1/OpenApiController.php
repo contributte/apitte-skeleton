@@ -3,7 +3,9 @@
 namespace App\Module\PubV1;
 
 use Apitte\Core\Annotation\Controller\Method;
+use Apitte\Core\Annotation\Controller\OpenApi;
 use Apitte\Core\Annotation\Controller\Path;
+use Apitte\Core\Annotation\Controller\Tag;
 use Apitte\Core\Http\ApiRequest;
 use Apitte\Core\Http\ApiResponse;
 use Apitte\OpenApi\ISchemaBuilder;
@@ -11,6 +13,7 @@ use Psr\Http\Message\ResponseInterface;
 
 /**
  * @Path("/openapi")
+ * @Tag("OpenApi")
  */
 class OpenApiController extends BasePubV1Controller
 {
@@ -24,6 +27,9 @@ class OpenApiController extends BasePubV1Controller
 	}
 
 	/**
+	 * @OpenApi("
+	 *   summary: Get OpenAPI definition.
+	 * ")
 	 * @Path("/meta")
 	 * @Method("GET")
 	 */
