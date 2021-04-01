@@ -28,6 +28,7 @@ services:
 		setup:
 			- setDebugMode(%debugMode%)
 			- setCatchExceptions(%productionMode%) # used in debug only
+			- setLogger(@Psr\Log\LoggerInterface, Psr\Log\LogLevel::ERROR)
 	middlewares.logging:
 		factory: Contributte\Middlewares\LoggingMiddleware
 		arguments: [@monolog.logger.default]
