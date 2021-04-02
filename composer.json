@@ -1,15 +1,15 @@
 {
-	"name": "planette/forest-project",
-	"description": "Forest project is opinionated API-based kit based on Nette Framework + Apitte and many useful packages by @f3l1x.",
+	"name": "contributte/apitte-skeleton",
+	"description": "🎁  API / REST API / JSON API / PSR-7 / Middlewares project skeleton based on Nette Framework (@nette), Apitte (@apitte), Doctrine (@nettrine) and Contributte (@contributte) libraries by @f3l1x.",
 	"keywords": [
     "php",
     "nette",
-    "planette",
     "contributte",
+    "api",
     "apitte",
     "sandbox",
     "project",
-    "api"
+    "skeleton"
   ],
 	"license": "MIT",
 	"type": "project",

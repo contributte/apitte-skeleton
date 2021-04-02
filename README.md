@@ -1,21 +1,14 @@
-<h1 align=center>Forest Project</h1>
+![](https://heatbadger.now.sh/github/readme/contributte/apitte-skeleton/)
 
 <p align=center>
-    <strong>Forest project</strong> is opinionated API-based kit based on Nette Framework + Apitte and many useful packages by <a href="https://github.com/f3l1x">@f3l1x</a>. Why <strong>forest</strong>? Because we are building (fo)REST API.
+  <a href="https://github.com/contributte/apitte-skeleton/actions"><img src="https://badgen.net/github/checks/contributte/apitte-skeleton/master"></a>
+  <a href="https://coveralls.io/r/contributte/apitte-skeleton"><img src="https://badgen.net/coveralls/c/github/contributte/apitte-skeleton"></a>
+  <a href="https://packagist.org/packages/contributte/apitte-skeleton"><img src="https://badgen.net/packagist/dm/contributte/apitte-skeleton"></a>
+  <a href="https://packagist.org/packages/contributte/apitte-skeleton"><img src="https://badgen.net/packagist/v/contributte/apitte-skeleton"></a>
 </p>
-
 <p align=center>
-    Take a look at demo <a href="https://examples.contributte.org/planette/forest-project/api/v1/users/?_access_token=admin">examples.contributte.org/planette/forest-project/</a>
-</p>
-
-<p align=center>
-    <img src="https://raw.githubusercontent.com/planette/forest-project/master/.docs/assets/screenshot1.png">
-</p>
-
-<p align=center>
-  <a href="https://github.com/planette/forest-project/actions"><img src="https://badgen.net/github/checks/planette/forest-project/master?cache=300"></a>
-  <a href="https://packagist.org/packages/planette/forest-project"><img src="https://badgen.net/packagist/php/planette/forest-project"></a>
-  <a href="https://github.com/planette/forest-project"><img src="https://badgen.net/github/license/planette/forest-project"></a>
+  <a href="https://packagist.org/packages/contributte/apitte-skeleton"><img src="https://badgen.net/packagist/php/contributte/apitte-skeleton"></a>
+  <a href="https://github.com/contributte/apitte-skeleton"><img src="https://badgen.net/github/license/contributte/apitte-skeleton"></a>
   <a href="https://bit.ly/ctteg"><img src="https://badgen.net/badge/support/gitter/cyan"></a>
   <a href="https://bit.ly/cttfo"><img src="https://badgen.net/badge/support/forum/yellow"></a>
   <a href="https://contributte.org/partners.html"><img src="https://badgen.net/badge/sponsor/donations/F96854"></a>
@@ -23,6 +16,10 @@
 
 <p align=center>
 Website 🚀 <a href="https://contributte.org">contributte.org</a> | Contact 👨🏻‍💻 <a href="https://f3l1x.io">f3l1x.io</a> | Twitter 🐦 <a href="https://twitter.com/contributte">@contributte</a>
+</p>
+
+<p align=center>
+	<img src="https://raw.githubusercontent.com/contributte/apitte-skeleton/master/.docs/assets/screenshot1.png">
 </p>
 
 -----
@@ -46,20 +43,20 @@ You can try it out yourself either by running it with docker, or more easily wit
 
 ## Demo
 
-https://examples.contributte.org/planette/forest-project/
+https://examples.contributte.org/apitte-skeleton/
 
 ## Install with [docker](https://github.com/docker/docker/)
 
 1) At first, use composer to install this project.
 
 	```bash
-	composer create-project -s dev planette/forest-project
+	composer create-project -s dev contributte/apitte-skeleton
 	```
 
 2) After that, you have to setup Postgres >= 10 database. You can start it manually or use docker image `postgres:10`.
 
 	```bash
-	docker run -it -p 5432:5432 -e POSTGRES_PASSWORD=forest -e POSTGRES_USER=forest postgres:10
+	docker run -it -p 5432:5432 -e POSTGRES_PASSWORD=apitte -e POSTGRES_USER=apitte postgres:10
 	```
 
     Or use make task, `make loc-postgres`.
@@ -75,9 +72,9 @@ https://examples.contributte.org/planette/forest-project/
 		# Database
 		database:
 			host: localhost
-			dbname: forest
-			user: forest
-			password: forest
+			dbname: apitte
+			user: apitte
+			password: apitte
 	```
 
 4) Ok database is now running and application is configured to connect to it. Let's create initial data.
@@ -107,7 +104,7 @@ https://examples.contributte.org/planette/forest-project/
 1) At first, use composer to install this project.
 
     ```
-    composer create-project -s dev planette/forest-project
+    composer create-project -s dev contributte/apitte-skeleton
     ```
 
 2) Modify `app/config/config.local.neon` and set host to `database`
@@ -121,9 +118,9 @@ https://examples.contributte.org/planette/forest-project/
 		# Database
 		database:
 			host: database
-			dbname: forest
-			user: forest
-			password: forest
+			dbname: apitte
+			user: apitte
+			password: apitte
 	```
 
 3) Run `docker-compose up`
