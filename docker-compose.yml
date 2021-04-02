@@ -35,9 +35,9 @@ services:
   database:
     image: dockette/postgres:10
     environment:
-      - POSTGRES_PASSWORD=forest
-      - POSTGRES_USER=forest
-      - POSTGRES_DB=forest
+      - POSTGRES_PASSWORD=apitte
+      - POSTGRES_USER=apitte
+      - POSTGRES_DB=apitte
     volumes:
       - database-volume:/var/lib/postgresql/data
   adminer:

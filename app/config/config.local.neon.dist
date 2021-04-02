@@ -4,6 +4,6 @@ parameters:
 	# Database
 	database:
 		host: localhost
-		dbname: forest
-		user: forest
-		password: forest
+		dbname: apitte
+		user: apitte
+		password: apitte

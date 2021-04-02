@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "547eb54a9187965d0ff440d82efdbe04",
+    "content-hash": "a85ee9998490f1f9a47bb874b52ae3b5",
     "packages": [
         {
             "name": "apitte/core",
@@ -725,23 +725,19 @@
                 "shasum": ""
             },
             "require": {
-                "contributte/di": "^0.5.0",
+                "contributte/di": "^0.5.1",
                 "monolog/monolog": "^2.0.0",
                 "nette/utils": "^3.0.0",
                 "php": ">=7.2"
             },
-            "conflict": {
-                "tracy/tracy": "<2.6.2"
-            },
             "require-dev": {
-                "ninjify/qa": "^0.10.0",
-                "phpstan/extension-installer": "^1.0",
+                "ninjify/nunjuck": "^0.4",
+                "ninjify/qa": "^0.12",
                 "phpstan/phpstan": "^0.12",
                 "phpstan/phpstan-deprecation-rules": "^0.12",
                 "phpstan/phpstan-nette": "^0.12",
                 "phpstan/phpstan-strict-rules": "^0.12",
-                "phpunit/phpunit": "^8.1.3",
-                "tracy/tracy": "~2.6.2 || ~2.7.0"
+                "tracy/tracy": "^2.6.2"
             },
             "default-branch": true,
             "type": "library",
@@ -774,9 +770,19 @@
             ],
             "support": {
                 "issues": "https://github.com/contributte/monolog/issues",
-                "source": "https://github.com/contributte/monolog/tree/v0.5.0"
+                "source": "https://github.com/contributte/monolog/tree/master"
             },
-            "time": "2020-12-10T14:31:08+00:00"
+            "funding": [
+                {
+                    "url": "https://contributte.org/partners.html",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/f3l1x",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-03-12T22:28:20+00:00"
         },
         {
             "name": "contributte/neonizer",
