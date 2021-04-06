@@ -139,6 +139,16 @@ https://examples.contributte.org/planette/forest-project/
     - [GET] http://localhost/api/v1/users/email?email=admin@admin.cz&_access_token=admin
     - [POST] http://localhost/api/v1/users/create
 
+## (Optional) REST API documentation
+
+Since we have OpenAPI specification available at `/api/public/v1/openapi/meta` you just need to add UI for it (e.g. to `www/doc` directory or as a standalone application).
+
+Available options are:
+- [Swagger UI](https://swagger.io/tools/swagger-ui/) + [themes](https://github.com/ostranme/swagger-ui-themes)
+- [ReDoc](https://github.com/Redocly/redoc)
+- other
+
+
 ## Features
 
 Here is a list of all features you can find in this project.
