@@ -28,8 +28,9 @@ class UserFixture extends AbstractFixture
 
 		foreach ($this->getRandomUsers() as $user) {
 			$this->manager->persist($user);
-			$this->manager->flush();
 		}
+		
+		$this->manager->flush();
 	}
 
 	/**
@@ -82,7 +83,6 @@ class UserFixture extends AbstractFixture
 		$entity->setApikey($user['apikey']);
 
 		$this->manager->persist($entity);
-		$this->manager->flush();
 	}
 
 }
