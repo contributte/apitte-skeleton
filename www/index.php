@@ -4,8 +4,11 @@
 //require 'maintenance.php';
 //die();
 
+require __DIR__ . '/../vendor/autoload.php';
+
 // Let bootstrap create Dependency Injection container.
-$container = require_once __DIR__ . '/../app/bootstrap.php';
+$configurator = App\Bootstrap::boot();
+$container = $configurator->createContainer();
 
 // Run application.
 $container->getByType(Contributte\Middlewares\Application\IApplication::class)->run();

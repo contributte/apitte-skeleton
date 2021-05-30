@@ -1,8 +1,11 @@
 #!/usr/bin/env php
-<?php
+<?php declare(strict_types = 1);
 
-/** @var Nette\DI\Container $container */
-$container = require_once __DIR__ . '/../app/bootstrap.php';
+require __DIR__ . '/../vendor/autoload.php';
+
+// Let bootstrap create Dependency Injection container.
+$configurator = App\Bootstrap::boot();
+$container = $configurator->createContainer();
 
 // Run application.
 $container->getByType(Symfony\Component\Console\Application::class)->run();
