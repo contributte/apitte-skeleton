@@ -62,7 +62,10 @@
 			"App\\Domain\\": "app/domain",
 			"Database\\": "db",
 			"App\\Module\\": "app/module"
-		}
+		},
+		"files": [
+			"app/Bootstrap.php"
+		]
 	},
 	"autoload-dev": {
 		"psr-4": {
