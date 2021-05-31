@@ -33,7 +33,7 @@ services:
       STARTUP_COMMAND_2: NETTE_DEBUG=1 php bin/console migrations:migrate --no-interaction
       STARTUP_COMMAND_3: NETTE_DEBUG=1 php bin/console doctrine:fixtures:load --no-interaction
   database:
-    image: dockette/postgres:10
+    image: dockette/postgres:13
     environment:
       - POSTGRES_PASSWORD=apitte
       - POSTGRES_USER=apitte
