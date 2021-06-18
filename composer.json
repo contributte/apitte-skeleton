@@ -15,6 +15,7 @@
   "type": "project",
   "require": {
     "php": ">=7.4",
+
     "contributte/bootstrap": "^0.5.0",
     "contributte/di": "^0.5.0",
     "contributte/http": "^0.4.0",
@@ -24,17 +25,21 @@
     "contributte/console": "^0.9.0",
     "contributte/monolog": "^0.6.0",
     "contributte/neonizer": "^0.5.0",
+
     "apitte/core": "^0.7.1",
     "apitte/debug": "^0.7.0",
     "apitte/middlewares": "^0.7.0",
     "apitte/openapi": "^0.7.0",
+
     "nette/finder": "~2.5.1",
     "nette/robot-loader": "~3.4.0",
+
     "nettrine/annotations": "^0.7.0",
     "nettrine/orm": "^0.8.0",
     "nettrine/dbal": "^0.7.0",
     "nettrine/migrations": "^0.7.0",
     "nettrine/fixtures": "^0.6.0",
+
     "symfony/serializer": "^5.0.1",
     "symfony/validator": "^5.0.1",
     "symfony/property-info": "^5.0.1"
