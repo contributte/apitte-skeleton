@@ -6,7 +6,7 @@ class User
 {
 
 	/** @var Order[] */
-	private $orders = [];
+	private array $orders = [];
 
 	public function addOrder(Order $order): void
 	{

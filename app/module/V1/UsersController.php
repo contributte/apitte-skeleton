@@ -19,8 +19,7 @@ use App\Domain\Api\Response\UserResDto;
 class UsersController extends BaseV1Controller
 {
 
-	/** @var UsersFacade */
-	private $usersFacade;
+	private UsersFacade $usersFacade;
 
 	public function __construct(UsersFacade $usersFacade)
 	{

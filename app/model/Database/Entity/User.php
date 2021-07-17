@@ -18,6 +18,10 @@ use Nette\Utils\Random;
 class User extends AbstractEntity
 {
 
+	use TId;
+	use TCreatedAt;
+	use TUpdatedAt;
+
 	public const ROLE_ADMIN = 'admin';
 	public const ROLE_USER = 'user';
 
@@ -27,63 +31,35 @@ class User extends AbstractEntity
 
 	public const STATES = [self::STATE_FRESH, self::STATE_BLOCKED, self::STATE_ACTIVATED];
 
-	use TId;
-	use TCreatedAt;
-	use TUpdatedAt;
+	/** @ORM\Column(type="string", length=255, nullable=FALSE, unique=false) */
+	private string $name;
 
-	/**
-	 * @var string
-	 * @ORM\Column(type="string", length=255, nullable=FALSE, unique=false)
-	 */
-	private $name;
+	/** @ORM\Column(type="string", length=255, nullable=FALSE, unique=false) */
+	private string $surname;
 
-	/**
-	 * @var string
-	 * @ORM\Column(type="string", length=255, nullable=FALSE, unique=false)
-	 */
-	private $surname;
+	/** @ORM\Column(type="string", length=255, nullable=FALSE, unique=TRUE) */
+	private string $email;
 
-	/**
-	 * @var string
-	 * @ORM\Column(type="string", length=255, nullable=FALSE, unique=TRUE)
-	 */
-	private $email;
+	/** @ORM\Column(type="string", length=255, nullable=FALSE, unique=TRUE) */
+	private string $username;
 
-	/**
-	 * @var string
-	 * @ORM\Column(type="string", length=255, nullable=FALSE, unique=TRUE)
-	 */
-	private $username;
+	/** @ORM\Column(type="integer", length=10, nullable=FALSE) */
+	private int $state;
 
-	/**
-	 * @var int
-	 * @ORM\Column(type="integer", length=10, nullable=FALSE)
-	 */
-	private $state;
+	/** @ORM\Column(type="string", length=255, nullable=FALSE) */
+	private string $password;
 
-	/**
-	 * @var string
-	 * @ORM\Column(type="string", length=255, nullable=FALSE)
-	 */
-	private $password;
+	/** @ORM\Column(type="string", length=255, nullable=FALSE) */
+	private string $role;
 
-	/**
-	 * @var string
-	 * @ORM\Column(type="string", length=255, nullable=FALSE)
-	 */
-	private $role;
-
-	/**
-	 * @var string
-	 * @ORM\Column(type="string", length=255, nullable=FALSE)
-	 */
-	private $apikey;
+	/** @ORM\Column(type="string", length=255, nullable=FALSE) */
+	private string $apikey;
 
 	/**
 	 * @var DateTime|NULL
 	 * @ORM\Column(type="datetime", nullable=TRUE)
 	 */
-	private $lastLoggedAt;
+	private ?DateTime $lastLoggedAt = null;
 
 	public function __construct(string $name, string $surname, string $email, string $username, string $passwordHash)
 	{

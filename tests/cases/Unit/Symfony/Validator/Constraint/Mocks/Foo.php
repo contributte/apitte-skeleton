@@ -7,11 +7,8 @@ use Tests\Cases\Unit\Symfony\Validator\Constraint as NewAssert;
 class Foo
 {
 
-	/**
-	 * @var string
-	 * @NewAssert\Hello
-	 */
-	private $username;
+	/** @NewAssert\Hello */
+	private string $username;
 
 	public function __construct(string $username)
 	{

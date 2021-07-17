@@ -9,18 +9,16 @@ use Nette\Security\IUserStorage;
 final class DummyUserStorage implements IUserStorage
 {
 
-	/** @var bool */
-	private $authenticated = false;
+	private bool $authenticated = false;
 
 	/** @var IIdentity|NULL */
-	private $identity;
+	private ?IIdentity $identity = null;
 
 	/**
-	 * @param bool $state
 	 * @return static
 	 * @phpcsSuppress SlevomatCodingStandard.TypeHints.TypeHintDeclaration.MissingParameterTypeHint
 	 */
-	public function setAuthenticated($state)
+	public function setAuthenticated(bool $state): static
 	{
 		$this->authenticated = $state;
 
@@ -35,6 +33,7 @@ final class DummyUserStorage implements IUserStorage
 	public function setIdentity(?IIdentity $identity): self
 	{
 		$this->identity = $identity;
+
 		return $this;
 	}
 
@@ -44,10 +43,9 @@ final class DummyUserStorage implements IUserStorage
 	}
 
 	/**
-	 * @param string|int|DateTimeInterface $time
 	 * @return static
 	 */
-	public function setExpiration($time, int $flags = 0)
+	public function setExpiration(string|int|DateTimeInterface $time, int $flags = 0): static
 	{
 		return $this;
 	}

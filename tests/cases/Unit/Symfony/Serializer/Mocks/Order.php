@@ -7,11 +7,8 @@ use Symfony\Component\Serializer\Annotation\Groups;
 class Order
 {
 
-	/**
-	 * @var int
-	 * @Groups({"admin", "user"})
-	 */
-	private $id;
+	/** @Groups({"admin", "user"}) */
+	private int $id;
 
 	public function __construct(int $id)
 	{

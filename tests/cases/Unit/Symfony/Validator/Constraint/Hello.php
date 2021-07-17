@@ -10,7 +10,6 @@ use Symfony\Component\Validator\Constraint;
 class Hello extends Constraint
 {
 
-	/** @var string */
-	public $message = 'The string {{ string }} is not hello word!';
+	public string $message = 'The string {{ string }} is not hello word!';
 
 }

@@ -18,8 +18,7 @@ use Psr\Http\Message\ResponseInterface;
 class OpenApiController extends BasePubV1Controller
 {
 
-	/** @var ISchemaBuilder */
-	private $schemaBuilder;
+	private ISchemaBuilder $schemaBuilder;
 
 	public function __construct(ISchemaBuilder $schemaBuilder)
 	{

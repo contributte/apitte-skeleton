@@ -12,7 +12,7 @@ trait TUpdatedAt
 	 * @var DateTime|NULL
 	 * @ORM\Column(type="datetime", nullable=TRUE)
 	 */
-	protected $updatedAt;
+	protected ?DateTime $updatedAt = null;
 
 	public function getUpdatedAt(): ?DateTime
 	{

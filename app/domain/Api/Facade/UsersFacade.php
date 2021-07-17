@@ -12,8 +12,7 @@ use App\Model\Security\Passwords;
 final class UsersFacade
 {
 
-	/** @var EntityManager */
-	private $em;
+	private EntityManager $em;
 
 	public function __construct(EntityManager $em)
 	{

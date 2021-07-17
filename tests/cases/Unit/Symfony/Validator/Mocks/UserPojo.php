@@ -9,8 +9,7 @@ use Symfony\Component\Validator\Mapping\ClassMetadata;
 class UserPojo
 {
 
-	/** @var string */
-	private $username;
+	private string $username;
 
 	public function getUsername(): string
 	{

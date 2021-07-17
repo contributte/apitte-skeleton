@@ -7,8 +7,7 @@ use Nette\DI\Container;
 abstract class BaseContainerTestCase extends BaseTestCase
 {
 
-	/** @var Container */
-	protected $container;
+	protected Container $container;
 
 	public function __construct(Container $container)
 	{

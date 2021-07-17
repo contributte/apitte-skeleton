@@ -21,15 +21,14 @@ use Symfony\Component\Validator\Validator\ValidatorInterface;
 class JsonDispatcher extends ApitteJsonDispatcher
 {
 
-	/** @var SerializerInterface */
-	protected $serializer;
+	protected SerializerInterface $serializer;
 
-	/** @var ValidatorInterface */
-	protected $validator;
+	protected ValidatorInterface $validator;
 
 	public function __construct(IRouter $router, IHandler $handler, SerializerInterface $serializer, ValidatorInterface $validator)
 	{
 		parent::__construct($router, $handler);
+
 		$this->serializer = $serializer;
 		$this->validator = $validator;
 	}
@@ -127,10 +126,8 @@ class JsonDispatcher extends ApitteJsonDispatcher
 
 	/**
 	 * Transform outgoing response data to JSON, if needed.
-	 *
-	 * @param mixed $data
 	 */
-	protected function transformResponse($data, ApiResponse $response): ApiResponse
+	protected function transformResponse(mixed $data, ApiResponse $response): ApiResponse
 	{
 		$response = $response->withStatus(200)
 			->withHeader('Content-Type', 'application/json');

@@ -8,31 +8,20 @@ final class CreateUserReqDto
 {
 
 	/**
-	 * @var string
 	 * @Assert\NotBlank
 	 * @Assert\Email
 	 */
-	public $email;
+	public string $email;
 
-	/**
-	 * @var string
-	 * @Assert\NotBlank
-	 */
-	public $name;
+	/** @Assert\NotBlank */
+	public string $name;
 
-	/**
-	 * @var string
-	 * @Assert\NotBlank
-	 */
-	public $surname;
+	/** @Assert\NotBlank */
+	public string $surname;
 
-	/**
-	 * @var string
-	 * @Assert\NotBlank
-	 */
-	public $username;
+	/** @Assert\NotBlank */
+	public string $username;
 
-	/** @var string|null */
-	public $password;
+	public ?string $password = null;
 
 }

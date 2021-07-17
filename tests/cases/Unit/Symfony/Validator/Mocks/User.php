@@ -8,11 +8,10 @@ class User
 {
 
 	/**
-	 * @var string
 	 * @Assert\NotBlank
 	 * @Assert\Length(min="10", max="20")
 	 */
-	private $username;
+	private string $username;
 
 	public function __construct(string $username)
 	{

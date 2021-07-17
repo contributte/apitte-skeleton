@@ -15,36 +15,11 @@ class AuthenticationMiddleware implements IMiddleware
 
 	private const WHITELIST_PATHS = ['/api/public'];
 
-	/** @var IAuthenticator */
-	private $authenticator;
+	private IAuthenticator $authenticator;
 
 	public function __construct(IAuthenticator $authenticator)
 	{
 		$this->authenticator = $authenticator;
-	}
-
-	/**
-	 * Authenticate user from given request
-	 */
-	public function __invoke(ServerRequestInterface $request, ResponseInterface $response, callable $next): ResponseInterface
-	{
-		if ($this->isWhitelisted($request)) {
-			return $next($request, $response);
-		}
-
-		$user = $this->authenticator->authenticate($request);
-
-		// If we have a identity, then go to next middlewares,
-		// otherwise stop and return current response
-		if (!$user) {
-			return $this->denied($request, $response);
-		}
-
-		// Add info about current logged user to request attributes
-		$request = $request->withAttribute(RequestAttributes::APP_LOGGED_USER, $user);
-
-		// Pass to next middleware
-		return $next($request, $response);
 	}
 
 	protected function denied(ServerRequestInterface $request, ResponseInterface $response): ResponseInterface
@@ -69,6 +44,30 @@ class AuthenticationMiddleware implements IMiddleware
 		}
 
 		return false;
+	}
+
+	/**
+	 * Authenticate user from given request
+	 */
+	public function __invoke(ServerRequestInterface $request, ResponseInterface $response, callable $next): ResponseInterface
+	{
+		if ($this->isWhitelisted($request)) {
+			return $next($request, $response);
+		}
+
+		$user = $this->authenticator->authenticate($request);
+
+		// If we have a identity, then go to next middlewares,
+		// otherwise stop and return current response
+		if (!$user) {
+			return $this->denied($request, $response);
+		}
+
+		// Add info about current logged user to request attributes
+		$request = $request->withAttribute(RequestAttributes::APP_LOGGED_USER, $user);
+
+		// Pass to next middleware
+		return $next($request, $response);
 	}
 
 }

@@ -21,8 +21,7 @@ use Nette\Http\IResponse;
 class UserCreateController extends BaseV1Controller
 {
 
-	/** @var UsersFacade */
-	private $usersFacade;
+	private UsersFacade $usersFacade;
 
 	public function __construct(UsersFacade $usersFacade)
 	{

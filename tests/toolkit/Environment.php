@@ -58,10 +58,7 @@ class Environment
 		self::purge($tmpDir);
 	}
 
-	/**
-	 * @param mixed $value
-	 */
-	public static function setupVariable(string $variable, $value): void
+	public static function setupVariable(string $variable, mixed $value): void
 	{
 		define($variable, $value);
 	}

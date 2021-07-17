@@ -13,14 +13,14 @@ class SuperUser
 	 * @Groups({"user"})
 	 * @SerializedName("orders1")
 	 */
-	private $userOrders = [];
+	private array $userOrders = [];
 
 	/**
 	 * @var Order[]
 	 * @Groups({"admin"})
 	 * @SerializedName("orders2")
 	 */
-	private $adminOrders = [];
+	private array $adminOrders = [];
 
 	public function addUserOrder(Order $order): void
 	{

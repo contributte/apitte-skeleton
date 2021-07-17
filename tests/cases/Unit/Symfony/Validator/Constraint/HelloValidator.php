@@ -9,10 +9,9 @@ class HelloValidator extends ConstraintValidator
 {
 
 	/**
-	 * @param mixed $value
 	 * @param Hello $constraint
 	 */
-	public function validate($value, Constraint $constraint): void
+	public function validate(mixed $value, Constraint $constraint): void
 	{
 		if ($value !== 'hello') {
 			$this->context->buildViolation($constraint->message)

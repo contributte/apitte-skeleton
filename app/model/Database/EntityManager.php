@@ -12,14 +12,13 @@ class EntityManager extends EntityManagerDecorator
 	use TRepositories;
 
 	/**
-	 * @param string $entityName
 	 * @return AbstractRepository<T>|ObjectRepository<T>
 	 * @internal
 	 * @phpcsSuppress SlevomatCodingStandard.TypeHints.TypeHintDeclaration.MissingParameterTypeHint
 	 * @phpstan-template T
 	 * @phpstan-param class-string<T> $entityName
 	 */
-	public function getRepository($entityName): ObjectRepository
+	public function getRepository(string $entityName): ObjectRepository
 	{
 		return parent::getRepository($entityName);
 	}

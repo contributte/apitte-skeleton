@@ -8,23 +8,17 @@ use DateTimeInterface;
 final class UserResDto
 {
 
-	/** @var int */
-	public $id;
+	public int $id;
 
-	/** @var string */
-	public $email;
+	public string $email;
 
-	/** @var string */
-	public $name;
+	public string $name;
 
-	/** @var string */
-	public $surname;
+	public string $surname;
 
-	/** @var string */
-	public $fullname;
+	public string $fullname;
 
-	/** @var DateTimeInterface|null */
-	public $lastLoggedAt;
+	public ?DateTimeInterface $lastLoggedAt = null;
 
 	public static function from(User $user): self
 	{
