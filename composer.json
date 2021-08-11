@@ -14,7 +14,7 @@
   "license": "MIT",
   "type": "project",
   "require": {
-    "php": ">=7.4",
+    "php": ">=8.0",
 
     "contributte/bootstrap": "^0.5.0",
     "contributte/di": "^0.5.0",
