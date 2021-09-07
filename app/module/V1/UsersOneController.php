@@ -58,7 +58,7 @@ class UsersOneController extends BaseV1Controller
 	 * @Path("/{id}")
 	 * @Method("GET")
 	 * @RequestParameters({
-	 *      @RequestParameter(name="id", type="int", description="User ID")
+	 *      @RequestParameter(name="id", in="path", type="int", description="User ID")
 	 * })
 	 */
 	public function byId(ApiRequest $request): UserResDto

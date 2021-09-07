@@ -26,10 +26,10 @@
     "contributte/monolog": "^0.6.0",
     "contributte/neonizer": "^0.5.0",
 
-    "apitte/core": "^0.7.1",
-    "apitte/debug": "^0.7.0",
-    "apitte/middlewares": "^0.7.0",
-    "apitte/openapi": "^0.7.0",
+    "apitte/core": "^0.8.0",
+    "apitte/debug": "^0.8.0",
+    "apitte/middlewares": "^0.8.0",
+    "apitte/openapi": "^0.8.0",
 
     "nette/finder": "~2.5.1",
     "nette/robot-loader": "~3.4.0",
