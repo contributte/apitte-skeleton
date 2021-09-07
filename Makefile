@@ -27,7 +27,7 @@ build:
 	NETTE_DEBUG=1 bin/console doctrine:fixtures:load --no-interaction --append
 
 loc-api:
-	NETTE_DEBUG=1 NETTE_ENV=dev php -S 0.0.0.0:8000 www/index.php
+	NETTE_DEBUG=1 NETTE_ENV=dev php -S 0.0.0.0:8000 -t www www/index.php
 
 loc-api-prod:
 	NETTE_ENV=prod php -S 0.0.0.0:8000 www/index.php
