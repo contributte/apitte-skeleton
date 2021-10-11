@@ -3,7 +3,9 @@ parameters:
 
 	# Database
 	database:
-		host: localhost
-		dbname: apitte
-		user: apitte
-		password: apitte
+		driver: pdo_sqlite
+		host: test
+		dbname: test
+		user: test
+		password: test
+		port: 12345
