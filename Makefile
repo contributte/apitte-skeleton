@@ -39,6 +39,13 @@ loc-postgres-stop:
 	docker stop apitte_postgres || true
 	docker rm apitte_postgres || true
 
+loc-mariadb: loc-mariadb-stop
+	docker run -it -d -p 3306:3306 --name apitte_mariadb -e MARIADB_ROOT_PASSWORD=apitte -e MARIADB_PASSWORD=apitte -e MARIADB_USER=apitte -e MARIADB_DATABASE=apitte mariadb:10.4
+
+loc-mariadb-stop:
+	docker stop apitte_mariadb || true
+	docker rm apitte_mariadb || true
+
 loc-adminer: loc-adminer-stop
 	docker run -it -d -p 9999:80 --name apitte_adminer dockette/adminer:dg
 

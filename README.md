@@ -31,6 +31,7 @@ Main goal is to provide best prepared API starter-kit project for Nette-Apitte d
 Focused on:
 
 - latest PHP 8.0
+- postgres & mariadb
 - `nette/*` packages
 - build PSR-7 API via `apitte/*`
 - Doctrine ORM via `nettrine/*`
@@ -53,17 +54,27 @@ https://examples.contributte.org/apitte-skeleton/
 	composer create-project -s dev contributte/apitte-skeleton
 	```
 
-2) After that, you have to setup Postgres >= 10 database. You can start it manually or use docker image `postgres:10`.
+2) After that, you have to setup database.
 
-	```bash
-	docker run -it -p 5432:5432 -e POSTGRES_PASSWORD=apitte -e POSTGRES_USER=apitte postgres:10
-	```
+	1. Setup PostgreSQL 10. You can start it manually or use docker image `postgres:10`.
 
-    Or use make task, `make loc-postgres`.
+		```bash
+		docker run -it -p 5432:5432 -e POSTGRES_PASSWORD=apitte -e POSTGRES_USER=apitte postgres:10
+		```
+
+		Or use make task, `make loc-postgres`.
+
+	2. Setup MariaDB 10.4. You can start it manually or use docker image `mariadb:10.4`.
+
+		```bash
+		docker run -it -d -p 3306:3306 -e MARIADB_ROOT_PASSWORD=apitte -e MARIADB_PASSWORD=apitte -e MARIADB_USER=apitte -e MARIADB_DATABASE=apitte mariadb:10.4
+		```
+
+		Or use make task, `make loc-mariadb`.
 
 3) Custom configuration file is located at `app/config/config.local.neon`. Edit it if you want.
 
-    Default configuration should look like:
+	Default configuration should look like this. Pick PostgreSQL or MariaDB.
 
 	```neon
 	# Host Config
@@ -71,45 +82,57 @@ https://examples.contributte.org/apitte-skeleton/
 
 		# Database
 		database:
-			host: localhost
+
+			# Postgres
+			driver: pdo_pgsql
+			host: database
 			dbname: apitte
 			user: apitte
 			password: apitte
+			port: 5432
+
+			# MariaDB
+			driver: pdo_mysql
+			host: database
+			dbname: apitte
+			user: apitte
+			password: apitte
+			port: 3306
 	```
 
 4) Ok database is now running and application is configured to connect to it. Let's create initial data.
 
-    Run `NETTE_DEBUG=1 bin/console migrations:migrate` to create tables.
-    Run `NETTE_DEBUG=1 bin/console doctrine:fixtures:load --append` to create first user(s).
+	Run `NETTE_DEBUG=1 bin/console migrations:migrate` to create tables.
+	Run `NETTE_DEBUG=1 bin/console doctrine:fixtures:load --append` to create first user(s).
 
-    Or via task `make build`.
+	Or via task `make build`.
 
 5) Start your devstack or use PHP local development server.
 
-    You can start PHP server by running `php -S localhost:8000 -t www` or use prepared make task `make loc-api`.
+	You can start PHP server by running `php -S localhost:8000 -t www` or use prepared make task `make loc-api`.
 
 6) Open http://localhost and enjoy!
 
-    Take a look at:
-    - [GET] http://localhost:8000/api/public/v1/openapi/meta (Swagger format)
-    - [GET] http://localhost:8000/api/v1/users
-    - [GET] http://localhost:8000/api/v1/users?_access_token=admin
-    - [GET] http://localhost:8000/api/v1/users/1?_access_token=admin
-    - [GET] http://localhost:8000/api/v1/users/999?_access_token=admin
-    - [GET] http://localhost:8000/api/v1/users/email?email=admin@admin.cz&_access_token=admin
-    - [POST] http://localhost:8000/api/v1/users/create
+	Take a look at:
+	- [GET] http://localhost:8000/api/public/v1/openapi/meta (Swagger format)
+	- [GET] http://localhost:8000/api/v1/users
+	- [GET] http://localhost:8000/api/v1/users?_access_token=admin
+	- [GET] http://localhost:8000/api/v1/users/1?_access_token=admin
+	- [GET] http://localhost:8000/api/v1/users/999?_access_token=admin
+	- [GET] http://localhost:8000/api/v1/users/email?email=admin@admin.cz&_access_token=admin
+	- [POST] http://localhost:8000/api/v1/users/create
 
 ## Install with [docker compose](https://github.com/docker/compose)
 
 1) At first, use composer to install this project.
 
-    ```
-    composer create-project -s dev contributte/apitte-skeleton
-    ```
+	```
+	composer create-project -s dev contributte/apitte-skeleton
+	```
 
 2) Modify `app/config/config.local.neon` and set host to `database`
 
-    Default configuration should look like this:
+	Default configuration should look like this. There is preconfigured database. Pick PostgreSQL or MariaDB.
 
 	```neon
 	# Host Config
@@ -117,24 +140,36 @@ https://examples.contributte.org/apitte-skeleton/
 
 		# Database
 		database:
+
+			# Postgres
+			driver: pdo_pgsql
 			host: database
 			dbname: apitte
 			user: apitte
 			password: apitte
+			port: 5432
+
+			# MariaDB
+			driver: pdo_mysql
+			host: database
+			dbname: apitte
+			user: apitte
+			password: apitte
+			port: 3306
 	```
 
 3) Run `docker-compose up`
 
 4) Open http://localhost and enjoy!
 
-    Take a look at:
-    - [GET] http://localhost/api/public/v1/openapi/meta (Swagger format)
-    - [GET] http://localhost/api/v1/users
-    - [GET] http://localhost/api/v1/users?_access_token=admin
-    - [GET] http://localhost/api/v1/users/1?_access_token=admin
-    - [GET] http://localhost/api/v1/users/999?_access_token=admin
-    - [GET] http://localhost/api/v1/users/email?email=admin@admin.cz&_access_token=admin
-    - [POST] http://localhost/api/v1/users/create
+	Take a look at:
+	- [GET] http://localhost/api/public/v1/openapi/meta (Swagger format)
+	- [GET] http://localhost/api/v1/users
+	- [GET] http://localhost/api/v1/users?_access_token=admin
+	- [GET] http://localhost/api/v1/users/1?_access_token=admin
+	- [GET] http://localhost/api/v1/users/999?_access_token=admin
+	- [GET] http://localhost/api/v1/users/email?email=admin@admin.cz&_access_token=admin
+	- [POST] http://localhost/api/v1/users/create
 
 ## (Optional) REST API documentation
 
@@ -152,38 +187,38 @@ Here is a list of all features you can find in this project.
 
 - PHP 8.0+
 - :package: Packages
-    - Nette 3.0
-    - Apitte
-    - Contributte
-    - Nettrine
+	- Nette 3.0
+	- Apitte
+	- Contributte
+	- Nettrine
 - :deciduous_tree: Structure
-    - `app`
-        - `config` - configuration files
-            - `env` - prod/dev/test environments
-            - `app` - application configs
-            - `ext` - extensions configs
-            - `config.local.neon` - local runtime config
-            - `config.local.neon.dist` - template for local config
-        - `domain` - business logic and domain specific classes
-        - `model` - application backbone
-        - `module` - API module
-        - `resources` - static content for mails and others
-        - `bootstrap.php` - Nette entrypoint
-    - `bin` - console entrypoint (`bin/console`)
-    - `db` - database files
-        - `fixtures` - PHP fixtures
-        - `migrations` - migrations files
-    - `docs` - documentation
-    - `log` - runtime and error logs
-    - `temp` - temp files and cache
-    - `tests` - test engine and many cases
-        - `tests/cases/E2E` - PhpStorm's requests files (`api.http`)
-        - `tests/cases/Integration`
-        - `tests/cases/Unit`
-    - `vendor` - composer's folder
-    - `www` - public content
+	- `app`
+		- `config` - configuration files
+			- `env` - prod/dev/test environments
+			- `app` - application configs
+			- `ext` - extensions configs
+			- `config.local.neon` - local runtime config
+			- `config.local.neon.dist` - template for local config
+		- `domain` - business logic and domain specific classes
+		- `model` - application backbone
+		- `module` - API module
+		- `resources` - static content for mails and others
+		- `bootstrap.php` - Nette entrypoint
+	- `bin` - console entrypoint (`bin/console`)
+	- `db` - database files
+		- `fixtures` - PHP fixtures
+		- `migrations` - migrations files
+	- `docs` - documentation
+	- `log` - runtime and error logs
+	- `temp` - temp files and cache
+	- `tests` - test engine and many cases
+		- `tests/cases/E2E` - PhpStorm's requests files (`api.http`)
+		- `tests/cases/Integration`
+		- `tests/cases/Unit`
+	- `vendor` - composer's folder
+	- `www` - public content
 - :exclamation: Tracy
-    - Cool error 500 page
+	- Cool error 500 page
 
 ### Composer packages
 
@@ -237,7 +272,7 @@ See [how to contribute](https://contributte.org/contributing.html) to this packa
 This package is currently maintaining by these authors.
 
 <a href="https://github.com/f3l1x">
-    <img width="80" height="80" src="https://avatars2.githubusercontent.com/u/538058?v=3&s=80">
+	<img width="80" height="80" src="https://avatars2.githubusercontent.com/u/538058?v=3&s=80">
 </a>
 
 -----

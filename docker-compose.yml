@@ -6,7 +6,7 @@ services:
       context: .
       dockerfile: ./.docker/nginx/Dockerfile
     volumes:
-      - ./:/var/www/html/
+      - ./:/var/www/html:cached
       - ./.docker/nginx/nginx.conf:/etc/nginx/nginx.conf
       - ./.docker/nginx/sites/:/etc/nginx/sites-available
       - ./.docker/nginx/conf.d/:/etc/nginx/conf.d
@@ -20,30 +20,45 @@ services:
       context: .
       dockerfile: ./.docker/php/Dockerfile
     volumes:
-      - ./:/var/www/html/
+      - ./:/var/www/html:cached
     depends_on:
-      - database
+      - postgres
+      - mariadb
     environment:
       NETTE_DEBUG: 1
       PHP_EXTENSION_XDEBUG: 1
       PHP_EXTENSION_PGSQL: 1
       PHP_EXTENSION_PDO_PGSQL: 1
-      PHP_EXTENSION_MYSQLI: 0
+      PHP_EXTENSION_MYSQLI: 1
       STARTUP_COMMAND_1: composer install
       STARTUP_COMMAND_2: NETTE_DEBUG=1 php bin/console migrations:migrate --no-interaction
       STARTUP_COMMAND_3: NETTE_DEBUG=1 php bin/console doctrine:fixtures:load --no-interaction
-  database:
+
+  postgres:
     image: dockette/postgres:13
     environment:
       - POSTGRES_PASSWORD=apitte
       - POSTGRES_USER=apitte
       - POSTGRES_DB=apitte
     volumes:
-      - database-volume:/var/lib/postgresql/data
+      - .docker/data/postgres:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+
+  mariadb:
+    image: mariadb:10.4
+    environment:
+      - MARIADB_ROOT_PASSWORD=apitte
+      - MARIADB_PASSWORD=apitte
+      - MARIADB_USER=apitte
+      - MARIADB_DATABASE=apitte
+    volumes:
+      - .docker/data/mysql:/var/lib/mysql
+    ports:
+      - 3306:3306
+
   adminer:
     image: dockette/adminer:dg
     ports:
       - 8080:80
 
-volumes:
-  database-volume:

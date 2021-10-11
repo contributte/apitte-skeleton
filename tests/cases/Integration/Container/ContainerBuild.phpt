@@ -15,10 +15,12 @@ $parameters = [
 	'appDir' => $rootDir . '/app',
 	'wwwDir' => $rootDir . '/www',
 	'database' => [
+		'driver' => 'fake',
 		'host' => 'fake',
 		'user' => 'fake',
 		'password' => 'fake',
 		'dbname' => 'fake',
+		'port' => 'fake',
 	],
 ];
 
