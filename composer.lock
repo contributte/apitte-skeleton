@@ -5856,36 +5856,36 @@
         },
         {
             "name": "nelmio/alice",
-            "version": "v3.8.2",
+            "version": "v3.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nelmio/alice.git",
-                "reference": "b57f4c6f039baa72e2bd5b75fd8de77e1b9228e3"
+                "reference": "5a5bf0593131290e3709dbbd48829b23ea4d0d93"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nelmio/alice/zipball/b57f4c6f039baa72e2bd5b75fd8de77e1b9228e3",
-                "reference": "b57f4c6f039baa72e2bd5b75fd8de77e1b9228e3",
+                "url": "https://api.github.com/repos/nelmio/alice/zipball/5a5bf0593131290e3709dbbd48829b23ea4d0d93",
+                "reference": "5a5bf0593131290e3709dbbd48829b23ea4d0d93",
                 "shasum": ""
             },
             "require": {
                 "fakerphp/faker": "^1.10",
                 "myclabs/deep-copy": "^1.10",
-                "php": "^7.3 || ^8.0",
+                "php": "^7.4 || ^8.0",
                 "sebastian/comparator": "^3.0 || ^4.0",
-                "symfony/property-access": "^2.8 || ^3.4 || ^4.0 || ^5.0",
-                "symfony/yaml": "^2.8 || ^3.4 || ^4.0 || ^5.0"
+                "symfony/property-access": "^4.4 || ^5.2",
+                "symfony/yaml": "^4.4 || ^5.2"
             },
             "conflict": {
-                "symfony/framework-bundle": "<3.4"
+                "symfony/framework-bundle": "<4.4 || >=5.0.0,<5.2.0"
             },
             "require-dev": {
-                "bamarni/composer-bin-plugin": "^1.1.0",
+                "bamarni/composer-bin-plugin": "^1.4.1",
                 "phpspec/prophecy": "^1.6",
                 "phpspec/prophecy-phpunit": "^2.0",
-                "phpunit/phpunit": "^8.5.4 || ^9.3",
+                "phpunit/phpunit": "^9.3",
                 "symfony/phpunit-bridge": "^5.1.3",
-                "symfony/var-dumper": "^3.4 || ^4.0 || ^5.0"
+                "symfony/var-dumper": "^4.4 || ^5.2"
             },
             "suggest": {
                 "theofidry/alice-data-fixtures": "Wrapper for Alice to provide a persistence layer."
@@ -5934,7 +5934,7 @@
             ],
             "support": {
                 "issues": "https://github.com/nelmio/alice/issues",
-                "source": "https://github.com/nelmio/alice/tree/v3.8.2"
+                "source": "https://github.com/nelmio/alice/tree/v3.9.0"
             },
             "funding": [
                 {
@@ -5942,7 +5942,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-02-27T19:13:09+00:00"
+            "time": "2021-10-12T16:09:54+00:00"
         },
         {
             "name": "nette/tester",
@@ -6978,16 +6978,16 @@
         },
         {
             "name": "symfony/property-access",
-            "version": "v5.3.7",
+            "version": "v5.3.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/property-access.git",
-                "reference": "a4bbf09b8f3e2d2c89cc2c8b3d6682bf4c3d5589"
+                "reference": "2fbab5f95ddb6b8e85f38a6a8a04a17c0acc4d66"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/property-access/zipball/a4bbf09b8f3e2d2c89cc2c8b3d6682bf4c3d5589",
-                "reference": "a4bbf09b8f3e2d2c89cc2c8b3d6682bf4c3d5589",
+                "url": "https://api.github.com/repos/symfony/property-access/zipball/2fbab5f95ddb6b8e85f38a6a8a04a17c0acc4d66",
+                "reference": "2fbab5f95ddb6b8e85f38a6a8a04a17c0acc4d66",
                 "shasum": ""
             },
             "require": {
@@ -7039,7 +7039,7 @@
                 "reflection"
             ],
             "support": {
-                "source": "https://github.com/symfony/property-access/tree/v5.3.7"
+                "source": "https://github.com/symfony/property-access/tree/v5.3.8"
             },
             "funding": [
                 {
@@ -7055,7 +7055,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-08-09T12:23:10+00:00"
+            "time": "2021-09-10T11:55:24+00:00"
         },
         {
             "name": "symfony/yaml",
