@@ -38,12 +38,12 @@ class Bootstrap
 
 		// Load development or production config
 		if (getenv('NETTE_ENV', true) === 'dev') {
-			$configurator->addConfig(__DIR__ . '/config/env/dev.neon');
+			$configurator->addConfig(__DIR__ . '/../config/env/dev.neon');
 		} else {
-			$configurator->addConfig(__DIR__ . '/config/env/prod.neon');
+			$configurator->addConfig(__DIR__ . '/../config/env/prod.neon');
 		}
 
-		$configurator->addConfig(__DIR__ . '/config/config.local.neon');
+		$configurator->addConfig(__DIR__ . '/../config/local.neon');
 
 		return $configurator;
 	}

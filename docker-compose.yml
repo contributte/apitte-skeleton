@@ -30,7 +30,7 @@ services:
       PHP_EXTENSION_PGSQL: 1
       PHP_EXTENSION_PDO_PGSQL: 1
       PHP_EXTENSION_MYSQLI: 1
-      STARTUP_COMMAND_1: composer install
+      STARTUP_COMMAND_1: composer install && composer set-config -- config/local.neon --database.driver=pdo_pgsql --database.host=postgres --database.dbname=apitte --database.user=apitte --database.password=apitte --database.port=5432
       STARTUP_COMMAND_2: NETTE_DEBUG=1 php bin/console migrations:migrate --no-interaction
       STARTUP_COMMAND_3: NETTE_DEBUG=1 php bin/console doctrine:fixtures:load --no-interaction
 
@@ -61,4 +61,3 @@ services:
     image: dockette/adminer:dg
     ports:
       - 8080:80
-
