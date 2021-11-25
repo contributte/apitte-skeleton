@@ -80,6 +80,9 @@
     ],
     "post-update-cmd": [
       "Contributte\\Neonizer\\NeonizerExtension::process"
+    ],
+    "set-config": [
+      "Contributte\\Neonizer\\NeonizerExtension::set"
     ]
   },
   "extra": {

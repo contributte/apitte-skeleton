@@ -124,41 +124,17 @@ https://examples.contributte.org/apitte-skeleton/
 
 ## Install with [docker compose](https://github.com/docker/compose)
 
-1) At first, use composer to install this project.
+1) At first, use GIT to download this project.
 
-	```
-	composer create-project -s dev contributte/apitte-skeleton
-	```
+   ```
+   git clone https://github.com/contributte/apitte-skeleton.git
+   ```
 
-2) Modify `config/local.neon` and set host to `database`
+2) Run command:
 
-	Default configuration should look like this. There is preconfigured database. Pick PostgreSQL or MariaDB.
-
-	```neon
-	# Host Config
-	parameters:
-
-		# Database
-		database:
-
-			# Postgres
-			driver: pdo_pgsql
-			host: database
-			dbname: apitte
-			user: apitte
-			password: apitte
-			port: 5432
-
-			# MariaDB
-			driver: pdo_mysql
-			host: database
-			dbname: apitte
-			user: apitte
-			password: apitte
-			port: 3306
-	```
-
-3) Run `docker-compose up`
+   ```
+   docker-compose up
+   ```
 
 4) Open http://localhost and enjoy!
 
@@ -170,6 +146,8 @@ https://examples.contributte.org/apitte-skeleton/
 	- [GET] http://localhost/api/v1/users/999?_access_token=admin
 	- [GET] http://localhost/api/v1/users/email?email=admin@admin.cz&_access_token=admin
 	- [POST] http://localhost/api/v1/users/create
+
+If you need enter into container (such as `composer update`) run command `docker-compose run web bash`.
 
 ## (Optional) REST API documentation
 
