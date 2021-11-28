@@ -12,7 +12,7 @@ class Bootstrap
 	public static function boot(): Configurator
 	{
 		$configurator = new ExtraConfigurator();
-		$configurator->setTempDirectory(__DIR__ . '/../temp');
+		$configurator->setTempDirectory(__DIR__ . '/../var/tmp');
 
 		// Disable default extensions
 		unset($configurator->defaultExtensions['security']);
@@ -26,7 +26,7 @@ class Bootstrap
 		$configurator->setEnvDebugMode();
 
 		// Enable tracy and configure it
-		$configurator->enableTracy(__DIR__ . '/../log');
+		$configurator->enableTracy(__DIR__ . '/../var/log');
 		Debugger::$errorTemplate = __DIR__ . '/resources/tracy/500.txt';
 
 		// Provide some parameters
