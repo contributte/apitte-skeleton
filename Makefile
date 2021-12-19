@@ -1,11 +1,28 @@
-.PHONY: qa cs cfx phpstan tests build
+.PHONY: project install setup qa dev cs csf phpstan tests build
+
+############################################################
+# PROJECT ##################################################
+############################################################
+
+project: install setup
+
+install:
+	composer install
+
+setup:
+	mkdir -p var/{tmp,log}
+	chmod +0777 var/{tmp,log}
+
+############################################################
+# DEVELOPMENT ##############################################
+############################################################
 
 qa: cs phpstan
 
 cs:
 	vendor/bin/codesniffer app tests
 
-cfx:
+csf:
 	vendor/bin/codefixer app tests
 
 phpstan:
@@ -14,7 +31,7 @@ phpstan:
 tests:
 	vendor/bin/tester -s -p php --colors 1 -C tests
 
-tests-coverage:
+coverage:
 	vendor/bin/tester -s -p phpdbg --colors 1 -C --coverage ./coverage.xml --coverage-src ./app tests
 
 #####################
