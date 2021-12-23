@@ -56,13 +56,13 @@ https://examples.contributte.org/apitte-skeleton/
 
 2) After that, you have to setup database.
 
-	1. Setup PostgreSQL 10. You can start it manually or use docker image `postgres:10`.
+	1. Setup PostgreSQL 10. You can start it manually or use docker image `dockette/postgres:12`.
 
 		```bash
-		docker run -it -p 5432:5432 -e POSTGRES_PASSWORD=apitte -e POSTGRES_USER=apitte postgres:10
+		docker run -it -p 5432:5432 -e POSTGRES_PASSWORD=apitte -e POSTGRES_USER=apitte dockette/postgres:12
 		```
 
-		Or use make task, `make loc-postgres`.
+		Or use make task, `make docker-postgres`.
 
 	2. Setup MariaDB 10.4. You can start it manually or use docker image `mariadb:10.4`.
 
@@ -70,7 +70,7 @@ https://examples.contributte.org/apitte-skeleton/
 		docker run -it -d -p 3306:3306 -e MARIADB_ROOT_PASSWORD=apitte -e MARIADB_PASSWORD=apitte -e MARIADB_USER=apitte -e MARIADB_DATABASE=apitte mariadb:10.4
 		```
 
-		Or use make task, `make loc-mariadb`.
+		Or use make task, `make docker-mariadb`.
 
 3) Custom configuration file is located at `config/local.neon`. Edit it if you want.
 
@@ -109,7 +109,7 @@ https://examples.contributte.org/apitte-skeleton/
 
 5) Start your devstack or use PHP local development server.
 
-	You can start PHP server by running `php -S localhost:8000 -t www` or use prepared make task `make loc-api`.
+	You can start PHP server by running `php -S localhost:8000 -t www` or use prepared make task `make dev`.
 
 6) Open http://localhost and enjoy!
 
@@ -187,7 +187,7 @@ Here is a list of all features you can find in this project.
 
 - PHP 8.0+
 - :package: Packages
-	- Nette 3.0
+	- Nette 3+
 	- Apitte
 	- Contributte
 	- Nettrine
