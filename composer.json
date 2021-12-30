@@ -40,7 +40,7 @@
     "nettrine/migrations": "^0.7.0",
     "nettrine/fixtures": "^0.6.0",
 
-    "symfony/serializer": "^5.0.1",
+    "symfony/serializer": "^6.0.2",
     "symfony/validator": "^5.0.1",
     "symfony/property-info": "^6.0.0"
   },
