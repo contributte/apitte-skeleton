@@ -1,4 +1,4 @@
-<?php declare(strict_types=1);
+<?php declare(strict_types = 1);
 
 namespace App;
 
@@ -9,6 +9,7 @@ use Tracy\Debugger;
 
 class Bootstrap
 {
+
 	public static function boot(): Configurator
 	{
 		$configurator = new ExtraConfigurator();
@@ -47,4 +48,5 @@ class Bootstrap
 
 		return $configurator;
 	}
+
 }
