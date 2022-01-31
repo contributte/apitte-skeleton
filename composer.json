@@ -41,7 +41,7 @@
     "nettrine/fixtures": "^0.6.0",
 
     "symfony/serializer": "^6.0.2",
-    "symfony/validator": "^5.0.1",
+    "symfony/validator": "^6.0.3",
     "symfony/property-info": "^6.0.0"
   },
   "require-dev": {
