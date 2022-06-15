@@ -43,3 +43,5 @@ services:
 		tags: [middleware: [priority: 200]]
 
 	api.core.dispatcher: App\Model\Api\Dispatcher\JsonDispatcher
+
+	- App\Module\V1\StaticController(%static.text%)

@@ -7,3 +7,6 @@ parameters:
 		error:
 			email: dev@dev.dev
 			presenter: Front:Error
+
+	static:
+		text: "This is example of static text"
