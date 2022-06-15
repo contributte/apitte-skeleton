@@ -17,7 +17,7 @@
     "php": ">=8.0",
 
     "contributte/bootstrap": "^0.5.0",
-    "contributte/di": "^0.5.0",
+    "contributte/di": "^0.5.2",
     "contributte/http": "^0.4.0",
     "contributte/security": "^0.4.0",
     "contributte/utils": "^0.5.0",
