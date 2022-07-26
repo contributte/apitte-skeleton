@@ -120,6 +120,7 @@ https://examples.contributte.org/apitte-skeleton/
 	- [GET] http://localhost:8000/api/v1/users/1?_access_token=admin
 	- [GET] http://localhost:8000/api/v1/users/999?_access_token=admin
 	- [GET] http://localhost:8000/api/v1/users/email?email=admin@admin.cz&_access_token=admin
+	- [GET] http://localhost:8000/api/v1/static/text
 	- [POST] http://localhost:8000/api/v1/users/create
 
 ## Install with [docker compose](https://github.com/docker/compose)
