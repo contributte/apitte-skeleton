@@ -29,7 +29,7 @@ abstract class AbstractRepository extends EntityRepository
 			->resetDQLPart('from')
 			->from($this->getEntityName(), 'e', 'e.' . $key);
 
-		foreach ($criteria as $k => $v) {
+		foreach ($criteria as $v) {
 			if (is_array($v)) {
 				$qb->andWhere(sprintf('e.%s IN(:%s)', $key, $key))->setParameter($key, array_values($v));
 			} else {

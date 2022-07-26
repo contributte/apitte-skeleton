@@ -12,8 +12,6 @@ use Tests\Cases\Unit\Symfony\Validator\Mocks\UserPojo;
 
 require_once __DIR__ . '/../../../../bootstrap.php';
 
-AnnotationRegistry::registerUniqueLoader('class_exists');
-
 test(function (): void {
 	$validator = Validation::createValidator();
 	$violations = $validator->validate('Felix', [
@@ -42,6 +40,7 @@ test(function (): void {
 
 	$validator = Validation::createValidatorBuilder()
 		->enableAnnotationMapping()
+		->addDefaultDoctrineAnnotationReader()
 		->getValidator();
 
 	$violations = $validator->validate($user);

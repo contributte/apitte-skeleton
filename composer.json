@@ -42,7 +42,8 @@
 
     "symfony/serializer": "^6.0.2",
     "symfony/validator": "^6.0.3",
-    "symfony/property-info": "^6.0.0"
+    "symfony/property-info": "^6.0.0",
+    "symfony/cache": "^6.0.0"
   },
   "require-dev": {
     "ninjify/qa": "^0.13",
