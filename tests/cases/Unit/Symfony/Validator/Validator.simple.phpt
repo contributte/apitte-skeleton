@@ -2,7 +2,6 @@
 
 namespace Tests\Cases\Unit\Symfony\Validator;
 
-use Doctrine\Common\Annotations\AnnotationRegistry;
 use Symfony\Component\Validator\Constraints\Length;
 use Symfony\Component\Validator\Constraints\NotBlank;
 use Symfony\Component\Validator\Validation;
