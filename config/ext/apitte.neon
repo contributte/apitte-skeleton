@@ -36,11 +36,14 @@ services:
 	middleware.methodOverride:
 		factory: Contributte\Middlewares\MethodOverrideMiddleware
 		tags: [middleware: [priority: 150]]
+	middleware.cors:
+		factory: App\Model\Api\Middleware\CORSMiddleware
+		tags: [middleware: [priority: 200]]
 	middleware.authenticator:
 		factory: App\Model\Api\Middleware\AuthenticationMiddleware(
 			App\Model\Api\Security\TokenAuthenticator()
 		)
-		tags: [middleware: [priority: 200]]
+		tags: [middleware: [priority: 250]]
 
 	api.core.dispatcher: App\Model\Api\Dispatcher\JsonDispatcher
 
