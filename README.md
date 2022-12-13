@@ -243,13 +243,12 @@ Take a detailed look :eyes: at each single package.
 - [apitte/middlewares](https://contributte.org/packages/apitte/middlewares.html)
 - [apitte/openapi](https://contributte.org/packages/apitte/openapi.html)
 
-**Nettrine**
+**Doctrine**
 
-- [nettrine/orm](https://contributte.org/packages/nettrine/orm.html)
-- [nettrine/dbal](https://contributte.org/packages/nettrine/dbal.html)
-- [nettrine/migrations](https://contributte.org/packages/nettrine/migrations.html)
-- [nettrine/fixtures](https://contributte.org/packages/nettrine/fixtures.html)
-- [nettrine/extensions](https://contributte.org/packages/nettrine/extensions.html)
+- [contributte/doctrine-orm](https://contributte.org/packages/contributte/doctrine-orm.html)
+- [contributte/doctrine-dbal](https://contributte.org/packages/contributte/doctrine-dbal.html)
+- [contributte/doctrine-migrations](https://contributte.org/packages/contributte/doctrine-migrations.html)
+- [contributte/doctrine-fixtures](https://contributte.org/packages/contributte/doctrine-fixtures.html)
 
 **Nette**
 
