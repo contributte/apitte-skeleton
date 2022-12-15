@@ -31,7 +31,7 @@
     "apitte/middlewares": "^0.8.0",
     "apitte/openapi": "^0.8.0",
 
-    "nette/finder": "~2.5.1",
+    "nette/finder": "~2.6.0",
     "nette/robot-loader": "~3.4.0",
 
     "nettrine/annotations": "^0.7.0",
