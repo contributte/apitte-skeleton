@@ -5018,16 +5018,16 @@
         },
         {
             "name": "symfony/property-info",
-            "version": "v6.0.16",
+            "version": "v6.0.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/property-info.git",
-                "reference": "5124bab2d32d521c592159bd4d13235fa3da0fe7"
+                "reference": "a8593a44d1d3621c3fefd03bd6f1d10b26ca9ab2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/property-info/zipball/5124bab2d32d521c592159bd4d13235fa3da0fe7",
-                "reference": "5124bab2d32d521c592159bd4d13235fa3da0fe7",
+                "url": "https://api.github.com/repos/symfony/property-info/zipball/a8593a44d1d3621c3fefd03bd6f1d10b26ca9ab2",
+                "reference": "a8593a44d1d3621c3fefd03bd6f1d10b26ca9ab2",
                 "shasum": ""
             },
             "require": {
@@ -5040,7 +5040,7 @@
                 "symfony/dependency-injection": "<5.4"
             },
             "require-dev": {
-                "doctrine/annotations": "^1.10.4",
+                "doctrine/annotations": "^1.10.4|^2",
                 "phpdocumentor/reflection-docblock": "^5.2",
                 "phpstan/phpdoc-parser": "^1.0",
                 "symfony/cache": "^5.4|^6.0",
@@ -5087,7 +5087,7 @@
                 "validator"
             ],
             "support": {
-                "source": "https://github.com/symfony/property-info/tree/v6.0.16"
+                "source": "https://github.com/symfony/property-info/tree/v6.0.17"
             },
             "funding": [
                 {
@@ -5103,7 +5103,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-11-25T07:33:41+00:00"
+            "time": "2022-12-20T16:40:04+00:00"
         },
         {
             "name": "symfony/serializer",
@@ -5352,16 +5352,16 @@
         },
         {
             "name": "symfony/string",
-            "version": "v6.0.15",
+            "version": "v6.0.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/string.git",
-                "reference": "51ac0fa0ccf132a00519b87c97e8f775fa14e771"
+                "reference": "3f57003dd8a67ed76870cc03092f8501db7788d9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/string/zipball/51ac0fa0ccf132a00519b87c97e8f775fa14e771",
-                "reference": "51ac0fa0ccf132a00519b87c97e8f775fa14e771",
+                "url": "https://api.github.com/repos/symfony/string/zipball/3f57003dd8a67ed76870cc03092f8501db7788d9",
+                "reference": "3f57003dd8a67ed76870cc03092f8501db7788d9",
                 "shasum": ""
             },
             "require": {
@@ -5417,7 +5417,7 @@
                 "utf8"
             ],
             "support": {
-                "source": "https://github.com/symfony/string/tree/v6.0.15"
+                "source": "https://github.com/symfony/string/tree/v6.0.17"
             },
             "funding": [
                 {
@@ -5433,7 +5433,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-10-10T09:34:08+00:00"
+            "time": "2022-12-14T15:52:41+00:00"
         },
         {
             "name": "symfony/translation-contracts",
