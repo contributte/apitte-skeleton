@@ -3462,12 +3462,12 @@
             "version": "v0.7.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/nettrine/annotations.git",
+                "url": "https://github.com/contributte/doctrine-annotations.git",
                 "reference": "fbb06d156a4edcbf37e4154e5b4ede079136388b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nettrine/annotations/zipball/fbb06d156a4edcbf37e4154e5b4ede079136388b",
+                "url": "https://api.github.com/repos/contributte/doctrine-annotations/zipball/fbb06d156a4edcbf37e4154e5b4ede079136388b",
                 "reference": "fbb06d156a4edcbf37e4154e5b4ede079136388b",
                 "shasum": ""
             },
@@ -3520,9 +3520,19 @@
                 "nettrine"
             ],
             "support": {
-                "issues": "https://github.com/nettrine/annotations/issues",
-                "source": "https://github.com/nettrine/annotations/tree/v0.7.0"
+                "issues": "https://github.com/contributte/doctrine-annotations/issues",
+                "source": "https://github.com/contributte/doctrine-annotations/tree/v0.7.0"
             },
+            "funding": [
+                {
+                    "url": "https://contributte.org/partners.html",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/f3l1x",
+                    "type": "github"
+                }
+            ],
             "time": "2020-12-10T18:01:50+00:00"
         },
         {
@@ -3840,16 +3850,16 @@
         },
         {
             "name": "nettrine/orm",
-            "version": "v0.8.3",
+            "version": "v0.8.4",
             "source": {
                 "type": "git",
-                "url": "https://github.com/nettrine/orm.git",
-                "reference": "04bf4aca3897c12fcba3db3bc7aeb58e557de638"
+                "url": "https://github.com/contributte/doctrine-orm.git",
+                "reference": "d253e200217293ede49a4c4ca76c6e0d43b57242"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nettrine/orm/zipball/04bf4aca3897c12fcba3db3bc7aeb58e557de638",
-                "reference": "04bf4aca3897c12fcba3db3bc7aeb58e557de638",
+                "url": "https://api.github.com/repos/contributte/doctrine-orm/zipball/d253e200217293ede49a4c4ca76c6e0d43b57242",
+                "reference": "d253e200217293ede49a4c4ca76c6e0d43b57242",
                 "shasum": ""
             },
             "require": {
@@ -3897,7 +3907,7 @@
                 }
             ],
             "description": "Doctrine ORM for Nette Framework",
-            "homepage": "https://github.com/nettrine/orm",
+            "homepage": "https://github.com/contributte/doctrine-orm",
             "keywords": [
                 "database",
                 "doctrine",
@@ -3905,10 +3915,20 @@
                 "orm"
             ],
             "support": {
-                "issues": "https://github.com/nettrine/orm/issues",
-                "source": "https://github.com/nettrine/orm/tree/v0.8.3"
+                "issues": "https://github.com/contributte/doctrine-orm/issues",
+                "source": "https://github.com/contributte/doctrine-orm/tree/v0.8.4"
             },
-            "time": "2022-02-10T15:54:23+00:00"
+            "funding": [
+                {
+                    "url": "https://contributte.org/partners.html",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/f3l1x",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-12-27T18:27:01+00:00"
         },
         {
             "name": "psr/cache",
