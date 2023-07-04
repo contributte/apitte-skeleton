@@ -3,14 +3,13 @@
 namespace App;
 
 use Contributte\Bootstrap\ExtraConfigurator;
-use Nette\Configurator;
 use Nette\DI\Compiler;
 use Tracy\Debugger;
 
 class Bootstrap
 {
 
-	public static function boot(): Configurator
+	public static function boot(): ExtraConfigurator
 	{
 		$configurator = new ExtraConfigurator();
 		$configurator->setTempDirectory(__DIR__ . '/../var/tmp');
@@ -18,6 +17,7 @@ class Bootstrap
 		// Disable default extensions
 		unset($configurator->defaultExtensions['security']);
 
+		// @phpstan-ignore-next-line
 		$configurator->onCompile[] = function (ExtraConfigurator $configurator, Compiler $compiler): void {
 			// Add env variables to config structure
 			$compiler->addConfig(['parameters' => $configurator->getEnvironmentParameters()]);
@@ -28,10 +28,10 @@ class Bootstrap
 
 		// Enable tracy and configure it
 		$configurator->enableTracy(__DIR__ . '/../var/log');
-		Debugger::$errorTemplate = __DIR__ . '/resources/tracy/500.txt';
+		Debugger::$errorTemplate = __DIR__ . '/../resources/tracy/500.txt';
 
 		// Provide some parameters
-		$configurator->addParameters([
+		$configurator->addStaticParameters([
 			'rootDir' => realpath(__DIR__ . '/..'),
 			'appDir' => __DIR__,
 			'wwwDir' => realpath(__DIR__ . '/../www'),

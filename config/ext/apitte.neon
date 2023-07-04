@@ -8,7 +8,7 @@ extensions:
 resource:
 	resources:
 		App\Module\:
-			paths: [%appDir%/module]
+			paths: [%appDir%/Module]
 
 api:
 	debug: false

@@ -37,9 +37,9 @@ services:
   postgres:
     image: dockette/postgres:13
     environment:
-      - POSTGRES_PASSWORD=apitte
-      - POSTGRES_USER=apitte
-      - POSTGRES_DB=apitte
+      - POSTGRES_PASSWORD=contributte
+      - POSTGRES_USER=contributte
+      - POSTGRES_DB=contributte
     volumes:
       - .docker/data/postgres:/var/lib/postgresql/data
     ports:
@@ -48,10 +48,10 @@ services:
   mariadb:
     image: mariadb:10.4
     environment:
-      - MARIADB_ROOT_PASSWORD=apitte
-      - MARIADB_PASSWORD=apitte
-      - MARIADB_USER=apitte
-      - MARIADB_DATABASE=apitte
+      - MARIADB_ROOT_PASSWORD=contributte
+      - MARIADB_PASSWORD=contributte
+      - MARIADB_USER=contributte
+      - MARIADB_DATABASE=contributte
     volumes:
       - .docker/data/mysql:/var/lib/mysql
     ports:

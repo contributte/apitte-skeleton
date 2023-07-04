@@ -10,3 +10,7 @@ parameters:
 
 	static:
 		text: "This is example of static text"
+
+	database:
+		driver: pdo_pgsql
+		port: 5432

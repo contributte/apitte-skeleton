@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8416f8604199c911351622d616f24148",
+    "content-hash": "e42aa47a88a12c745f42b7bd66b2d797",
     "packages": [
         {
             "name": "apitte/core",
@@ -974,36 +974,37 @@
         },
         {
             "name": "contributte/tracy",
-            "version": "v0.5.1",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/tracy.git",
-                "reference": "eefc7596f348145c23ce81653b89a68b79653e67"
+                "reference": "9da92584dc3c0cf0dcc0689522b592627ebd8386"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/tracy/zipball/eefc7596f348145c23ce81653b89a68b79653e67",
-                "reference": "eefc7596f348145c23ce81653b89a68b79653e67",
+                "url": "https://api.github.com/repos/contributte/tracy/zipball/9da92584dc3c0cf0dcc0689522b592627ebd8386",
+                "reference": "9da92584dc3c0cf0dcc0689522b592627ebd8386",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.2",
-                "tracy/tracy": "^2.7.0"
+                "tracy/tracy": "^2.9.0"
             },
             "conflict": {
                 "nette/di": "<3.0.0"
             },
             "require-dev": {
-                "nette/application": "~3.0.0",
-                "nette/di": "~3.0.0",
-                "nette/http": "~3.0.1",
+                "nette/application": "^3.0.0",
+                "nette/di": "^3.0.0",
+                "nette/http": "^3.0.1",
                 "ninjify/nunjuck": "^0.4",
                 "ninjify/qa": "^0.12",
-                "phpstan/phpstan": "^0.12",
-                "phpstan/phpstan-deprecation-rules": "^0.12",
-                "phpstan/phpstan-nette": "^0.12",
-                "phpstan/phpstan-strict-rules": "^0.12"
+                "phpstan/phpstan": "^1.0",
+                "phpstan/phpstan-deprecation-rules": "^1.0",
+                "phpstan/phpstan-nette": "^1.0",
+                "phpstan/phpstan-strict-rules": "^1.0"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -1023,13 +1024,9 @@
                 {
                     "name": "Milan Felix Šulc",
                     "homepage": "https://f3l1x.io"
-                },
-                {
-                    "name": "Marek Bartoš",
-                    "homepage": "https://marek-bartos.cz"
                 }
             ],
-            "description": "Tuned Tracy Bars/Panels/BlueScreens for easy-developing",
+            "description": "Nette Tracy extensions for easy-developing",
             "homepage": "https://github.com/contributte/tracy",
             "keywords": [
                 "bluescreen",
@@ -1041,27 +1038,37 @@
             ],
             "support": {
                 "issues": "https://github.com/contributte/tracy/issues",
-                "source": "https://github.com/contributte/tracy/tree/v0.5.1"
+                "source": "https://github.com/contributte/tracy/tree/master"
             },
-            "time": "2020-12-19T17:38:47+00:00"
+            "funding": [
+                {
+                    "url": "https://contributte.org/partners.html",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/f3l1x",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-09-28T12:51:12+00:00"
         },
         {
             "name": "contributte/utils",
-            "version": "v0.5.2",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/utils.git",
-                "reference": "e2d9c380dbb179cf15a66555924ab2792b2c1769"
+                "reference": "f9796645d3cc2b0fa75ee5de0e35d24421feb35e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/utils/zipball/e2d9c380dbb179cf15a66555924ab2792b2c1769",
-                "reference": "e2d9c380dbb179cf15a66555924ab2792b2c1769",
+                "url": "https://api.github.com/repos/contributte/utils/zipball/f9796645d3cc2b0fa75ee5de0e35d24421feb35e",
+                "reference": "f9796645d3cc2b0fa75ee5de0e35d24421feb35e",
                 "shasum": ""
             },
             "require": {
-                "nette/utils": "^3.0.1",
-                "php": ">=7.2"
+                "nette/utils": "^3.2.9 || ^4.0.0",
+                "php": ">=8.0"
             },
             "conflict": {
                 "nette/di": "<3.0.0"
@@ -1078,6 +1085,7 @@
             "suggest": {
                 "nette/di": "to use DateTimeExtension[CompilerExtension]"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -1110,7 +1118,7 @@
             ],
             "support": {
                 "issues": "https://github.com/contributte/utils/issues",
-                "source": "https://github.com/contributte/utils/tree/v0.5.2"
+                "source": "https://github.com/contributte/utils/tree/master"
             },
             "funding": [
                 {
@@ -1122,7 +1130,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-12-26T13:10:34+00:00"
+            "time": "2023-04-25T12:54:31+00:00"
         },
         {
             "name": "doctrine/annotations",
@@ -5678,35 +5686,41 @@
     "packages-dev": [
         {
             "name": "contributte/dev",
-            "version": "v0.3",
+            "version": "v0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/dev.git",
-                "reference": "2f583ab44c082d4fd09db57db3906cb0c48706e4"
+                "reference": "ad662e623a4d3d7e98b4d647eb4a6681f7c0ae1b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/dev/zipball/2f583ab44c082d4fd09db57db3906cb0c48706e4",
-                "reference": "2f583ab44c082d4fd09db57db3906cb0c48706e4",
+                "url": "https://api.github.com/repos/contributte/dev/zipball/ad662e623a4d3d7e98b4d647eb4a6681f7c0ae1b",
+                "reference": "ad662e623a4d3d7e98b4d647eb4a6681f7c0ae1b",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.2"
+                "contributte/tracy": "^0.6.0",
+                "contributte/utils": "^0.6.0",
+                "php": ">=8.1"
             },
             "require-dev": {
-                "ninjify/nunjuck": "^0.4",
-                "ninjify/qa": "^0.12"
+                "contributte/phpstan": "^0.1.0",
+                "contributte/phpunit": "^0.1.0",
+                "contributte/qa": "^0.4.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.4.x-dev"
+                    "dev-master": "0.5.x-dev"
                 }
             },
             "autoload": {
                 "files": [
                     "src/shortcuts.php"
-                ]
+                ],
+                "psr-4": {
+                    "Contributte\\Dev\\": "src"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -5718,50 +5732,280 @@
                     "homepage": "https://f3l1x.io"
                 }
             ],
-            "description": "Tools for development",
+            "description": "Tools for development with Nette and Tracy",
             "homepage": "https://github.com/contributte/dev",
             "keywords": [
+                "debugger",
                 "development",
+                "functions",
                 "nette",
                 "shortcuts"
             ],
             "support": {
                 "issues": "https://github.com/contributte/dev/issues",
-                "source": "https://github.com/contributte/dev/tree/v0.3"
+                "source": "https://github.com/contributte/dev/tree/v0.4"
             },
-            "time": "2020-12-13T18:46:03+00:00"
+            "funding": [
+                {
+                    "url": "https://contributte.org/partners.html",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/f3l1x",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-06-09T19:56:08+00:00"
         },
         {
-            "name": "dealerdirect/phpcodesniffer-composer-installer",
-            "version": "v0.7.2",
+            "name": "contributte/phpstan",
+            "version": "v0.1.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/Dealerdirect/phpcodesniffer-composer-installer.git",
-                "reference": "1c968e542d8843d7cd71de3c5c9c3ff3ad71a1db"
+                "url": "https://github.com/contributte/phpstan.git",
+                "reference": "12731b3619c55d31bdbae73f814d6b7ee976c1e3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Dealerdirect/phpcodesniffer-composer-installer/zipball/1c968e542d8843d7cd71de3c5c9c3ff3ad71a1db",
-                "reference": "1c968e542d8843d7cd71de3c5c9c3ff3ad71a1db",
+                "url": "https://api.github.com/repos/contributte/phpstan/zipball/12731b3619c55d31bdbae73f814d6b7ee976c1e3",
+                "reference": "12731b3619c55d31bdbae73f814d6b7ee976c1e3",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0",
+                "phpstan/phpstan": "^1.10.15",
+                "phpstan/phpstan-deprecation-rules": "^1.1.3",
+                "phpstan/phpstan-nette": "^1.2.9",
+                "phpstan/phpstan-strict-rules": "^1.5.1"
+            },
+            "require-dev": {
+                "contributte/qa": "^0.4",
+                "contributte/tester": "^0.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.2.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Contributte\\Phpstan\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Milan Felix Šulc",
+                    "homepage": "https://f3l1x.io"
+                }
+            ],
+            "description": "Opinionated set of phpstan extensions & rules for all fans.",
+            "homepage": "https://github.com/contributte/phpstan",
+            "keywords": [
+                "PHPStan",
+                "contributte",
+                "extensions",
+                "rules",
+                "strict"
+            ],
+            "support": {
+                "issues": "https://github.com/contributte/phpstan/issues",
+                "source": "https://github.com/contributte/phpstan/tree/v0.1.0"
+            },
+            "funding": [
+                {
+                    "url": "https://contributte.org/partners.html",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/f3l1x",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-06-04T12:37:12+00:00"
+        },
+        {
+            "name": "contributte/qa",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/contributte/qa.git",
+                "reference": "84e8f837975fb1515fdc8dc94e185c9be31dc0bf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/contributte/qa/zipball/84e8f837975fb1515fdc8dc94e185c9be31dc0bf",
+                "reference": "84e8f837975fb1515fdc8dc94e185c9be31dc0bf",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0",
+                "slevomat/coding-standard": "^8.12.1",
+                "squizlabs/php_codesniffer": "^3.6.1"
+            },
+            "require-dev": {
+                "contributte/tester": "^0.1.0",
+                "symfony/process": "^6.0.0"
+            },
+            "default-branch": true,
+            "bin": [
+                "bin/codesniffer",
+                "bin/codefixer"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.4.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Milan Felix Šulc",
+                    "homepage": "https://f3l1x.io"
+                }
+            ],
+            "description": "Tuned & very strict coding standards for PHP projects. Trusted by Contributte, Apitte, Nettrine and many others.",
+            "homepage": "https://github.com/contributte/qa",
+            "keywords": [
+                "Codestyle",
+                "codesniffer",
+                "contributte",
+                "qa",
+                "quality assurance"
+            ],
+            "support": {
+                "issues": "https://github.com/contributte/qa/issues",
+                "source": "https://github.com/contributte/qa/tree/master"
+            },
+            "funding": [
+                {
+                    "url": "https://contributte.org/partners.html",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/f3l1x",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-05-30T17:22:23+00:00"
+        },
+        {
+            "name": "contributte/tester",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/contributte/tester.git",
+                "reference": "04c34962e21fcfce0196b81a2e93b57fef01f7e4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/contributte/tester/zipball/04c34962e21fcfce0196b81a2e93b57fef01f7e4",
+                "reference": "04c34962e21fcfce0196b81a2e93b57fef01f7e4",
+                "shasum": ""
+            },
+            "require": {
+                "nette/tester": "^2.5.0",
+                "php": ">=8.0"
+            },
+            "require-dev": {
+                "contributte/phpstan": "^0.1.0",
+                "contributte/qa": "^0.4.0",
+                "nette/di": "^3.1.2",
+                "nette/neon": "^3.4.0",
+                "nette/robot-loader": "^3.4.2"
+            },
+            "suggest": {
+                "nette/di": "for NEON handling",
+                "nette/neon": "for NEON handling",
+                "nette/robot-loader": "for class finding"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Contributte\\Tester\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Milan Felix Šulc",
+                    "homepage": "https://f3l1x.io"
+                }
+            ],
+            "description": "Nette Tester with extra horse power",
+            "homepage": "https://github.com/contributte/tester",
+            "keywords": [
+                "nette",
+                "php",
+                "tester"
+            ],
+            "support": {
+                "issues": "https://github.com/contributte/tester/issues",
+                "source": "https://github.com/contributte/tester/tree/master"
+            },
+            "funding": [
+                {
+                    "url": "https://contributte.org/partners.html",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/f3l1x",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-06-10T14:00:48+00:00"
+        },
+        {
+            "name": "dealerdirect/phpcodesniffer-composer-installer",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PHPCSStandards/composer-installer.git",
+                "reference": "4be43904336affa5c2f70744a348312336afd0da"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PHPCSStandards/composer-installer/zipball/4be43904336affa5c2f70744a348312336afd0da",
+                "reference": "4be43904336affa5c2f70744a348312336afd0da",
                 "shasum": ""
             },
             "require": {
                 "composer-plugin-api": "^1.0 || ^2.0",
-                "php": ">=5.3",
+                "php": ">=5.4",
                 "squizlabs/php_codesniffer": "^2.0 || ^3.1.0 || ^4.0"
             },
             "require-dev": {
                 "composer/composer": "*",
+                "ext-json": "*",
+                "ext-zip": "*",
                 "php-parallel-lint/php-parallel-lint": "^1.3.1",
-                "phpcompatibility/php-compatibility": "^9.0"
+                "phpcompatibility/php-compatibility": "^9.0",
+                "yoast/phpunit-polyfills": "^1.0"
             },
             "type": "composer-plugin",
             "extra": {
-                "class": "Dealerdirect\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\Plugin"
+                "class": "PHPCSStandards\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\Plugin"
             },
             "autoload": {
                 "psr-4": {
-                    "Dealerdirect\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\": "src/"
+                    "PHPCSStandards\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -5777,7 +6021,7 @@
                 },
                 {
                     "name": "Contributors",
-                    "homepage": "https://github.com/Dealerdirect/phpcodesniffer-composer-installer/graphs/contributors"
+                    "homepage": "https://github.com/PHPCSStandards/composer-installer/graphs/contributors"
                 }
             ],
             "description": "PHP_CodeSniffer Standards Composer Installer Plugin",
@@ -5801,10 +6045,10 @@
                 "tests"
             ],
             "support": {
-                "issues": "https://github.com/dealerdirect/phpcodesniffer-composer-installer/issues",
-                "source": "https://github.com/dealerdirect/phpcodesniffer-composer-installer"
+                "issues": "https://github.com/PHPCSStandards/composer-installer/issues",
+                "source": "https://github.com/PHPCSStandards/composer-installer"
             },
-            "time": "2022-02-04T12:51:07+00:00"
+            "time": "2023-01-05T11:28:13+00:00"
         },
         {
             "name": "fakerphp/faker",
@@ -6232,263 +6476,6 @@
             "time": "2023-03-02T02:14:46+00:00"
         },
         {
-            "name": "ninjify/coding-standard",
-            "version": "v0.12.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/ninjify/coding-standard.git",
-                "reference": "c655eedbe1b4f9b307e9941ad347f9078fbdd58a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/ninjify/coding-standard/zipball/c655eedbe1b4f9b307e9941ad347f9078fbdd58a",
-                "reference": "c655eedbe1b4f9b307e9941ad347f9078fbdd58a",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.2",
-                "slevomat/coding-standard": "^7.0.18",
-                "squizlabs/php_codesniffer": "^3.5.8"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.13.x-dev"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Milan Felix Šulc",
-                    "homepage": "https://f3l1x.io"
-                }
-            ],
-            "description": "Tuned & very strict coding standards for PHP projects. Trusted by Contributte, Apitte, Nettrine and many others.",
-            "homepage": "https://github.com/ninjify/coding-standard",
-            "keywords": [
-                "Codestyle",
-                "codesniffer",
-                "ninjify",
-                "php"
-            ],
-            "support": {
-                "issues": "https://github.com/ninjify/coding-standard/issues",
-                "source": "https://github.com/ninjify/coding-standard/tree/v0.12.1"
-            },
-            "funding": [
-                {
-                    "url": "https://contributte.org/partners.html",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/f3l1x",
-                    "type": "github"
-                }
-            ],
-            "time": "2022-02-11T14:34:15+00:00"
-        },
-        {
-            "name": "ninjify/nunjuck",
-            "version": "v0.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/ninjify/nunjuck.git",
-                "reference": "4768a7db2f76ab662061b977a05b5aebc2b7bb45"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/ninjify/nunjuck/zipball/4768a7db2f76ab662061b977a05b5aebc2b7bb45",
-                "reference": "4768a7db2f76ab662061b977a05b5aebc2b7bb45",
-                "shasum": ""
-            },
-            "require": {
-                "nette/tester": "^2.4.3",
-                "php": ">=7.2"
-            },
-            "require-dev": {
-                "janmarek/mockista": "^1.1.0",
-                "mockery/mockery": "^1.2.2",
-                "nette/di": "~3.0.0",
-                "nette/robot-loader": "~3.2",
-                "ninjify/qa": "^0.12",
-                "phpstan/phpstan": "^0.12",
-                "phpstan/phpstan-deprecation-rules": "^0.12",
-                "phpstan/phpstan-nette": "^0.12",
-                "phpstan/phpstan-strict-rules": "^0.12"
-            },
-            "suggest": {
-                "janmarek/mockista": "to use BaseMockistaTestCase",
-                "mockery/mockery": "to use BaseMockeryTestCase",
-                "nette/di": "to use BaseContainerTestCase"
-            },
-            "bin": [
-                "bin/nunjuck",
-                "bin/nunjuck-setup"
-            ],
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.4.x-dev"
-                }
-            },
-            "autoload": {
-                "files": [
-                    "src/functions.php"
-                ],
-                "psr-4": {
-                    "Ninjify\\Nunjuck\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Milan Felix Šulc",
-                    "homepage": "https://f3l1x.io"
-                }
-            ],
-            "description": "Special tuned version of nette/tester for your PHP projects",
-            "homepage": "https://github.com/ninjify/nunjuck",
-            "keywords": [
-                "nette",
-                "php",
-                "tester"
-            ],
-            "support": {
-                "issues": "https://github.com/ninjify/nunjuck/issues",
-                "source": "https://github.com/ninjify/nunjuck/tree/v0.4.0"
-            },
-            "time": "2023-03-14T13:58:17+00:00"
-        },
-        {
-            "name": "ninjify/qa",
-            "version": "v0.13.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/ninjify/qa.git",
-                "reference": "9080dc0b8c28ba9b984e451f99654212288e60bb"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/ninjify/qa/zipball/9080dc0b8c28ba9b984e451f99654212288e60bb",
-                "reference": "9080dc0b8c28ba9b984e451f99654212288e60bb",
-                "shasum": ""
-            },
-            "require": {
-                "ninjify/coding-standard": "^0.12.0",
-                "php": ">=7.2",
-                "php-parallel-lint/php-parallel-lint": "^1.2.0"
-            },
-            "bin": [
-                "bin/codesniffer",
-                "bin/codefixer",
-                "bin/linter"
-            ],
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.13.x-dev"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Milan Felix Šulc",
-                    "homepage": "https://f3l1x.io"
-                }
-            ],
-            "description": "Quality assurance for your PHP projects",
-            "homepage": "https://github.com/ninjify/qa",
-            "keywords": [
-                "assurance",
-                "codesniffer",
-                "linter",
-                "nette",
-                "php",
-                "quality"
-            ],
-            "support": {
-                "issues": "https://github.com/ninjify/qa/issues",
-                "source": "https://github.com/ninjify/qa/tree/v0.13.0"
-            },
-            "funding": [
-                {
-                    "url": "https://contributte.org/partners.html",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/f3l1x",
-                    "type": "github"
-                }
-            ],
-            "time": "2022-01-08T13:15:44+00:00"
-        },
-        {
-            "name": "php-parallel-lint/php-parallel-lint",
-            "version": "v1.3.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/php-parallel-lint/PHP-Parallel-Lint.git",
-                "reference": "6483c9832e71973ed29cf71bd6b3f4fde438a9de"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/php-parallel-lint/PHP-Parallel-Lint/zipball/6483c9832e71973ed29cf71bd6b3f4fde438a9de",
-                "reference": "6483c9832e71973ed29cf71bd6b3f4fde438a9de",
-                "shasum": ""
-            },
-            "require": {
-                "ext-json": "*",
-                "php": ">=5.3.0"
-            },
-            "replace": {
-                "grogy/php-parallel-lint": "*",
-                "jakub-onderka/php-parallel-lint": "*"
-            },
-            "require-dev": {
-                "nette/tester": "^1.3 || ^2.0",
-                "php-parallel-lint/php-console-highlighter": "0.* || ^1.0",
-                "squizlabs/php_codesniffer": "^3.6"
-            },
-            "suggest": {
-                "php-parallel-lint/php-console-highlighter": "Highlight syntax in code snippet"
-            },
-            "bin": [
-                "parallel-lint"
-            ],
-            "type": "library",
-            "autoload": {
-                "classmap": [
-                    "./src/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-2-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Jakub Onderka",
-                    "email": "ahoj@jakubonderka.cz"
-                }
-            ],
-            "description": "This tool check syntax of PHP files about 20x faster than serial check.",
-            "homepage": "https://github.com/php-parallel-lint/PHP-Parallel-Lint",
-            "support": {
-                "issues": "https://github.com/php-parallel-lint/PHP-Parallel-Lint/issues",
-                "source": "https://github.com/php-parallel-lint/PHP-Parallel-Lint/tree/v1.3.2"
-            },
-            "time": "2022-02-21T12:50:22+00:00"
-        },
-        {
             "name": "phpstan/phpdoc-parser",
             "version": "1.22.1",
             "source": {
@@ -6596,6 +6583,54 @@
                 }
             ],
             "time": "2023-06-30T20:04:11+00:00"
+        },
+        {
+            "name": "phpstan/phpstan-deprecation-rules",
+            "version": "1.1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpstan/phpstan-deprecation-rules.git",
+                "reference": "a22b36b955a2e9a3d39fe533b6c1bb5359f9c319"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpstan/phpstan-deprecation-rules/zipball/a22b36b955a2e9a3d39fe533b6c1bb5359f9c319",
+                "reference": "a22b36b955a2e9a3d39fe533b6c1bb5359f9c319",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2 || ^8.0",
+                "phpstan/phpstan": "^1.10"
+            },
+            "require-dev": {
+                "php-parallel-lint/php-parallel-lint": "^1.2",
+                "phpstan/phpstan-php-parser": "^1.1",
+                "phpstan/phpstan-phpunit": "^1.0",
+                "phpunit/phpunit": "^9.5"
+            },
+            "type": "phpstan-extension",
+            "extra": {
+                "phpstan": {
+                    "includes": [
+                        "rules.neon"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "PHPStan\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "PHPStan rules for detecting usage of deprecated classes, methods, properties, constants and traits.",
+            "support": {
+                "issues": "https://github.com/phpstan/phpstan-deprecation-rules/issues",
+                "source": "https://github.com/phpstan/phpstan-deprecation-rules/tree/1.1.3"
+            },
+            "time": "2023-03-17T07:50:08+00:00"
         },
         {
             "name": "phpstan/phpstan-doctrine",
@@ -6730,37 +6765,34 @@
             "time": "2023-04-12T14:11:53+00:00"
         },
         {
-            "name": "phpstan/phpstan-phpunit",
-            "version": "1.3.13",
+            "name": "phpstan/phpstan-strict-rules",
+            "version": "1.5.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/phpstan/phpstan-phpunit.git",
-                "reference": "d8bdab0218c5eb0964338d24a8511b65e9c94fa5"
+                "url": "https://github.com/phpstan/phpstan-strict-rules.git",
+                "reference": "b21c03d4f6f3a446e4311155f4be9d65048218e6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan-phpunit/zipball/d8bdab0218c5eb0964338d24a8511b65e9c94fa5",
-                "reference": "d8bdab0218c5eb0964338d24a8511b65e9c94fa5",
+                "url": "https://api.github.com/repos/phpstan/phpstan-strict-rules/zipball/b21c03d4f6f3a446e4311155f4be9d65048218e6",
+                "reference": "b21c03d4f6f3a446e4311155f4be9d65048218e6",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.2 || ^8.0",
                 "phpstan/phpstan": "^1.10"
             },
-            "conflict": {
-                "phpunit/phpunit": "<7.0"
-            },
             "require-dev": {
                 "nikic/php-parser": "^4.13.0",
                 "php-parallel-lint/php-parallel-lint": "^1.2",
-                "phpstan/phpstan-strict-rules": "^1.0",
+                "phpstan/phpstan-deprecation-rules": "^1.1",
+                "phpstan/phpstan-phpunit": "^1.0",
                 "phpunit/phpunit": "^9.5"
             },
             "type": "phpstan-extension",
             "extra": {
                 "phpstan": {
                     "includes": [
-                        "extension.neon",
                         "rules.neon"
                     ]
                 }
@@ -6774,12 +6806,12 @@
             "license": [
                 "MIT"
             ],
-            "description": "PHPUnit extensions and rules for PHPStan",
+            "description": "Extra strict and opinionated rules for PHPStan",
             "support": {
-                "issues": "https://github.com/phpstan/phpstan-phpunit/issues",
-                "source": "https://github.com/phpstan/phpstan-phpunit/tree/1.3.13"
+                "issues": "https://github.com/phpstan/phpstan-strict-rules/issues",
+                "source": "https://github.com/phpstan/phpstan-strict-rules/tree/1.5.1"
             },
-            "time": "2023-05-26T11:05:59+00:00"
+            "time": "2023-03-29T14:47:40+00:00"
         },
         {
             "name": "sebastian/comparator",
@@ -7066,42 +7098,42 @@
         },
         {
             "name": "slevomat/coding-standard",
-            "version": "7.2.1",
+            "version": "8.13.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/slevomat/coding-standard.git",
-                "reference": "aff06ae7a84e4534bf6f821dc982a93a5d477c90"
+                "reference": "a13c15e20f2d307a1ca8dec5313ec462a4466470"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/slevomat/coding-standard/zipball/aff06ae7a84e4534bf6f821dc982a93a5d477c90",
-                "reference": "aff06ae7a84e4534bf6f821dc982a93a5d477c90",
+                "url": "https://api.github.com/repos/slevomat/coding-standard/zipball/a13c15e20f2d307a1ca8dec5313ec462a4466470",
+                "reference": "a13c15e20f2d307a1ca8dec5313ec462a4466470",
                 "shasum": ""
             },
             "require": {
-                "dealerdirect/phpcodesniffer-composer-installer": "^0.6.2 || ^0.7",
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.6.2 || ^0.7 || ^1.0",
                 "php": "^7.2 || ^8.0",
-                "phpstan/phpdoc-parser": "^1.5.1",
-                "squizlabs/php_codesniffer": "^3.6.2"
+                "phpstan/phpdoc-parser": "^1.22.0",
+                "squizlabs/php_codesniffer": "^3.7.1"
             },
             "require-dev": {
-                "phing/phing": "2.17.3",
+                "phing/phing": "2.17.4",
                 "php-parallel-lint/php-parallel-lint": "1.3.2",
-                "phpstan/phpstan": "1.4.10|1.7.1",
-                "phpstan/phpstan-deprecation-rules": "1.0.0",
-                "phpstan/phpstan-phpunit": "1.0.0|1.1.1",
-                "phpstan/phpstan-strict-rules": "1.2.3",
-                "phpunit/phpunit": "7.5.20|8.5.21|9.5.20"
+                "phpstan/phpstan": "1.10.21",
+                "phpstan/phpstan-deprecation-rules": "1.1.3",
+                "phpstan/phpstan-phpunit": "1.3.13",
+                "phpstan/phpstan-strict-rules": "1.5.1",
+                "phpunit/phpunit": "7.5.20|8.5.21|9.6.8|10.2.2"
             },
             "type": "phpcodesniffer-standard",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "7.x-dev"
+                    "dev-master": "8.x-dev"
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "SlevomatCodingStandard\\": "SlevomatCodingStandard"
+                    "SlevomatCodingStandard\\": "SlevomatCodingStandard/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -7109,9 +7141,13 @@
                 "MIT"
             ],
             "description": "Slevomat Coding Standard for PHP_CodeSniffer complements Consistence Coding Standard by providing sniffs with additional checks.",
+            "keywords": [
+                "dev",
+                "phpcs"
+            ],
             "support": {
                 "issues": "https://github.com/slevomat/coding-standard/issues",
-                "source": "https://github.com/slevomat/coding-standard/tree/7.2.1"
+                "source": "https://github.com/slevomat/coding-standard/tree/8.13.1"
             },
             "funding": [
                 {
@@ -7123,7 +7159,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-05-25T10:58:12+00:00"
+            "time": "2023-06-25T12:52:34+00:00"
         },
         {
             "name": "squizlabs/php_codesniffer",
@@ -7337,7 +7373,7 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=8.0"
+        "php": ">=8.1"
     },
     "platform-dev": [],
     "plugin-api-version": "2.3.0"

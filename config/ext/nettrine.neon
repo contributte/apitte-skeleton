@@ -30,21 +30,18 @@ nettrine.dbal:
 		password: %database.password%
 		dbname: %database.dbname%
 		port: %database.port%
+		serverVersion: 12
 
 nettrine.orm:
-	entityManagerDecoratorClass: App\Model\Database\EntityManager
+	entityManagerDecoratorClass: App\Model\Database\EntityManagerDecorator
 	configuration:
 		autoGenerateProxyClasses: %debugMode%
 
 nettrine.orm.annotations:
-	mapping: [
-		App\Model\Database\Entity: %appDir%/model/Database/Entity
-	]
+	mapping:
+		App\Domain: %appDir%/Domain
 
 nettrine.orm.cache:
-
-nettrine.cache:
-#	driver: Doctrine\Common\Cache\ApcuCache
 
 nettrine.migrations:
 	table: doctrine_migrations

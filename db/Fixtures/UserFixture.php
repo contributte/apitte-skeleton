@@ -2,7 +2,7 @@
 
 namespace Database\Fixtures;
 
-use App\Model\Database\Entity\User;
+use App\Domain\User\User;
 use App\Model\Fixtures\ReflectionLoader;
 use App\Model\Security\Passwords;
 use Doctrine\Persistence\ObjectManager;
@@ -22,14 +22,14 @@ class UserFixture extends AbstractFixture
 	{
 		$this->manager = $manager;
 
-		foreach ($this->getStaticUsers() as $user) {
-			$this->saveUser($user);
-		}
+//		foreach ($this->getStaticUsers() as $user) {
+//			$this->saveUser($user);
+//		}
 
 		foreach ($this->getRandomUsers() as $user) {
 			$this->manager->persist($user);
 		}
-		
+
 		$this->manager->flush();
 	}
 
@@ -49,7 +49,7 @@ class UserFixture extends AbstractFixture
 		$loader = new ReflectionLoader();
 		$objectSet = $loader->loadData([
 			User::class => [
-				'user{1..100}' => [
+				'user{1..1}' => [
 					'__construct' => [
 						'<firstName()>',
 						'<lastName()>',
@@ -57,7 +57,7 @@ class UserFixture extends AbstractFixture
 						'<username()>',
 						'<password()>',
 					],
-					'id' => '<current()>',
+					'id' => '<(intval(strval($current)))>',
 					'apiKey' => '<sha256()>',
 				],
 			],
