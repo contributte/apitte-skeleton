@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e42aa47a88a12c745f42b7bd66b2d797",
+    "content-hash": "e28b4da6351595688c7f4881a3cca5d2",
     "packages": [
         {
             "name": "apitte/core",
@@ -3652,38 +3652,35 @@
         },
         {
             "name": "nettrine/migrations",
-            "version": "v0.8.1",
+            "version": "v0.9.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/doctrine-migrations.git",
-                "reference": "198eebdbcfb26db2135ea053175e17fde708eb08"
+                "reference": "a201572c58184e912b96e7fa96d656e6bd1bd09f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/doctrine-migrations/zipball/198eebdbcfb26db2135ea053175e17fde708eb08",
-                "reference": "198eebdbcfb26db2135ea053175e17fde708eb08",
+                "url": "https://api.github.com/repos/contributte/doctrine-migrations/zipball/a201572c58184e912b96e7fa96d656e6bd1bd09f",
+                "reference": "a201572c58184e912b96e7fa96d656e6bd1bd09f",
                 "shasum": ""
             },
             "require": {
-                "contributte/di": "^0.5.0",
-                "doctrine/migrations": "^3.1.0",
-                "php": ">=7.2",
-                "symfony/console": "^4.2.5|^5.0.0|^6.0.0"
+                "doctrine/migrations": "^3.6.0",
+                "nette/di": "^3.1.2",
+                "php": ">=8.1",
+                "symfony/console": "^6.2.0"
             },
             "require-dev": {
+                "contributte/phpstan": "^0.1",
+                "contributte/qa": "^0.4",
+                "contributte/tester": "^0.3",
                 "doctrine/orm": "^2.6",
-                "mockery/mockery": "^1.3.0",
-                "ninjify/nunjuck": "^0.4",
-                "ninjify/qa": "^0.13",
-                "phpstan/phpstan": "^1.4.0",
-                "phpstan/phpstan-deprecation-rules": "^1.0.0",
-                "phpstan/phpstan-nette": "^1.0.0",
-                "phpstan/phpstan-strict-rules": "^1.0.0"
+                "mockery/mockery": "^1.3.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.9.x-dev"
+                    "dev-master": "0.10.x-dev"
                 }
             },
             "autoload": {
@@ -3714,7 +3711,7 @@
             ],
             "support": {
                 "issues": "https://github.com/contributte/doctrine-migrations/issues",
-                "source": "https://github.com/contributte/doctrine-migrations/tree/v0.8.1"
+                "source": "https://github.com/contributte/doctrine-migrations/tree/v0.9.1"
             },
             "funding": [
                 {
@@ -3726,7 +3723,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-12-27T18:27:17+00:00"
+            "time": "2023-07-03T16:24:04+00:00"
         },
         {
             "name": "nettrine/orm",
