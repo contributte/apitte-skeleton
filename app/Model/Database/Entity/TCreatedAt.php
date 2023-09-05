@@ -2,7 +2,7 @@
 
 namespace App\Model\Database\Entity;
 
-use App\Model\Utils\DateTime;
+use DateTime;
 use Doctrine\ORM\Mapping as ORM;
 
 trait TCreatedAt
