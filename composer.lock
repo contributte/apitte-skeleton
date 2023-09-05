@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3c7d8fdbc831eec7c46375627dee08a0",
+    "content-hash": "06002d8fce5cfb6f4995a23be975a0c7",
     "packages": [
         {
             "name": "contributte/apitte",
@@ -245,16 +245,16 @@
         },
         {
             "name": "contributte/di",
-            "version": "v0.5.5",
+            "version": "v0.5.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/di.git",
-                "reference": "2857d07b15c8d0136038f4daa6930c42491a6f6a"
+                "reference": "49d6b93d46f57be319b1e811cd983bfed0c90979"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/di/zipball/2857d07b15c8d0136038f4daa6930c42491a6f6a",
-                "reference": "2857d07b15c8d0136038f4daa6930c42491a6f6a",
+                "url": "https://api.github.com/repos/contributte/di/zipball/49d6b93d46f57be319b1e811cd983bfed0c90979",
+                "reference": "49d6b93d46f57be319b1e811cd983bfed0c90979",
                 "shasum": ""
             },
             "require": {
@@ -305,7 +305,7 @@
             ],
             "support": {
                 "issues": "https://github.com/contributte/di/issues",
-                "source": "https://github.com/contributte/di/tree/v0.5.5"
+                "source": "https://github.com/contributte/di/tree/v0.5.6"
             },
             "funding": [
                 {
@@ -317,7 +317,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-02-21T08:24:32+00:00"
+            "time": "2023-09-05T08:23:55+00:00"
         },
         {
             "name": "contributte/http",
