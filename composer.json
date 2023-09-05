@@ -26,10 +26,7 @@
     "contributte/tracy": "^0.6.0",
     "contributte/utils": "^0.6.0",
 
-    "apitte/core": "^0.8.0",
-    "apitte/debug": "^0.8.0",
-    "apitte/middlewares": "^0.8.0",
-    "apitte/openapi": "^0.8.0",
+    "contributte/apitte": "^0.11.0",
 
     "nette/finder": "~2.6.0",
     "nette/robot-loader": "~3.4.0",

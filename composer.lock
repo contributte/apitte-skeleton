@@ -4,53 +4,62 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e28b4da6351595688c7f4881a3cca5d2",
+    "content-hash": "3c7d8fdbc831eec7c46375627dee08a0",
     "packages": [
         {
-            "name": "apitte/core",
-            "version": "v0.8.1",
+            "name": "contributte/apitte",
+            "version": "v0.11.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/contributte/apitte-core.git",
-                "reference": "e114cfa747977972ceb77e059d474eb00b1edf76"
+                "url": "https://github.com/contributte/apitte.git",
+                "reference": "ad2565b6cb5e364d4976859c6ebfaac96c0a9d02"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/apitte-core/zipball/e114cfa747977972ceb77e059d474eb00b1edf76",
-                "reference": "e114cfa747977972ceb77e059d474eb00b1edf76",
+                "url": "https://api.github.com/repos/contributte/apitte/zipball/ad2565b6cb5e364d4976859c6ebfaac96c0a9d02",
+                "reference": "ad2565b6cb5e364d4976859c6ebfaac96c0a9d02",
                 "shasum": ""
             },
             "require": {
-                "contributte/psr7-http-message": "~0.7.0",
+                "contributte/middlewares": "^0.11.0",
+                "contributte/psr7-http-message": "^0.9.0",
                 "doctrine/annotations": "^1.13",
                 "ext-json": "*",
                 "koriym/attributes": "^1.0.2",
-                "nette/utils": "^3.0.3",
-                "php": ">=7.3"
+                "nette/utils": "^3.2.7",
+                "php": ">=8.0"
             },
             "conflict": {
-                "nette/di": "<=3.0.0-RC"
+                "nette/tester": "<2.4.1"
             },
             "provide": {
                 "psr/http-message-implementation": "1.0"
             },
             "require-dev": {
-                "mockery/mockery": "^1.1.0",
+                "contributte/dev": "^0.3",
+                "contributte/phpstan": "^0.1",
+                "contributte/qa": "^0.4",
+                "contributte/tester": "^0.3",
+                "mockery/mockery": "^1.5.1",
+                "nette/application": "^3.0.0",
                 "nette/di": "^3.0.0",
+                "nette/http": "^3.0.1",
                 "nettrine/annotations": "^0.7.0",
-                "ninjify/nunjuck": "^0.4",
-                "ninjify/qa": "^0.12",
-                "phpstan/phpstan": "^0.12",
-                "phpstan/phpstan-deprecation-rules": "^0.12",
-                "phpstan/phpstan-nette": "^0.12",
-                "phpstan/phpstan-strict-rules": "^0.12",
-                "psr/log": "^1.1",
-                "symfony/validator": "^4.1.1|^5.0.0"
+                "psr/log": "^1.1|^2.0|^3.0",
+                "symfony/console": "^5.4.3 || ^6.0.0",
+                "symfony/validator": "^5.4.3 || ^6.0",
+                "symfony/yaml": "^5.4.3 || ^6.0.0",
+                "tracy/tracy": "^2.6.0"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.11.x-dev"
+                }
+            },
             "autoload": {
                 "psr-4": {
-                    "Apitte\\Core\\": "src"
+                    "Apitte\\": "src"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -63,8 +72,8 @@
                     "homepage": "https://f3l1x.io"
                 }
             ],
-            "description": "Core API library in Apitte stack",
-            "homepage": "https://github.com/apitte/core",
+            "description": "An opinionated and enjoyable API framework based on Nette Framework. Supporting content negotiation, debugging, middlewares, attributes, annotations and loving openapi/swagger.",
+            "homepage": "https://github.com/contributte/apitte",
             "keywords": [
                 "annotation",
                 "api",
@@ -74,8 +83,8 @@
                 "rest"
             ],
             "support": {
-                "issues": "https://github.com/contributte/apitte-core/issues",
-                "source": "https://github.com/contributte/apitte-core/tree/v0.8.1"
+                "issues": "https://github.com/contributte/apitte/issues",
+                "source": "https://github.com/contributte/apitte/tree/v0.11.0"
             },
             "funding": [
                 {
@@ -87,232 +96,7 @@
                     "type": "github"
                 }
             ],
-            "abandoned": "contributte/apitte",
-            "time": "2021-09-08T04:35:14+00:00"
-        },
-        {
-            "name": "apitte/debug",
-            "version": "v0.8.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/contributte/apitte-debug.git",
-                "reference": "ec765467a9ce54a57a30bda13cb9c4a2a0a5d80f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/contributte/apitte-debug/zipball/ec765467a9ce54a57a30bda13cb9c4a2a0a5d80f",
-                "reference": "ec765467a9ce54a57a30bda13cb9c4a2a0a5d80f",
-                "shasum": ""
-            },
-            "require": {
-                "apitte/core": "~0.7 || ~0.8",
-                "php": ">=7.3",
-                "tracy/tracy": "^2.6.0"
-            },
-            "require-dev": {
-                "apitte/negotiation": "^0.7.0",
-                "nette/di": "^3.0",
-                "nette/schema": "^1.0",
-                "ninjify/nunjuck": "^0.4",
-                "ninjify/qa": "^0.12",
-                "phpstan/phpstan": "^0.12",
-                "phpstan/phpstan-deprecation-rules": "^0.12",
-                "phpstan/phpstan-nette": "^0.12",
-                "phpstan/phpstan-strict-rules": "^0.12"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Apitte\\Debug\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Milan Felix Šulc",
-                    "homepage": "https://f3l1x.io"
-                }
-            ],
-            "description": "Debugging tools for Apitte stack",
-            "homepage": "https://github.com/apitte/debug",
-            "keywords": [
-                "api",
-                "apitte",
-                "debugging",
-                "tracy"
-            ],
-            "support": {
-                "issues": "https://github.com/contributte/apitte-debug/issues",
-                "source": "https://github.com/contributte/apitte-debug/tree/v0.8.0"
-            },
-            "funding": [
-                {
-                    "url": "https://contributte.org/partners.html",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/f3l1x",
-                    "type": "github"
-                }
-            ],
-            "abandoned": "contributte/apitte",
-            "time": "2021-09-07T15:31:53+00:00"
-        },
-        {
-            "name": "apitte/middlewares",
-            "version": "v0.8.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/contributte/apitte-middlewares.git",
-                "reference": "ba46f9b2aff48db24f07cf489401b74afdf76cca"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/contributte/apitte-middlewares/zipball/ba46f9b2aff48db24f07cf489401b74afdf76cca",
-                "reference": "ba46f9b2aff48db24f07cf489401b74afdf76cca",
-                "shasum": ""
-            },
-            "require": {
-                "apitte/core": "~0.7 || ~0.8",
-                "contributte/middlewares": "^0.10.0",
-                "php": ">=7.3"
-            },
-            "require-dev": {
-                "mockery/mockery": "^1.3.3",
-                "ninjify/nunjuck": "^0.4",
-                "ninjify/qa": "^0.12",
-                "phpstan/phpstan": "^0.12",
-                "phpstan/phpstan-deprecation-rules": "^0.12",
-                "phpstan/phpstan-nette": "^0.12",
-                "phpstan/phpstan-strict-rules": "^0.12"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.8.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Apitte\\Middlewares\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Milan Felix Šulc",
-                    "homepage": "https://f3l1x.io"
-                }
-            ],
-            "description": "Middlewares support for Apitte stack",
-            "homepage": "https://github.com/apitte/middlewares",
-            "keywords": [
-                "Relay",
-                "api",
-                "apitte",
-                "middlewares"
-            ],
-            "support": {
-                "issues": "https://github.com/contributte/apitte-middlewares/issues",
-                "source": "https://github.com/contributte/apitte-middlewares/tree/v0.8.0"
-            },
-            "funding": [
-                {
-                    "url": "https://contributte.org/partners.html",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/f3l1x",
-                    "type": "github"
-                }
-            ],
-            "abandoned": "contributte/apitte",
-            "time": "2021-09-07T15:18:11+00:00"
-        },
-        {
-            "name": "apitte/openapi",
-            "version": "v0.8.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/contributte/apitte-openapi.git",
-                "reference": "655bbfd79f69804f73bcd515d9acd0efce0debbc"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/contributte/apitte-openapi/zipball/655bbfd79f69804f73bcd515d9acd0efce0debbc",
-                "reference": "655bbfd79f69804f73bcd515d9acd0efce0debbc",
-                "shasum": ""
-            },
-            "require": {
-                "apitte/core": "~0.7 || ~0.8",
-                "nette/utils": "^3.0.1",
-                "php": ">=7.3"
-            },
-            "require-dev": {
-                "contributte/di": "^0.5.0",
-                "ninjify/nunjuck": "^0.4",
-                "ninjify/qa": "^0.12",
-                "phpstan/phpstan": "^0.12",
-                "phpstan/phpstan-deprecation-rules": "^0.12",
-                "phpstan/phpstan-nette": "^0.12",
-                "phpstan/phpstan-strict-rules": "^0.12",
-                "symfony/yaml": "^4.4.0|^5.0.0",
-                "tracy/tracy": "^2.6.0"
-            },
-            "suggest": {
-                "symfony/yaml": "Allows yaml definition"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.8.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Apitte\\OpenApi\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Milan Felix Šulc",
-                    "homepage": "https://f3l1x.io"
-                }
-            ],
-            "description": "Apitte OpenApi library",
-            "homepage": "https://github.com/apitte/openapi",
-            "keywords": [
-                "api",
-                "json",
-                "openapi",
-                "rest"
-            ],
-            "support": {
-                "issues": "https://github.com/contributte/apitte-openapi/issues",
-                "source": "https://github.com/contributte/apitte-openapi/tree/v0.8.0"
-            },
-            "funding": [
-                {
-                    "url": "https://contributte.org/partners.html",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/f3l1x",
-                    "type": "github"
-                }
-            ],
-            "abandoned": "contributte/apitte",
-            "time": "2021-09-07T15:17:54+00:00"
+            "time": "2023-07-17T08:49:24+00:00"
         },
         {
             "name": "contributte/bootstrap",
@@ -615,34 +399,34 @@
         },
         {
             "name": "contributte/middlewares",
-            "version": "v0.10.2",
+            "version": "v0.11.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/middlewares.git",
-                "reference": "c875ed28e2da0b369bea9ee627ab8c1d9757673e"
+                "reference": "77b6e8d5db6b4690d4a156f38fb56471a94a0a5a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/middlewares/zipball/c875ed28e2da0b369bea9ee627ab8c1d9757673e",
-                "reference": "c875ed28e2da0b369bea9ee627ab8c1d9757673e",
+                "url": "https://api.github.com/repos/contributte/middlewares/zipball/77b6e8d5db6b4690d4a156f38fb56471a94a0a5a",
+                "reference": "77b6e8d5db6b4690d4a156f38fb56471a94a0a5a",
                 "shasum": ""
             },
             "require": {
-                "contributte/di": "^0.5.0",
-                "contributte/psr7-http-message": "^0.7.0",
+                "contributte/di": "^0.5.1",
+                "contributte/psr7-http-message": "^0.9.0",
                 "php": ">=7.2"
             },
             "require-dev": {
-                "nette/application": "^3.0.0",
-                "nette/http": "^3.0.1",
+                "nette/application": "^3.1.0",
+                "nette/http": "^3.2.0",
                 "ninjify/nunjuck": "^0.4",
-                "ninjify/qa": "^0.12",
-                "phpstan/phpstan": "^0.12",
-                "phpstan/phpstan-deprecation-rules": "^0.12",
-                "phpstan/phpstan-nette": "^0.12",
-                "phpstan/phpstan-strict-rules": "^0.12",
-                "psr/log": "^1.0",
-                "tracy/tracy": "^2.7.0"
+                "ninjify/qa": "^0.14",
+                "phpstan/phpstan": "^1.6.8",
+                "phpstan/phpstan-deprecation-rules": "^1.0",
+                "phpstan/phpstan-nette": "^1.0",
+                "phpstan/phpstan-strict-rules": "^1.2.3",
+                "psr/log": "^1.0|^2.0|^3.0",
+                "tracy/tracy": "^2.9.0"
             },
             "suggest": {
                 "nette/application": "to use PresenterMiddleware",
@@ -679,7 +463,7 @@
             ],
             "support": {
                 "issues": "https://github.com/contributte/middlewares/issues",
-                "source": "https://github.com/contributte/middlewares/tree/v0.10.2"
+                "source": "https://github.com/contributte/middlewares/tree/v0.11.1"
             },
             "funding": [
                 {
@@ -691,7 +475,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-04-01T19:22:48+00:00"
+            "time": "2023-02-25T10:58:16+00:00"
         },
         {
             "name": "contributte/monolog",
@@ -832,20 +616,20 @@
         },
         {
             "name": "contributte/psr7-http-message",
-            "version": "v0.7.1",
+            "version": "v0.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/psr7-http-message.git",
-                "reference": "7e7d2176b531cf28a1efddca95ffaade516efab3"
+                "reference": "f32ee0ca0b6c8bd7c01e2502833c4e3c21600ccc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/psr7-http-message/zipball/7e7d2176b531cf28a1efddca95ffaade516efab3",
-                "reference": "7e7d2176b531cf28a1efddca95ffaade516efab3",
+                "url": "https://api.github.com/repos/contributte/psr7-http-message/zipball/f32ee0ca0b6c8bd7c01e2502833c4e3c21600ccc",
+                "reference": "f32ee0ca0b6c8bd7c01e2502833c4e3c21600ccc",
                 "shasum": ""
             },
             "require": {
-                "guzzlehttp/psr7": "^1.7.0",
+                "guzzlehttp/psr7": "^1.7.0 || ^2.1.0",
                 "nette/utils": "^3.0.0",
                 "php": ">=7.2"
             },
@@ -854,15 +638,15 @@
                 "nette/http": "<3.0.5"
             },
             "require-dev": {
-                "nette/application": "^3.0.0",
+                "nette/application": "^3.1.0",
                 "nette/di": "^3.0.7",
                 "nette/http": "^3.0.5",
-                "ninjify/nunjuck": "^0.4",
-                "ninjify/qa": "^0.12",
-                "phpstan/phpstan": "^0.12",
-                "phpstan/phpstan-deprecation-rules": "^0.12",
-                "phpstan/phpstan-nette": "^0.12",
-                "phpstan/phpstan-strict-rules": "^0.12"
+                "ninjify/nunjuck": "^v0.3.0",
+                "ninjify/qa": "^v0.13.0",
+                "phpstan/phpstan": "^1.8.2",
+                "phpstan/phpstan-deprecation-rules": "^1.0.0",
+                "phpstan/phpstan-nette": "^1.0.0",
+                "phpstan/phpstan-strict-rules": "^1.3.0"
             },
             "suggest": {
                 "nette/application": "to use $request->withApplicationRequest[Nette\\Application\\Request]",
@@ -872,7 +656,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.8.x-dev"
+                    "dev-master": "0.9.x-dev"
                 }
             },
             "autoload": {
@@ -902,9 +686,19 @@
             ],
             "support": {
                 "issues": "https://github.com/contributte/psr7-http-message/issues",
-                "source": "https://github.com/contributte/psr7-http-message/tree/v0.7.1"
+                "source": "https://github.com/contributte/psr7-http-message/tree/v0.9.0"
             },
-            "time": "2021-01-04T17:56:43+00:00"
+            "funding": [
+                {
+                    "url": "https://contributte.org/partners.html",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/f3l1x",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-10-30T09:39:23+00:00"
         },
         {
             "name": "contributte/security",
@@ -2155,16 +1949,16 @@
         },
         {
             "name": "doctrine/orm",
-            "version": "2.16.1",
+            "version": "2.16.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/orm.git",
-                "reference": "597a63a86ca8c5f9d1ec2dc74fe3d1269d43434a"
+                "reference": "17500f56eaa930f5cd14d765bc2cd851c7d37cc0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/orm/zipball/597a63a86ca8c5f9d1ec2dc74fe3d1269d43434a",
-                "reference": "597a63a86ca8c5f9d1ec2dc74fe3d1269d43434a",
+                "url": "https://api.github.com/repos/doctrine/orm/zipball/17500f56eaa930f5cd14d765bc2cd851c7d37cc0",
+                "reference": "17500f56eaa930f5cd14d765bc2cd851c7d37cc0",
                 "shasum": ""
             },
             "require": {
@@ -2250,9 +2044,9 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/orm/issues",
-                "source": "https://github.com/doctrine/orm/tree/2.16.1"
+                "source": "https://github.com/doctrine/orm/tree/2.16.2"
             },
-            "time": "2023-08-09T13:05:08+00:00"
+            "time": "2023-08-27T18:21:56+00:00"
         },
         {
             "name": "doctrine/persistence",
@@ -2354,38 +2148,44 @@
         },
         {
             "name": "guzzlehttp/psr7",
-            "version": "1.9.1",
+            "version": "2.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "e4490cabc77465aaee90b20cfc9a770f8c04be6b"
+                "reference": "be45764272e8873c72dbe3d2edcfdfcc3bc9f727"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/e4490cabc77465aaee90b20cfc9a770f8c04be6b",
-                "reference": "e4490cabc77465aaee90b20cfc9a770f8c04be6b",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/be45764272e8873c72dbe3d2edcfdfcc3bc9f727",
+                "reference": "be45764272e8873c72dbe3d2edcfdfcc3bc9f727",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.4.0",
-                "psr/http-message": "~1.0",
-                "ralouphie/getallheaders": "^2.0.5 || ^3.0.0"
+                "php": "^7.2.5 || ^8.0",
+                "psr/http-factory": "^1.0",
+                "psr/http-message": "^1.1 || ^2.0",
+                "ralouphie/getallheaders": "^3.0"
             },
             "provide": {
+                "psr/http-factory-implementation": "1.0",
                 "psr/http-message-implementation": "1.0"
             },
             "require-dev": {
-                "ext-zlib": "*",
-                "phpunit/phpunit": "~4.8.36 || ^5.7.27 || ^6.5.14 || ^7.5.20 || ^8.5.8 || ^9.3.10"
+                "bamarni/composer-bin-plugin": "^1.8.1",
+                "http-interop/http-factory-tests": "^0.9",
+                "phpunit/phpunit": "^8.5.29 || ^9.5.23"
             },
             "suggest": {
                 "laminas/laminas-httphandlerrunner": "Emit PSR-7 responses"
             },
             "type": "library",
+            "extra": {
+                "bamarni-bin": {
+                    "bin-links": true,
+                    "forward-command": false
+                }
+            },
             "autoload": {
-                "files": [
-                    "src/functions_include.php"
-                ],
                 "psr-4": {
                     "GuzzleHttp\\Psr7\\": "src/"
                 }
@@ -2424,6 +2224,11 @@
                     "name": "Tobias Schultze",
                     "email": "webmaster@tubo-world.de",
                     "homepage": "https://github.com/Tobion"
+                },
+                {
+                    "name": "Márk Sági-Kazár",
+                    "email": "mark.sagikazar@gmail.com",
+                    "homepage": "https://sagikazarmark.hu"
                 }
             ],
             "description": "PSR-7 message implementation that also provides common utility methods",
@@ -2439,7 +2244,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/psr7/issues",
-                "source": "https://github.com/guzzle/psr7/tree/1.9.1"
+                "source": "https://github.com/guzzle/psr7/tree/2.6.1"
             },
             "funding": [
                 {
@@ -2455,7 +2260,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-04-17T16:00:37+00:00"
+            "time": "2023-08-27T10:13:57+00:00"
         },
         {
             "name": "koriym/attributes",
@@ -2987,21 +2792,21 @@
         },
         {
             "name": "nette/php-generator",
-            "version": "v4.0.8",
+            "version": "v4.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/php-generator.git",
-                "reference": "d9157df8463b198dcbcd9f979fb09a9367c7fe99"
+                "reference": "72cf9e20686904678d9c1de664c6f7a8c9d676ed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/php-generator/zipball/d9157df8463b198dcbcd9f979fb09a9367c7fe99",
-                "reference": "d9157df8463b198dcbcd9f979fb09a9367c7fe99",
+                "url": "https://api.github.com/repos/nette/php-generator/zipball/72cf9e20686904678d9c1de664c6f7a8c9d676ed",
+                "reference": "72cf9e20686904678d9c1de664c6f7a8c9d676ed",
                 "shasum": ""
             },
             "require": {
                 "nette/utils": "^3.2.9 || ^4.0",
-                "php": ">=8.0 <8.4"
+                "php": "8.0 - 8.3"
             },
             "require-dev": {
                 "jetbrains/phpstorm-attributes": "dev-master",
@@ -3040,7 +2845,7 @@
                     "homepage": "https://nette.org/contributors"
                 }
             ],
-            "description": "🐘 Nette PHP Generator: generates neat PHP code for you. Supports new PHP 8.2 features.",
+            "description": "🐘 Nette PHP Generator: generates neat PHP code for you. Supports new PHP 8.3 features.",
             "homepage": "https://nette.org",
             "keywords": [
                 "code",
@@ -3050,9 +2855,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nette/php-generator/issues",
-                "source": "https://github.com/nette/php-generator/tree/v4.0.8"
+                "source": "https://github.com/nette/php-generator/tree/v4.0.9"
             },
-            "time": "2023-07-30T12:05:00+00:00"
+            "time": "2023-08-29T19:09:26+00:00"
         },
         {
             "name": "nette/robot-loader",
@@ -3913,26 +3718,27 @@
             "time": "2021-11-05T16:47:00+00:00"
         },
         {
-            "name": "psr/http-message",
-            "version": "1.1",
+            "name": "psr/http-factory",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/php-fig/http-message.git",
-                "reference": "cb6ce4845ce34a8ad9e68117c10ee90a29919eba"
+                "url": "https://github.com/php-fig/http-factory.git",
+                "reference": "e616d01114759c4c489f93b099585439f795fe35"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/http-message/zipball/cb6ce4845ce34a8ad9e68117c10ee90a29919eba",
-                "reference": "cb6ce4845ce34a8ad9e68117c10ee90a29919eba",
+                "url": "https://api.github.com/repos/php-fig/http-factory/zipball/e616d01114759c4c489f93b099585439f795fe35",
+                "reference": "e616d01114759c4c489f93b099585439f795fe35",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.2 || ^8.0"
+                "php": ">=7.0.0",
+                "psr/http-message": "^1.0 || ^2.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.1.x-dev"
+                    "dev-master": "1.0.x-dev"
                 }
             },
             "autoload": {
@@ -3947,7 +3753,61 @@
             "authors": [
                 {
                     "name": "PHP-FIG",
-                    "homepage": "http://www.php-fig.org/"
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interfaces for PSR-7 HTTP message factories",
+            "keywords": [
+                "factory",
+                "http",
+                "message",
+                "psr",
+                "psr-17",
+                "psr-7",
+                "request",
+                "response"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/http-factory/tree/1.0.2"
+            },
+            "time": "2023-04-10T20:10:41+00:00"
+        },
+        {
+            "name": "psr/http-message",
+            "version": "2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-message.git",
+                "reference": "402d35bcb92c70c026d1a6a9883f06b2ead23d71"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-message/zipball/402d35bcb92c70c026d1a6a9883f06b2ead23d71",
+                "reference": "402d35bcb92c70c026d1a6a9883f06b2ead23d71",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2 || ^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Message\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
                 }
             ],
             "description": "Common interface for HTTP messages",
@@ -3961,9 +3821,9 @@
                 "response"
             ],
             "support": {
-                "source": "https://github.com/php-fig/http-message/tree/1.1"
+                "source": "https://github.com/php-fig/http-message/tree/2.0"
             },
-            "time": "2023-04-04T09:50:52+00:00"
+            "time": "2023-04-04T09:54:51+00:00"
         },
         {
             "name": "psr/log",
@@ -4233,16 +4093,16 @@
         },
         {
             "name": "symfony/console",
-            "version": "v6.3.2",
+            "version": "v6.3.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "aa5d64ad3f63f2e48964fc81ee45cb318a723898"
+                "reference": "eca495f2ee845130855ddf1cf18460c38966c8b6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/aa5d64ad3f63f2e48964fc81ee45cb318a723898",
-                "reference": "aa5d64ad3f63f2e48964fc81ee45cb318a723898",
+                "url": "https://api.github.com/repos/symfony/console/zipball/eca495f2ee845130855ddf1cf18460c38966c8b6",
+                "reference": "eca495f2ee845130855ddf1cf18460c38966c8b6",
                 "shasum": ""
             },
             "require": {
@@ -4303,7 +4163,7 @@
                 "terminal"
             ],
             "support": {
-                "source": "https://github.com/symfony/console/tree/v6.3.2"
+                "source": "https://github.com/symfony/console/tree/v6.3.4"
             },
             "funding": [
                 {
@@ -4319,7 +4179,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-07-19T20:17:28+00:00"
+            "time": "2023-08-16T10:10:12+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",
@@ -4390,16 +4250,16 @@
         },
         {
             "name": "symfony/polyfill-ctype",
-            "version": "v1.27.0",
+            "version": "v1.28.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-ctype.git",
-                "reference": "5bbc823adecdae860bb64756d639ecfec17b050a"
+                "reference": "ea208ce43cbb04af6867b4fdddb1bdbf84cc28cb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/5bbc823adecdae860bb64756d639ecfec17b050a",
-                "reference": "5bbc823adecdae860bb64756d639ecfec17b050a",
+                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/ea208ce43cbb04af6867b4fdddb1bdbf84cc28cb",
+                "reference": "ea208ce43cbb04af6867b4fdddb1bdbf84cc28cb",
                 "shasum": ""
             },
             "require": {
@@ -4414,7 +4274,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "1.27-dev"
+                    "dev-main": "1.28-dev"
                 },
                 "thanks": {
                     "name": "symfony/polyfill",
@@ -4452,7 +4312,7 @@
                 "portable"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-ctype/tree/v1.27.0"
+                "source": "https://github.com/symfony/polyfill-ctype/tree/v1.28.0"
             },
             "funding": [
                 {
@@ -4468,20 +4328,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-11-03T14:55:06+00:00"
+            "time": "2023-01-26T09:26:14+00:00"
         },
         {
             "name": "symfony/polyfill-intl-grapheme",
-            "version": "v1.27.0",
+            "version": "v1.28.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-intl-grapheme.git",
-                "reference": "511a08c03c1960e08a883f4cffcacd219b758354"
+                "reference": "875e90aeea2777b6f135677f618529449334a612"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-intl-grapheme/zipball/511a08c03c1960e08a883f4cffcacd219b758354",
-                "reference": "511a08c03c1960e08a883f4cffcacd219b758354",
+                "url": "https://api.github.com/repos/symfony/polyfill-intl-grapheme/zipball/875e90aeea2777b6f135677f618529449334a612",
+                "reference": "875e90aeea2777b6f135677f618529449334a612",
                 "shasum": ""
             },
             "require": {
@@ -4493,7 +4353,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "1.27-dev"
+                    "dev-main": "1.28-dev"
                 },
                 "thanks": {
                     "name": "symfony/polyfill",
@@ -4533,7 +4393,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-intl-grapheme/tree/v1.27.0"
+                "source": "https://github.com/symfony/polyfill-intl-grapheme/tree/v1.28.0"
             },
             "funding": [
                 {
@@ -4549,20 +4409,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-11-03T14:55:06+00:00"
+            "time": "2023-01-26T09:26:14+00:00"
         },
         {
             "name": "symfony/polyfill-intl-normalizer",
-            "version": "v1.27.0",
+            "version": "v1.28.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-intl-normalizer.git",
-                "reference": "19bd1e4fcd5b91116f14d8533c57831ed00571b6"
+                "reference": "8c4ad05dd0120b6a53c1ca374dca2ad0a1c4ed92"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-intl-normalizer/zipball/19bd1e4fcd5b91116f14d8533c57831ed00571b6",
-                "reference": "19bd1e4fcd5b91116f14d8533c57831ed00571b6",
+                "url": "https://api.github.com/repos/symfony/polyfill-intl-normalizer/zipball/8c4ad05dd0120b6a53c1ca374dca2ad0a1c4ed92",
+                "reference": "8c4ad05dd0120b6a53c1ca374dca2ad0a1c4ed92",
                 "shasum": ""
             },
             "require": {
@@ -4574,7 +4434,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "1.27-dev"
+                    "dev-main": "1.28-dev"
                 },
                 "thanks": {
                     "name": "symfony/polyfill",
@@ -4617,7 +4477,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-intl-normalizer/tree/v1.27.0"
+                "source": "https://github.com/symfony/polyfill-intl-normalizer/tree/v1.28.0"
             },
             "funding": [
                 {
@@ -4633,20 +4493,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-11-03T14:55:06+00:00"
+            "time": "2023-01-26T09:26:14+00:00"
         },
         {
             "name": "symfony/polyfill-mbstring",
-            "version": "v1.27.0",
+            "version": "v1.28.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "8ad114f6b39e2c98a8b0e3bd907732c207c2b534"
+                "reference": "42292d99c55abe617799667f454222c54c60e229"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/8ad114f6b39e2c98a8b0e3bd907732c207c2b534",
-                "reference": "8ad114f6b39e2c98a8b0e3bd907732c207c2b534",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/42292d99c55abe617799667f454222c54c60e229",
+                "reference": "42292d99c55abe617799667f454222c54c60e229",
                 "shasum": ""
             },
             "require": {
@@ -4661,7 +4521,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "1.27-dev"
+                    "dev-main": "1.28-dev"
                 },
                 "thanks": {
                     "name": "symfony/polyfill",
@@ -4700,7 +4560,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.27.0"
+                "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.28.0"
             },
             "funding": [
                 {
@@ -4716,20 +4576,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-11-03T14:55:06+00:00"
+            "time": "2023-07-28T09:04:16+00:00"
         },
         {
             "name": "symfony/polyfill-php72",
-            "version": "v1.27.0",
+            "version": "v1.28.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php72.git",
-                "reference": "869329b1e9894268a8a61dabb69153029b7a8c97"
+                "reference": "70f4aebd92afca2f865444d30a4d2151c13c3179"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-php72/zipball/869329b1e9894268a8a61dabb69153029b7a8c97",
-                "reference": "869329b1e9894268a8a61dabb69153029b7a8c97",
+                "url": "https://api.github.com/repos/symfony/polyfill-php72/zipball/70f4aebd92afca2f865444d30a4d2151c13c3179",
+                "reference": "70f4aebd92afca2f865444d30a4d2151c13c3179",
                 "shasum": ""
             },
             "require": {
@@ -4738,7 +4598,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "1.27-dev"
+                    "dev-main": "1.28-dev"
                 },
                 "thanks": {
                     "name": "symfony/polyfill",
@@ -4776,7 +4636,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-php72/tree/v1.27.0"
+                "source": "https://github.com/symfony/polyfill-php72/tree/v1.28.0"
             },
             "funding": [
                 {
@@ -4792,20 +4652,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-11-03T14:55:06+00:00"
+            "time": "2023-01-26T09:26:14+00:00"
         },
         {
             "name": "symfony/polyfill-php80",
-            "version": "v1.27.0",
+            "version": "v1.28.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php80.git",
-                "reference": "7a6ff3f1959bb01aefccb463a0f2cd3d3d2fd936"
+                "reference": "6caa57379c4aec19c0a12a38b59b26487dcfe4b5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-php80/zipball/7a6ff3f1959bb01aefccb463a0f2cd3d3d2fd936",
-                "reference": "7a6ff3f1959bb01aefccb463a0f2cd3d3d2fd936",
+                "url": "https://api.github.com/repos/symfony/polyfill-php80/zipball/6caa57379c4aec19c0a12a38b59b26487dcfe4b5",
+                "reference": "6caa57379c4aec19c0a12a38b59b26487dcfe4b5",
                 "shasum": ""
             },
             "require": {
@@ -4814,7 +4674,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "1.27-dev"
+                    "dev-main": "1.28-dev"
                 },
                 "thanks": {
                     "name": "symfony/polyfill",
@@ -4859,7 +4719,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-php80/tree/v1.27.0"
+                "source": "https://github.com/symfony/polyfill-php80/tree/v1.28.0"
             },
             "funding": [
                 {
@@ -4875,20 +4735,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-11-03T14:55:06+00:00"
+            "time": "2023-01-26T09:26:14+00:00"
         },
         {
             "name": "symfony/polyfill-php83",
-            "version": "v1.27.0",
+            "version": "v1.28.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php83.git",
-                "reference": "508c652ba3ccf69f8c97f251534f229791b52a57"
+                "reference": "b0f46ebbeeeda3e9d2faebdfbf4b4eae9b59fa11"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-php83/zipball/508c652ba3ccf69f8c97f251534f229791b52a57",
-                "reference": "508c652ba3ccf69f8c97f251534f229791b52a57",
+                "url": "https://api.github.com/repos/symfony/polyfill-php83/zipball/b0f46ebbeeeda3e9d2faebdfbf4b4eae9b59fa11",
+                "reference": "b0f46ebbeeeda3e9d2faebdfbf4b4eae9b59fa11",
                 "shasum": ""
             },
             "require": {
@@ -4898,7 +4758,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "1.27-dev"
+                    "dev-main": "1.28-dev"
                 },
                 "thanks": {
                     "name": "symfony/polyfill",
@@ -4911,7 +4771,10 @@
                 ],
                 "psr-4": {
                     "Symfony\\Polyfill\\Php83\\": ""
-                }
+                },
+                "classmap": [
+                    "Resources/stubs"
+                ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -4936,7 +4799,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-php83/tree/v1.27.0"
+                "source": "https://github.com/symfony/polyfill-php83/tree/v1.28.0"
             },
             "funding": [
                 {
@@ -4952,7 +4815,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-11-03T14:55:06+00:00"
+            "time": "2023-08-16T06:22:46+00:00"
         },
         {
             "name": "symfony/property-info",
@@ -6533,16 +6396,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "1.10.32",
+            "version": "1.10.33",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "c47e47d3ab03137c0e121e77c4d2cb58672f6d44"
+                "reference": "03b1cf9f814ba0863c4e9affea49a4d1ed9a2ed1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/c47e47d3ab03137c0e121e77c4d2cb58672f6d44",
-                "reference": "c47e47d3ab03137c0e121e77c4d2cb58672f6d44",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/03b1cf9f814ba0863c4e9affea49a4d1ed9a2ed1",
+                "reference": "03b1cf9f814ba0863c4e9affea49a4d1ed9a2ed1",
                 "shasum": ""
             },
             "require": {
@@ -6591,7 +6454,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-08-24T21:54:50+00:00"
+            "time": "2023-09-04T12:20:53+00:00"
         },
         {
             "name": "phpstan/phpstan-deprecation-rules",
