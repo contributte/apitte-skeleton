@@ -22,9 +22,9 @@ class UserFixture extends AbstractFixture
 	{
 		$this->manager = $manager;
 
-//		foreach ($this->getStaticUsers() as $user) {
-//			$this->saveUser($user);
-//		}
+		foreach ($this->getStaticUsers() as $user) {
+			$this->saveUser($user);
+		}
 
 		foreach ($this->getRandomUsers() as $user) {
 			$this->manager->persist($user);
