@@ -30,7 +30,7 @@ nettrine.dbal:
 		password: %database.password%
 		dbname: %database.dbname%
 		port: %database.port%
-		serverVersion: 12
+		serverVersion: %database.serverVersion%
 
 nettrine.orm:
 	entityManagerDecoratorClass: App\Model\Database\EntityManagerDecorator
