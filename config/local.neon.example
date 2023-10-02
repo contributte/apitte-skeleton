@@ -9,6 +9,7 @@ parameters:
 		dbname: contributte
 		user: contributte
 		password: contributte
+		serverVersion: null
 
 	# Database (mariadb)
 	# database:
@@ -18,3 +19,4 @@ parameters:
 	# 	dbname: contributte
 	# 	user: contributte
 	# 	password: contributte
+	#	serverVersion: null
