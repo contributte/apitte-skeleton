@@ -36,7 +36,7 @@
     "nettrine/dbal": "^0.8.0",
     "nettrine/cache": "^0.3.0",
     "nettrine/migrations": "^0.9.1",
-    "nettrine/fixtures": "^0.6.0",
+    "nettrine/fixtures": "^0.7.2",
 
     "symfony/serializer": "^6.0.2",
     "symfony/validator": "^6.0.3",
