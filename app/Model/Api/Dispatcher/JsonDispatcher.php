@@ -12,6 +12,7 @@ use Apitte\Core\Http\ApiResponse;
 use Apitte\Core\Http\RequestAttributes;
 use Apitte\Core\Router\IRouter;
 use Apitte\Core\Schema\Endpoint;
+use Apitte\Core\Schema\EndpointRequestBody;
 use Nette\Utils\Json;
 use RuntimeException;
 use Symfony\Component\Serializer\Exception\ExtraAttributesException;
@@ -83,9 +84,9 @@ class JsonDispatcher extends ApitteJsonDispatcher
 		}
 
 		// Get incoming request entity class, if defined. Otherwise, skip transforming.
-		/** @var class-string|null $entity */
-		$entity = $endpoint->getTag('request.dto');
-		if ($entity === null) {
+		/** @var EndpointRequestBody|null $requestBody */
+		$requestBody = $endpoint->getRequestBody();
+		if ($requestBody === null || $requestBody->getEntity() === null) {
 			return $request;
 		}
 
@@ -94,7 +95,7 @@ class JsonDispatcher extends ApitteJsonDispatcher
 			/** @var object $dto */
 			$dto = $this->serializer->deserialize(
 				$request->getBody()->getContents(),
-				$entity,
+				$requestBody->getEntity(),
 				'json',
 				['allow_extra_attributes' => false]
 			);
