@@ -31,7 +31,7 @@ class UserCreateController extends BaseV1Controller
 	 * ")
 	 * @Apitte\Path("/create")
 	 * @Apitte\Method("POST")
-	 * @Apitte\Tag(name="request.dto", value="App\Domain\Api\Request\CreateUserReqDto")
+	 * @Apitte\RequestBody(entity="App\Domain\Api\Request\CreateUserReqDto")
 	 */
 	public function create(ApiRequest $request, ApiResponse $response): ApiResponse
 	{
