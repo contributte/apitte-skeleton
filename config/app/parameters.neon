@@ -14,3 +14,4 @@ parameters:
 	database:
 		driver: pdo_pgsql
 		port: 5432
+		serverVersion: null
