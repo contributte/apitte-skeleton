@@ -17,7 +17,6 @@ class Bootstrap
 		// Disable default extensions
 		unset($configurator->defaultExtensions['security']);
 
-		// @phpstan-ignore-next-line
 		$configurator->onCompile[] = function (ExtraConfigurator $configurator, Compiler $compiler): void {
 			// Add env variables to config structure
 			$compiler->addConfig(['parameters' => $configurator->getEnvironmentParameters()]);
