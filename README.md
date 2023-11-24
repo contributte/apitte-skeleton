@@ -130,7 +130,7 @@ https://examples.contributte.org/apitte-skeleton/
    composer create-project -s dev contributte/apitte-skeleton
    ```
 
-2) Modify `config/local.neon` and set host to `database`
+2) Modify `config/local.neon` and set host to `postgres` or `mariadb`
 
    Default configuration should look like this. There is preconfigured database. Pick PostgreSQL or MariaDB.
 
