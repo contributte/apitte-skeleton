@@ -15,7 +15,7 @@ install:
 .PHONY: setup
 setup:
 	mkdir -p var/tmp var/log
-	chmod +0777 var/tmp var/log
+	chmod 0777 var/tmp var/log
 
 .PHONY: clean
 clean:
@@ -50,7 +50,7 @@ coverage:
 
 .PHONY: dev
 dev:
-	NETTE_DEBUG=1 NETTE_ENV=dev php -S 0.0.0.0:8000 -t www
+	XDEBUG_MODE=debug NETTE_DEBUG=1 NETTE_ENV=dev php -S 0.0.0.0:8000 -t www
 
 .PHONY: build
 build:
@@ -78,7 +78,7 @@ docker-postgres:
 		-p 5432:5432 \
 		-e POSTGRES_PASSWORD=contributte \
 		-e POSTGRES_USER=contributte \
-		dockette/postgres:12
+		dockette/postgres:13
 
 .PHONY: docker-mariadb
 docker-mariadb:
