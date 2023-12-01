@@ -11,7 +11,7 @@ resource:
 			paths: [%appDir%/Module]
 
 api:
-	debug: false
+	debug: %debugMode%
 	plugins:
 		Apitte\Core\DI\Plugin\CoreSchemaPlugin:
 		Apitte\Core\DI\Plugin\CoreServicesPlugin:
@@ -20,6 +20,8 @@ api:
 			tracy: false
 			autobasepath: true
 		Apitte\OpenApi\DI\OpenApiPlugin:
+			swaggerUi:
+				panel: true
 
 services:
 	middleware.tryCatch:
