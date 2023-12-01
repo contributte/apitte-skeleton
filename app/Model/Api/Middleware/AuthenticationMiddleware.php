@@ -3,7 +3,6 @@
 namespace App\Model\Api\Middleware;
 
 use App\Model\Api\RequestAttributes;
-use App\Model\Utils\Strings;
 use Contributte\Middlewares\IMiddleware;
 use Contributte\Middlewares\Security\IAuthenticator;
 use Nette\Utils\Json;
@@ -38,7 +37,7 @@ class AuthenticationMiddleware implements IMiddleware
 	protected function isWhitelisted(ServerRequestInterface $request): bool
 	{
 		foreach (self::WHITELIST_PATHS as $whitelist) {
-			if (Strings::startsWith($request->getUri()->getPath(), $whitelist)) {
+			if (str_starts_with($request->getUri()->getPath(), $whitelist)) {
 				return true;
 			}
 		}
