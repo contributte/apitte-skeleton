@@ -30,7 +30,7 @@ Main goal is to provide best prepared API starter-kit project for Nette-Apitte d
 
 Focused on:
 
-- PHP 8.1+
+- PHP 8.2+
 - `nette/*` packages
 - build PSR-7 API via `contributte/apitte`
 - Doctrine ORM via `nettrine/*`
@@ -185,7 +185,7 @@ Available options are:
 
 Here is a list of all features you can find in this project.
 
-- PHP 8.1+
+- PHP 8.2+
 - :package: Packages
     - Nette 3+
     - Contributte
