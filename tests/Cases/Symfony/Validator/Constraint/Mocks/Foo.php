@@ -1,13 +1,13 @@
 <?php declare(strict_types = 1);
 
-namespace Tests\Cases\Unit\Symfony\Validator\Constraint\Mocks;
+namespace Tests\Cases\Symfony\Validator\Constraint\Mocks;
 
-use Tests\Cases\Unit\Symfony\Validator\Constraint as NewAssert;
+use Tests\Cases\Symfony\Validator\Constraint\Hello;
 
 class Foo
 {
 
-	/** @NewAssert\Hello */
+	#[Hello]
 	private string $username;
 
 	public function __construct(string $username)

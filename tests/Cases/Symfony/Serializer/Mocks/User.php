@@ -1,6 +1,6 @@
 <?php declare(strict_types = 1);
 
-namespace Tests\Cases\Unit\Symfony\Serializer\Mocks;
+namespace Tests\Cases\Symfony\Serializer\Mocks;
 
 class User
 {

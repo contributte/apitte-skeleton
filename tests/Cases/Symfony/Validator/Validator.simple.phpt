@@ -7,10 +7,10 @@ use Symfony\Component\Validator\Constraints\Length;
 use Symfony\Component\Validator\Constraints\NotBlank;
 use Symfony\Component\Validator\Validation;
 use Tester\Assert;
-use Tests\Cases\Unit\Symfony\Validator\Mocks\User;
-use Tests\Cases\Unit\Symfony\Validator\Mocks\UserPojo;
+use Tests\Cases\Symfony\Validator\Mocks\User;
+use Tests\Cases\Symfony\Validator\Mocks\UserPojo;
 
-require_once __DIR__ . '/../../../../bootstrap.php';
+require_once __DIR__ . '/../../../bootstrap.php';
 
 Toolkit::test(function (): void {
 	$validator = Validation::createValidator();
@@ -27,6 +27,7 @@ Toolkit::test(function (): void {
 	$user->setUsername('Felix');
 
 	$validator = Validation::createValidatorBuilder()
+		->enableAttributeMapping()
 		->addMethodMapping('loadValidatorMetadata')
 		->getValidator();
 
@@ -39,8 +40,7 @@ Toolkit::test(function (): void {
 	$user = new User('Felix');
 
 	$validator = Validation::createValidatorBuilder()
-		->enableAnnotationMapping()
-		->addDefaultDoctrineAnnotationReader()
+		->enableAttributeMapping()
 		->getValidator();
 
 	$violations = $validator->validate($user);

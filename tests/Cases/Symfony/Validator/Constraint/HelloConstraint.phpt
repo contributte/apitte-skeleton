@@ -5,16 +5,15 @@ namespace Tests\Cases\Unit\Symfony\Validator\Constraint;
 use Contributte\Tester\Toolkit;
 use Symfony\Component\Validator\Validation;
 use Tester\Assert;
-use Tests\Cases\Unit\Symfony\Validator\Constraint\Mocks\Foo;
+use Tests\Cases\Symfony\Validator\Constraint\Mocks\Foo;
 
-require_once __DIR__ . '/../../../../../bootstrap.php';
+require_once __DIR__ . '/../../../../bootstrap.php';
 
 Toolkit::test(function (): void {
 	$foo = new Foo('Felix');
 
 	$validator = Validation::createValidatorBuilder()
-		->enableAnnotationMapping()
-		->addDefaultDoctrineAnnotationReader()
+		->enableAttributeMapping()
 		->getValidator();
 
 	$violations = $validator->validate($foo);

@@ -14,9 +14,9 @@ use Symfony\Component\Serializer\Normalizer\ObjectNormalizer;
 use Symfony\Component\Serializer\Normalizer\PropertyNormalizer;
 use Symfony\Component\Serializer\Serializer;
 use Tester\Assert;
-use Tests\Cases\Unit\Symfony\Serializer\Mocks\Order;
-use Tests\Cases\Unit\Symfony\Serializer\Mocks\SuperUser;
-use Tests\Cases\Unit\Symfony\Serializer\Mocks\User;
+use Tests\Cases\Symfony\Serializer\Mocks\Order;
+use Tests\Cases\Symfony\Serializer\Mocks\SuperUser;
+use Tests\Cases\Symfony\Serializer\Mocks\User;
 
 require_once __DIR__ . '/../../../../bootstrap.php';
 
