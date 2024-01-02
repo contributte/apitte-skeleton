@@ -50,7 +50,7 @@ services:
 
 	symfony.validator.builder:
 		type: Symfony\Component\Validator\ValidatorBuilder
-		factory: Symfony\Component\Validator\Validation::createValidatorBuilder()::enableAnnotationMapping(
+		factory: Symfony\Component\Validator\Validation::createValidatorBuilder()::enableAttributeMapping(
 			Doctrine\Common\Annotations\CachedReader(
 				@symfony.serializer.annotationReader,
 				Doctrine\Common\Cache\FilesystemCache(%tempDir%/cache/Symfony.Validator)
