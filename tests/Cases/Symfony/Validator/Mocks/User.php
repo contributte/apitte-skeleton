@@ -2,13 +2,14 @@
 
 namespace Tests\Cases\Symfony\Validator\Mocks;
 
-use Symfony\Component\Validator\Constraints as Assert;
+use Symfony\Component\Validator\Constraints\Length;
+use Symfony\Component\Validator\Constraints\NotBlank;
 
 class User
 {
 
-	#[Assert\NotBlank]
-	#[Assert\Length(min: 10, max: 20)]
+	#[NotBlank]
+	#[Length(min: 10, max: 20)]
 	private string $username;
 
 	public function __construct(string $username)
