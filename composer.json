@@ -35,7 +35,7 @@
     "nettrine/migrations": "^0.9.1",
     "nettrine/fixtures": "^0.7.2",
 
-    "symfony/serializer": "^6.0.2",
+    "symfony/serializer": "^7.0.2",
     "symfony/validator": "^7.0.2",
     "symfony/property-info": "^6.0.0",
     "symfony/cache": "^7.0.0"
