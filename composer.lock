@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5acca864a74d6325039b25550f10bc6a",
+    "content-hash": "884663fa1c2cb7ff22002282f9102cf5",
     "packages": [
         {
             "name": "contributte/apitte",
@@ -170,37 +170,35 @@
         },
         {
             "name": "contributte/console",
-            "version": "v0.9.3",
+            "version": "v0.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/console.git",
-                "reference": "f229171e71ac14709c2e932413f385ce7f1b036e"
+                "reference": "e52267aa402566ef0957f6edbe77545c0261bd7e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/console/zipball/f229171e71ac14709c2e932413f385ce7f1b036e",
-                "reference": "f229171e71ac14709c2e932413f385ce7f1b036e",
+                "url": "https://api.github.com/repos/contributte/console/zipball/e52267aa402566ef0957f6edbe77545c0261bd7e",
+                "reference": "e52267aa402566ef0957f6edbe77545c0261bd7e",
                 "shasum": ""
             },
             "require": {
-                "contributte/di": "^0.5.1|^0.6.0",
-                "php": ">=7.2",
-                "symfony/console": "^4.2.9|^5.0.0|^6.0.0"
+                "nette/di": "^3.1.8",
+                "php": ">=8.1",
+                "symfony/console": "^6.4.2 || ^7.0.2"
             },
             "require-dev": {
-                "nette/http": "^3.0.1",
-                "ninjify/nunjuck": "^0.4",
-                "ninjify/qa": "^0.13.0",
-                "phpstan/phpstan": "^1.8.11",
-                "phpstan/phpstan-deprecation-rules": "^1.0",
-                "phpstan/phpstan-nette": "^1.1.0",
-                "phpstan/phpstan-strict-rules": "^1.4.4",
-                "symfony/event-dispatcher": "^4.3 || ^5.0 || ^6.0"
+                "contributte/phpstan": "^0.1",
+                "contributte/qa": "^0.4",
+                "contributte/tester": "^0.4",
+                "mockery/mockery": "^1.6.7",
+                "nette/http": "^3.2.3",
+                "symfony/event-dispatcher": "^6.4.2 || ^7.0.2"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.10.x-dev"
+                    "dev-master": "0.11.x-dev"
                 }
             },
             "autoload": {
@@ -227,7 +225,7 @@
             ],
             "support": {
                 "issues": "https://github.com/contributte/console/issues",
-                "source": "https://github.com/contributte/console/tree/v0.9.3"
+                "source": "https://github.com/contributte/console/tree/v0.10.0"
             },
             "funding": [
                 {
@@ -239,7 +237,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-05-24T08:48:41+00:00"
+            "time": "2024-01-03T16:46:14+00:00"
         },
         {
             "name": "contributte/di",
