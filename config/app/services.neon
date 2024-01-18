@@ -18,7 +18,6 @@ services:
 	symfony.serializer.objectNormalizer:
 		factory: Symfony\Component\Serializer\Normalizer\ObjectNormalizer(
 			classMetadataFactory: @symfony.serializer.classMetadataFactory,
-			nameConverter: Symfony\Component\Serializer\NameConverter\CamelCaseToSnakeCaseNameConverter(),
 			propertyAccessor: null,
 			propertyTypeExtractor: Symfony\Component\PropertyInfo\Extractor\ReflectionExtractor()
 		)
