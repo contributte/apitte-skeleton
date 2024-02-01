@@ -5303,16 +5303,16 @@
         },
         {
             "name": "symfony/validator",
-            "version": "v7.0.2",
+            "version": "v7.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/validator.git",
-                "reference": "24911cba25f0ef2a8e23327c100664502e1b95cb"
+                "reference": "03b0c75d7d3df1ef9a0fd9fb8db1e86f83ffa2bb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/validator/zipball/24911cba25f0ef2a8e23327c100664502e1b95cb",
-                "reference": "24911cba25f0ef2a8e23327c100664502e1b95cb",
+                "url": "https://api.github.com/repos/symfony/validator/zipball/03b0c75d7d3df1ef9a0fd9fb8db1e86f83ffa2bb",
+                "reference": "03b0c75d7d3df1ef9a0fd9fb8db1e86f83ffa2bb",
                 "shasum": ""
             },
             "require": {
@@ -5330,7 +5330,7 @@
                 "symfony/http-kernel": "<6.4",
                 "symfony/intl": "<6.4",
                 "symfony/property-info": "<6.4",
-                "symfony/translation": "<6.4",
+                "symfony/translation": "<6.4.3|>=7.0,<7.0.3",
                 "symfony/yaml": "<6.4"
             },
             "require-dev": {
@@ -5348,7 +5348,7 @@
                 "symfony/mime": "^6.4|^7.0",
                 "symfony/property-access": "^6.4|^7.0",
                 "symfony/property-info": "^6.4|^7.0",
-                "symfony/translation": "^6.4|^7.0",
+                "symfony/translation": "^6.4.3|^7.0.3",
                 "symfony/yaml": "^6.4|^7.0"
             },
             "type": "library",
@@ -5377,7 +5377,7 @@
             "description": "Provides tools to validate values",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/validator/tree/v7.0.2"
+                "source": "https://github.com/symfony/validator/tree/v7.0.3"
             },
             "funding": [
                 {
@@ -5393,7 +5393,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-12-30T09:57:06+00:00"
+            "time": "2024-01-29T15:41:16+00:00"
         },
         {
             "name": "symfony/var-exporter",
