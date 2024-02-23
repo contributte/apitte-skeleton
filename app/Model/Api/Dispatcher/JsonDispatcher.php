@@ -14,7 +14,6 @@ use Apitte\Core\Router\IRouter;
 use Apitte\Core\Schema\Endpoint;
 use Apitte\Core\Schema\EndpointRequestBody;
 use Nette\Utils\Json;
-use RuntimeException;
 use Symfony\Component\Serializer\Exception\ExtraAttributesException;
 use Symfony\Component\Serializer\SerializerInterface;
 use Symfony\Component\Validator\Validator\ValidatorInterface;
