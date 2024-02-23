@@ -6,7 +6,6 @@ extensions:
 
 console:
 	url: http://localhost/
-	lazy: true
 
 monolog:
 	holder:
