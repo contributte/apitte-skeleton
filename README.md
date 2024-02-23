@@ -163,13 +163,13 @@ https://examples.contributte.org/apitte-skeleton/
 4) Open http://localhost and enjoy!
 
    Take a look at:
-    - [GET] http://localhost/api/public/v1/openapi/meta (Swagger format)
-    - [GET] http://localhost/api/v1/users
-    - [GET] http://localhost/api/v1/users?_access_token=admin
-    - [GET] http://localhost/api/v1/users/1?_access_token=admin
-    - [GET] http://localhost/api/v1/users/999?_access_token=admin
-    - [GET] http://localhost/api/v1/users/email?email=admin@admin.cz&_access_token=admin
-    - [POST] http://localhost/api/v1/users/create
+    - [GET] http://localhost:8000/api/public/v1/openapi/meta (Swagger format)
+    - [GET] http://localhost:8000/api/v1/users
+    - [GET] http://localhost:8000/api/v1/users?_access_token=admin
+    - [GET] http://localhost:8000/api/v1/users/1?_access_token=admin
+    - [GET] http://localhost:8000/api/v1/users/999?_access_token=admin
+    - [GET] http://localhost:8000/api/v1/users/email?email=admin@admin.cz&_access_token=admin
+    - [POST] http://localhost:8000/api/v1/users/create
 
 ## (Optional) REST API documentation
 
