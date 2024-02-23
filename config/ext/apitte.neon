@@ -48,5 +48,6 @@ services:
 		tags: [middleware: [priority: 250]]
 
 	api.core.dispatcher: App\Model\Api\Dispatcher\JsonDispatcher
+	api.core.errorHandler: App\Model\Api\ErrorHandler\ThrowingErrorHandler
 
 	- App\Module\V1\StaticController(%static.text%)

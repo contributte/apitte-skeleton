@@ -18,6 +18,7 @@ use RuntimeException;
 use Symfony\Component\Serializer\Exception\ExtraAttributesException;
 use Symfony\Component\Serializer\SerializerInterface;
 use Symfony\Component\Validator\Validator\ValidatorInterface;
+use Throwable;
 
 class JsonDispatcher extends ApitteJsonDispatcher
 {
@@ -60,12 +61,8 @@ class JsonDispatcher extends ApitteJsonDispatcher
 			$response = $response->withStatus($e->getCode() !== 0 ? $e->getCode() : 500)
 				->withHeader('Content-Type', 'application/json');
 			$response->getBody()->write(Json::encode($data));
-		} catch (RuntimeException $e) {
-			$response = $response->withStatus($e->getCode() !== 0 ? $e->getCode() : 500)
-				->withHeader('Content-Type', 'application/json');
-			$response->getBody()->write(Json::encode([
-				'message' => $e->getMessage() !== '' ? $e->getMessage() : 'Application encountered an internal error. Please try again later.',
-			]));
+		} catch (Throwable $e) {
+			throw $e;
 		}
 
 		return $response;

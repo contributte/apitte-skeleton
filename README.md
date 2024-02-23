@@ -170,6 +170,8 @@ https://examples.contributte.org/apitte-skeleton/
     - [GET] http://localhost:8000/api/v1/users/999?_access_token=admin
     - [GET] http://localhost:8000/api/v1/users/email?email=admin@admin.cz&_access_token=admin
     - [POST] http://localhost:8000/api/v1/users/create
+    - [GET] http://localhost:8000/api/v1/static/text?_access_token=admin
+    - [GET] http://localhost:8000/api/v1/error/exception?_access_token=admin
 
 ## (Optional) REST API documentation
 
