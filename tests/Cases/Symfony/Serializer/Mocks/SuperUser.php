@@ -8,18 +8,14 @@ use Symfony\Component\Serializer\Annotation\SerializedName;
 class SuperUser
 {
 
-	/**
-	 * @var Order[]
-	 * @Groups({"user"})
-	 * @SerializedName("orders1")
-	 */
+	/** @var array<Order> */
+	#[Groups(['user'])]
+	#[SerializedName('orders1')]
 	private array $userOrders = [];
 
-	/**
-	 * @var Order[]
-	 * @Groups({"admin"})
-	 * @SerializedName("orders2")
-	 */
+	/** @var array<Order> */
+	#[Groups(['admin'])]
+	#[SerializedName('orders2')]
 	private array $adminOrders = [];
 
 	public function addUserOrder(Order $order): void

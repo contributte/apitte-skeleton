@@ -3,12 +3,11 @@
 namespace Tests\Cases\Unit\Symfony\Serializer;
 
 use Contributte\Tester\Toolkit;
-use Doctrine\Common\Annotations\AnnotationReader;
 use Doctrine\Common\Annotations\AnnotationRegistry;
 use Symfony\Component\PropertyInfo\Extractor\ReflectionExtractor;
 use Symfony\Component\Serializer\Encoder\JsonEncoder;
 use Symfony\Component\Serializer\Mapping\Factory\ClassMetadataFactory;
-use Symfony\Component\Serializer\Mapping\Loader\AnnotationLoader;
+use Symfony\Component\Serializer\Mapping\Loader\AttributeLoader;
 use Symfony\Component\Serializer\NameConverter\MetadataAwareNameConverter;
 use Symfony\Component\Serializer\Normalizer\ObjectNormalizer;
 use Symfony\Component\Serializer\Normalizer\PropertyNormalizer;
@@ -57,7 +56,7 @@ Toolkit::test(function (): void {
 });
 
 Toolkit::test(function (): void {
-	$classMetadataFactory = new ClassMetadataFactory(new AnnotationLoader(new AnnotationReader()));
+	$classMetadataFactory = new ClassMetadataFactory(new AttributeLoader());
 	$metadataAwareNameConverter = new MetadataAwareNameConverter($classMetadataFactory);
 
 	$serializer = new Serializer(

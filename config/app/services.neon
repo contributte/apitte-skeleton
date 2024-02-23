@@ -25,16 +25,11 @@ services:
 		autowired: false
 
 	symfony.serializer.classMetadataFactory:
-		factory: Symfony\Component\Serializer\Mapping\Factory\ClassMetadataFactory(@symfony.serializer.annotationLoader)
+		factory: Symfony\Component\Serializer\Mapping\Factory\ClassMetadataFactory(@symfony.serializer.attributeLoader)
 		autowired: false
 
-	symfony.serializer.annotationLoader:
-		factory: Symfony\Component\Serializer\Mapping\Loader\AnnotationLoader(
-			Doctrine\Common\Annotations\CachedReader(
-				@symfony.serializer.annotationReader,
-				Doctrine\Common\Cache\FilesystemCache(%tempDir%/cache/Symfony.Serializer)
-			)
-		)
+	symfony.serializer.attributeLoader:
+		factory: Symfony\Component\Serializer\Mapping\Loader\AttributeLoader()
 		autowired: false
 
 	symfony.serializer.annotationReader:
@@ -50,10 +45,5 @@ services:
 
 	symfony.validator.builder:
 		type: Symfony\Component\Validator\ValidatorBuilder
-		factory: Symfony\Component\Validator\Validation::createValidatorBuilder()::enableAttributeMapping(
-			Doctrine\Common\Annotations\CachedReader(
-				@symfony.serializer.annotationReader,
-				Doctrine\Common\Cache\FilesystemCache(%tempDir%/cache/Symfony.Validator)
-			)
-		)
+		factory: Symfony\Component\Validator\Validation::createValidatorBuilder()::enableAttributeMapping()
 		autowired: false
