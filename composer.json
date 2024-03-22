@@ -37,7 +37,7 @@
 
     "symfony/serializer": "^7.0.3",
     "symfony/validator": "^7.0.2",
-    "symfony/property-info": "^6.0.0",
+    "symfony/property-info": "^7.0.3",
     "symfony/cache": "^7.0.0"
   },
   "require-dev": {
