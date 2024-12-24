@@ -5989,16 +5989,16 @@
         },
         {
             "name": "fakerphp/faker",
-            "version": "v1.23.1",
+            "version": "v1.24.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FakerPHP/Faker.git",
-                "reference": "bfb4fe148adbf78eff521199619b93a52ae3554b"
+                "reference": "e0ee18eb1e6dc3cda3ce9fd97e5a0689a88a64b5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FakerPHP/Faker/zipball/bfb4fe148adbf78eff521199619b93a52ae3554b",
-                "reference": "bfb4fe148adbf78eff521199619b93a52ae3554b",
+                "url": "https://api.github.com/repos/FakerPHP/Faker/zipball/e0ee18eb1e6dc3cda3ce9fd97e5a0689a88a64b5",
+                "reference": "e0ee18eb1e6dc3cda3ce9fd97e5a0689a88a64b5",
                 "shasum": ""
             },
             "require": {
@@ -6046,9 +6046,9 @@
             ],
             "support": {
                 "issues": "https://github.com/FakerPHP/Faker/issues",
-                "source": "https://github.com/FakerPHP/Faker/tree/v1.23.1"
+                "source": "https://github.com/FakerPHP/Faker/tree/v1.24.1"
             },
-            "time": "2024-01-02T13:46:09+00:00"
+            "time": "2024-11-21T13:46:39+00:00"
         },
         {
             "name": "hamcrest/hamcrest-php",
@@ -6186,16 +6186,16 @@
         },
         {
             "name": "myclabs/deep-copy",
-            "version": "1.12.0",
+            "version": "1.12.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/myclabs/DeepCopy.git",
-                "reference": "3a6b9a42cd8f8771bd4295d13e1423fa7f3d942c"
+                "reference": "123267b2c49fbf30d78a7b2d333f6be754b94845"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/3a6b9a42cd8f8771bd4295d13e1423fa7f3d942c",
-                "reference": "3a6b9a42cd8f8771bd4295d13e1423fa7f3d942c",
+                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/123267b2c49fbf30d78a7b2d333f6be754b94845",
+                "reference": "123267b2c49fbf30d78a7b2d333f6be754b94845",
                 "shasum": ""
             },
             "require": {
@@ -6234,7 +6234,7 @@
             ],
             "support": {
                 "issues": "https://github.com/myclabs/DeepCopy/issues",
-                "source": "https://github.com/myclabs/DeepCopy/tree/1.12.0"
+                "source": "https://github.com/myclabs/DeepCopy/tree/1.12.1"
             },
             "funding": [
                 {
@@ -6242,20 +6242,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-06-12T14:39:25+00:00"
+            "time": "2024-11-08T17:47:46+00:00"
         },
         {
             "name": "nelmio/alice",
-            "version": "3.13.6",
+            "version": "3.14.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nelmio/alice.git",
-                "reference": "76caab8675c68956d56a2dd03f66384251e0aa7c"
+                "reference": "40b240dc33ceee636bad1da9ea2a87a3add3bf7a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nelmio/alice/zipball/76caab8675c68956d56a2dd03f66384251e0aa7c",
-                "reference": "76caab8675c68956d56a2dd03f66384251e0aa7c",
+                "url": "https://api.github.com/repos/nelmio/alice/zipball/40b240dc33ceee636bad1da9ea2a87a3add3bf7a",
+                "reference": "40b240dc33ceee636bad1da9ea2a87a3add3bf7a",
                 "shasum": ""
             },
             "require": {
@@ -6329,7 +6329,7 @@
             ],
             "support": {
                 "issues": "https://github.com/nelmio/alice/issues",
-                "source": "https://github.com/nelmio/alice/tree/3.13.6"
+                "source": "https://github.com/nelmio/alice/tree/3.14.0"
             },
             "funding": [
                 {
@@ -6337,7 +6337,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-07-03T17:54:12+00:00"
+            "time": "2024-12-23T11:09:53+00:00"
         },
         {
             "name": "nette/tester",
@@ -6752,16 +6752,16 @@
         },
         {
             "name": "sebastian/comparator",
-            "version": "6.0.1",
+            "version": "6.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/comparator.git",
-                "reference": "131942b86d3587291067a94f295498ab6ac79c20"
+                "reference": "43d129d6a0f81c78bee378b46688293eb7ea3739"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/comparator/zipball/131942b86d3587291067a94f295498ab6ac79c20",
-                "reference": "131942b86d3587291067a94f295498ab6ac79c20",
+                "url": "https://api.github.com/repos/sebastianbergmann/comparator/zipball/43d129d6a0f81c78bee378b46688293eb7ea3739",
+                "reference": "43d129d6a0f81c78bee378b46688293eb7ea3739",
                 "shasum": ""
             },
             "require": {
@@ -6772,12 +6772,12 @@
                 "sebastian/exporter": "^6.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^11.0"
+                "phpunit/phpunit": "^11.4"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "6.0-dev"
+                    "dev-main": "6.2-dev"
                 }
             },
             "autoload": {
@@ -6817,7 +6817,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/comparator/issues",
                 "security": "https://github.com/sebastianbergmann/comparator/security/policy",
-                "source": "https://github.com/sebastianbergmann/comparator/tree/6.0.1"
+                "source": "https://github.com/sebastianbergmann/comparator/tree/6.2.1"
             },
             "funding": [
                 {
@@ -6825,7 +6825,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-07-03T04:48:07+00:00"
+            "time": "2024-10-31T05:30:08+00:00"
         },
         {
             "name": "sebastian/diff",
@@ -6896,16 +6896,16 @@
         },
         {
             "name": "sebastian/exporter",
-            "version": "6.1.3",
+            "version": "6.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/exporter.git",
-                "reference": "c414673eee9a8f9d51bbf8d61fc9e3ef1e85b20e"
+                "reference": "3473f61172093b2da7de1fb5782e1f24cc036dc3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/exporter/zipball/c414673eee9a8f9d51bbf8d61fc9e3ef1e85b20e",
-                "reference": "c414673eee9a8f9d51bbf8d61fc9e3ef1e85b20e",
+                "url": "https://api.github.com/repos/sebastianbergmann/exporter/zipball/3473f61172093b2da7de1fb5782e1f24cc036dc3",
+                "reference": "3473f61172093b2da7de1fb5782e1f24cc036dc3",
                 "shasum": ""
             },
             "require": {
@@ -6914,7 +6914,7 @@
                 "sebastian/recursion-context": "^6.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^11.2"
+                "phpunit/phpunit": "^11.3"
             },
             "type": "library",
             "extra": {
@@ -6962,7 +6962,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/exporter/issues",
                 "security": "https://github.com/sebastianbergmann/exporter/security/policy",
-                "source": "https://github.com/sebastianbergmann/exporter/tree/6.1.3"
+                "source": "https://github.com/sebastianbergmann/exporter/tree/6.3.0"
             },
             "funding": [
                 {
@@ -6970,7 +6970,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-07-03T04:56:19+00:00"
+            "time": "2024-12-05T09:17:50+00:00"
         },
         {
             "name": "sebastian/recursion-context",
@@ -7183,16 +7183,16 @@
         },
         {
             "name": "symfony/property-access",
-            "version": "v7.1.1",
+            "version": "v7.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/property-access.git",
-                "reference": "74e39e6a6276b8e384f34c6ddbc10a6c9a60193a"
+                "reference": "3ae42efba01e45aaedecf5c93c8d6a3ab3a82276"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/property-access/zipball/74e39e6a6276b8e384f34c6ddbc10a6c9a60193a",
-                "reference": "74e39e6a6276b8e384f34c6ddbc10a6c9a60193a",
+                "url": "https://api.github.com/repos/symfony/property-access/zipball/3ae42efba01e45aaedecf5c93c8d6a3ab3a82276",
+                "reference": "3ae42efba01e45aaedecf5c93c8d6a3ab3a82276",
                 "shasum": ""
             },
             "require": {
@@ -7239,7 +7239,7 @@
                 "reflection"
             ],
             "support": {
-                "source": "https://github.com/symfony/property-access/tree/v7.1.1"
+                "source": "https://github.com/symfony/property-access/tree/v7.2.0"
             },
             "funding": [
                 {
@@ -7255,24 +7255,25 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-05-31T14:57:53+00:00"
+            "time": "2024-09-26T12:28:35+00:00"
         },
         {
             "name": "symfony/yaml",
-            "version": "v7.1.1",
+            "version": "v7.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "fa34c77015aa6720469db7003567b9f772492bf2"
+                "reference": "099581e99f557e9f16b43c5916c26380b54abb22"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/fa34c77015aa6720469db7003567b9f772492bf2",
-                "reference": "fa34c77015aa6720469db7003567b9f772492bf2",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/099581e99f557e9f16b43c5916c26380b54abb22",
+                "reference": "099581e99f557e9f16b43c5916c26380b54abb22",
                 "shasum": ""
             },
             "require": {
                 "php": ">=8.2",
+                "symfony/deprecation-contracts": "^2.5|^3.0",
                 "symfony/polyfill-ctype": "^1.8"
             },
             "conflict": {
@@ -7310,7 +7311,7 @@
             "description": "Loads and dumps YAML files",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/yaml/tree/v7.1.1"
+                "source": "https://github.com/symfony/yaml/tree/v7.2.0"
             },
             "funding": [
                 {
@@ -7326,7 +7327,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-05-31T14:57:53+00:00"
+            "time": "2024-10-23T06:56:12+00:00"
         }
     ],
     "aliases": [],
