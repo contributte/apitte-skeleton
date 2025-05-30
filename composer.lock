@@ -5215,16 +5215,16 @@
         },
         {
             "name": "symfony/translation-contracts",
-            "version": "v3.5.1",
+            "version": "v3.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/translation-contracts.git",
-                "reference": "4667ff3bd513750603a09c8dedbea942487fb07c"
+                "reference": "df210c7a2573f1913b2d17cc95f90f53a73d8f7d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/translation-contracts/zipball/4667ff3bd513750603a09c8dedbea942487fb07c",
-                "reference": "4667ff3bd513750603a09c8dedbea942487fb07c",
+                "url": "https://api.github.com/repos/symfony/translation-contracts/zipball/df210c7a2573f1913b2d17cc95f90f53a73d8f7d",
+                "reference": "df210c7a2573f1913b2d17cc95f90f53a73d8f7d",
                 "shasum": ""
             },
             "require": {
@@ -5237,7 +5237,7 @@
                     "name": "symfony/contracts"
                 },
                 "branch-alias": {
-                    "dev-main": "3.5-dev"
+                    "dev-main": "3.6-dev"
                 }
             },
             "autoload": {
@@ -5273,7 +5273,7 @@
                 "standards"
             ],
             "support": {
-                "source": "https://github.com/symfony/translation-contracts/tree/v3.5.1"
+                "source": "https://github.com/symfony/translation-contracts/tree/v3.6.0"
             },
             "funding": [
                 {
@@ -5289,7 +5289,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-09-25T14:20:29+00:00"
+            "time": "2024-09-27T08:32:26+00:00"
         },
         {
             "name": "symfony/type-info",
@@ -5368,16 +5368,16 @@
         },
         {
             "name": "symfony/validator",
-            "version": "v7.2.6",
+            "version": "v7.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/validator.git",
-                "reference": "f7c32e309885a97fc9572335e22c2c2d31f328c4"
+                "reference": "dabb03cddf50761c0aff4fbf5a3b3fffb3e5e38b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/validator/zipball/f7c32e309885a97fc9572335e22c2c2d31f328c4",
-                "reference": "f7c32e309885a97fc9572335e22c2c2d31f328c4",
+                "url": "https://api.github.com/repos/symfony/validator/zipball/dabb03cddf50761c0aff4fbf5a3b3fffb3e5e38b",
+                "reference": "dabb03cddf50761c0aff4fbf5a3b3fffb3e5e38b",
                 "shasum": ""
             },
             "require": {
@@ -5414,6 +5414,7 @@
                 "symfony/mime": "^6.4|^7.0",
                 "symfony/property-access": "^6.4|^7.0",
                 "symfony/property-info": "^6.4|^7.0",
+                "symfony/string": "^6.4|^7.0",
                 "symfony/translation": "^6.4.3|^7.0.3",
                 "symfony/type-info": "^7.1",
                 "symfony/yaml": "^6.4|^7.0"
@@ -5445,7 +5446,7 @@
             "description": "Provides tools to validate values",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/validator/tree/v7.2.6"
+                "source": "https://github.com/symfony/validator/tree/v7.3.0"
             },
             "funding": [
                 {
@@ -5461,7 +5462,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-05-02T08:36:00+00:00"
+            "time": "2025-05-29T07:19:49+00:00"
         },
         {
             "name": "symfony/var-exporter",
