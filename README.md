@@ -217,7 +217,7 @@ make coverage     # Generate test coverage report
 ```bash
 make docker-postgres  # Start PostgreSQL in Docker
 make docker-mariadb   # Start MariaDB in Docker
-docker-adminer        # Start Adminer (DB management UI)
+make docker-adminer   # Start Adminer (DB management UI)
 ```
 
 Access Adminer at http://localhost:8080 when using Docker Compose.
