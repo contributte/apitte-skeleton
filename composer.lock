@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b42c4ab5018c45975511f65c327f0c36",
+    "content-hash": "dc961ee5cf96eb33b3622302d3f01d1e",
     "packages": [
         {
             "name": "contributte/apitte",
-            "version": "v0.12.4",
+            "version": "v0.13.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/apitte.git",
-                "reference": "f583c4fed380930b3d531d5d75cc98d3cc867463"
+                "reference": "7a2fafc33b09fd1d31aab021dfe50557cc8c9ebc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/apitte/zipball/f583c4fed380930b3d531d5d75cc98d3cc867463",
-                "reference": "f583c4fed380930b3d531d5d75cc98d3cc867463",
+                "url": "https://api.github.com/repos/contributte/apitte/zipball/7a2fafc33b09fd1d31aab021dfe50557cc8c9ebc",
+                "reference": "7a2fafc33b09fd1d31aab021dfe50557cc8c9ebc",
                 "shasum": ""
             },
             "require": {
@@ -83,7 +83,7 @@
             ],
             "support": {
                 "issues": "https://github.com/contributte/apitte/issues",
-                "source": "https://github.com/contributte/apitte/tree/v0.12.4"
+                "source": "https://github.com/contributte/apitte/tree/v0.13.0"
             },
             "funding": [
                 {
@@ -95,7 +95,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-11-25T09:46:53+00:00"
+            "time": "2025-11-30T15:21:15+00:00"
         },
         {
             "name": "contributte/bootstrap",
