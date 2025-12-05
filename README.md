@@ -15,7 +15,7 @@
 </p>
 
 <p align=center>
-Website 🚀 <a href="https://contributte.org">contributte.org</a> | Contact 👨🏻‍💻 <a href="https://f3l1x.io">f3l1x.io</a> | Twitter 🐦 <a href="https://twitter.com/contributte">@contributte</a>
+Website <a href="https://contributte.org">contributte.org</a> | Contact <a href="https://f3l1x.io">f3l1x.io</a> | Twitter <a href="https://twitter.com/contributte">@contributte</a>
 </p>
 
 <p align=center>
@@ -24,246 +24,244 @@ Website 🚀 <a href="https://contributte.org">contributte.org</a> | Contact �
 
 -----
 
-## Goal
+## What is Apitte Skeleton?
 
-Main goal is to provide best prepared API starter-kit project for Nette-Apitte developers.
+**Apitte Skeleton** is a ready-to-use starter kit for building modern REST APIs in PHP. If you're looking to create a JSON API with proper authentication, database support, and automatic documentation - this project gives you everything you need to get started in minutes.
 
-Focused on:
+Think of it as a "batteries included" foundation for your next API project, built on the rock-solid [Nette Framework](https://nette.org).
 
-- PHP 8.2+
-- `nette/*` packages
-- build PSR-7 API via `contributte/apitte`
-- Doctrine ORM via `nettrine/*`
-- Symfony components via `contributte/*`
-- codestyle checking via **CodeSniffer** and `contributte/qa`
-- static analysing via **phpstan** and `contributte/phpstan`
-- unit / integration tests via **Nette Tester** and `contributte/tester`
+### Why use this skeleton?
 
-You can try it out yourself either by running it with docker, or more easily with docker-compose.
+- **Quick Setup** - Start building your API immediately, not tomorrow
+- **Production Ready** - Built with best practices and real-world requirements in mind
+- **Well Documented** - OpenAPI/Swagger documentation out of the box
+- **Modern PHP** - PHP 8.2+ with full type safety and modern practices
+- **Flexible Database** - Works with PostgreSQL or MariaDB/MySQL
+- **Docker Ready** - Spin up your dev environment with a single command
+- **Fully Tested** - Includes unit, integration, and E2E test setup
 
-## Demo
+## Live Demo
 
-https://examples.contributte.org/apitte-skeleton/
+Try it yourself: https://examples.contributte.org/apitte-skeleton/
 
-## Install with [docker](https://github.com/docker/docker/)
+## Quick Start (5 minutes)
 
-1) At first, use composer to install this project.
+The fastest way to get up and running is with Docker Compose:
 
-   ```bash
-   composer create-project -s dev contributte/apitte-skeleton
-   ```
+```bash
+# 1. Create the project
+composer create-project -s dev contributte/apitte-skeleton
+cd apitte-skeleton
 
-2) After that, you have to setup database.
+# 2. Initialize local configuration
+make init
 
-    1. Setup PostgreSQL 10. You can start it manually or use docker image `dockette/postgres:15`.
+# 3. Start everything (database + webserver)
+docker-compose up
 
-       ```bash
-       docker run -it -p 5432:5432 -e POSTGRES_PASSWORD=contributte -e POSTGRES_USER=contributte dockette/postgres:15
-       ```
+# 4. Open your browser
+# http://localhost:8000
+```
 
-       Or use make task, `make docker-postgres`.
+That's it! Your API is now running with a PostgreSQL database and sample data.
 
-    2. Setup MariaDB 10.4. You can start it manually or use docker image `mariadb:10.4`.
+### Try your first request
 
-       ```bash
-       docker run -it -d -p 3306:3306 -e MARIADB_ROOT_PASSWORD=contributte -e MARIADB_PASSWORD=contributte -e MARIADB_USER=contributte -e MARIADB_DATABASE=contributte mariadb:10.4
-       ```
+```bash
+# Get the OpenAPI documentation
+curl http://localhost:8000/api/public/v1/openapi/meta
 
-       Or use make task, `make docker-mariadb`.
+# List all users (requires authentication)
+curl "http://localhost:8000/api/v1/users?_access_token=admin"
 
-3) Custom configuration file is located at `config/local.neon`. Edit it if you want.
+# Get a specific user
+curl "http://localhost:8000/api/v1/users/1?_access_token=admin"
+```
 
-   Default configuration should look like this. Pick PostgreSQL or MariaDB.
+## Manual Installation (without Docker)
 
-   ```neon
-   # Host Config
-   parameters:
+If you prefer to run things locally:
 
-       # Database
-       database:
+### 1. Create the project
 
-           # Postgres
-           driver: pdo_pgsql
-           host: database
-           dbname: contributte
-           user: contributte
-           password: contributte
-           port: 5432
+```bash
+composer create-project -s dev contributte/apitte-skeleton
+cd apitte-skeleton
+make init
+```
 
-           # MariaDB
-           driver: pdo_mysql
-           host: database
-           dbname: contributte
-           user: contributte
-           password: contributte
-           port: 3306
-   ```
+### 2. Start a database
 
-4) Ok database is now running and application is configured to connect to it. Let's create initial data.
+**Option A: PostgreSQL**
+```bash
+docker run -it -p 5432:5432 \
+  -e POSTGRES_PASSWORD=contributte \
+  -e POSTGRES_USER=contributte \
+  dockette/postgres:15
+```
 
-   Run `NETTE_DEBUG=1 bin/console migrations:migrate` to create tables.
-   Run `NETTE_DEBUG=1 bin/console doctrine:fixtures:load --append` to create first user(s).
+**Option B: MariaDB**
+```bash
+docker run -it -d -p 3306:3306 \
+  -e MARIADB_ROOT_PASSWORD=contributte \
+  -e MARIADB_PASSWORD=contributte \
+  -e MARIADB_USER=contributte \
+  -e MARIADB_DATABASE=contributte \
+  mariadb:10.4
+```
 
-   Or via task `make build`.
+### 3. Configure the database connection
 
-5) Start your devstack or use PHP local development server.
+Edit `config/local.neon` and update the database section:
 
-   You can start PHP server by running `php -S localhost:8000 -t www` or use prepared make task `make dev`.
+```neon
+parameters:
+    database:
+        # For PostgreSQL:
+        driver: pdo_pgsql
+        host: localhost
+        port: 5432
+        dbname: contributte
+        user: contributte
+        password: contributte
 
-6) Open http://localhost and enjoy!
+        # For MariaDB, use instead:
+        # driver: pdo_mysql
+        # host: localhost
+        # port: 3306
+```
 
-   Take a look at:
-    - [GET] http://localhost:8000/api/public/v1/openapi/meta (Swagger format)
-    - [GET] http://localhost:8000/api/v1/users
-    - [GET] http://localhost:8000/api/v1/users?_access_token=admin
-    - [GET] http://localhost:8000/api/v1/users/1?_access_token=admin
-    - [GET] http://localhost:8000/api/v1/users/999?_access_token=admin
-    - [GET] http://localhost:8000/api/v1/users/email?email=admin@admin.cz&_access_token=admin
-    - [GET] http://localhost:8000/api/v1/static/text
-    - [POST] http://localhost:8000/api/v1/users/create
+### 4. Set up the database
 
-## Install with [docker compose](https://github.com/docker/compose)
+```bash
+# Create tables
+NETTE_DEBUG=1 bin/console migrations:migrate
 
-1) At first, use composer to install this project.
+# Load sample data
+NETTE_DEBUG=1 bin/console doctrine:fixtures:load --append
+```
 
-   ```
-   composer create-project -s dev contributte/apitte-skeleton
-   ```
+### 5. Start the development server
 
-2) Modify `config/local.neon` and set host to `postgres` or `mariadb`
+```bash
+make dev
+# or: php -S localhost:8000 -t www
+```
 
-   Default configuration should look like this. There is preconfigured database. Pick PostgreSQL or MariaDB.
+Open http://localhost:8000 and you're ready to go!
 
-   ```neon
-   # Host Config
-   parameters:
+## API Endpoints
 
-       # Database
-       database:
+### Public Endpoints (no authentication required)
 
-           # Postgres
-           driver: pdo_pgsql
-           host: database
-           dbname: contributte
-           user: contributte
-           password: contributte
-           port: 5432
+| Method | URL | Description |
+|--------|-----|-------------|
+| GET | `/api/public/v1/openapi/meta` | OpenAPI/Swagger specification |
 
-           # MariaDB
-           driver: pdo_mysql
-           host: database
-           dbname: contributte
-           user: contributte
-           password: contributte
-           port: 3306
-   ```
+### Protected Endpoints (authentication required)
 
-3) Run `docker-compose up`
+Add `?_access_token=admin` to your requests to authenticate.
 
-4) Open http://localhost and enjoy!
+| Method | URL | Description |
+|--------|-----|-------------|
+| GET | `/api/v1/users` | List all users (supports `limit` and `offset`) |
+| GET | `/api/v1/users/{id}` | Get user by ID |
+| GET | `/api/v1/users/email?email=...` | Get user by email |
+| POST | `/api/v1/users/create` | Create a new user |
+| GET | `/api/v1/static/text` | Get static configured text |
 
-   Take a look at:
-    - [GET] http://localhost:8000/api/public/v1/openapi/meta (Swagger format)
-    - [GET] http://localhost:8000/api/v1/users
-    - [GET] http://localhost:8000/api/v1/users?_access_token=admin
-    - [GET] http://localhost:8000/api/v1/users/1?_access_token=admin
-    - [GET] http://localhost:8000/api/v1/users/999?_access_token=admin
-    - [GET] http://localhost:8000/api/v1/users/email?email=admin@admin.cz&_access_token=admin
-    - [POST] http://localhost:8000/api/v1/users/create
-    - [GET] http://localhost:8000/api/v1/static/text?_access_token=admin
-    - [GET] http://localhost:8000/api/v1/error/exception?_access_token=admin
+### Creating a User
 
-## (Optional) REST API documentation
+```bash
+curl -X POST "http://localhost:8000/api/v1/users/create?_access_token=admin" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "name": "John",
+    "surname": "Doe",
+    "email": "john@example.com",
+    "username": "johndoe",
+    "password": "secret123"
+  }'
+```
 
-Since we have OpenAPI specification available at `/api/public/v1/openapi/meta` you just need to add UI for it (e.g. to `www/doc` directory or as a standalone application).
+## Project Structure
 
-Available options are:
+```
+apitte-skeleton/
+├── app/                    # Application code
+│   ├── Domain/             # Business logic (entities, repositories, DTOs)
+│   ├── Model/              # Infrastructure (auth, middleware, utilities)
+│   ├── Module/             # API controllers
+│   │   ├── PubV1/          # Public endpoints (no auth)
+│   │   └── V1/             # Protected endpoints
+│   └── Bootstrap.php       # Application entry point
+│
+├── config/                 # Configuration
+│   ├── app/                # App-specific config
+│   ├── env/                # Environment configs (dev/prod/test)
+│   ├── ext/                # Extension configs (apitte, doctrine, etc.)
+│   └── local.neon          # Your local config (gitignored)
+│
+├── db/                     # Database
+│   ├── Fixtures/           # Sample data loaders
+│   └── Migrations/         # Schema migrations
+│
+├── tests/                  # Test suites
+│   └── cases/              # Unit, Integration, E2E tests
+│
+├── www/                    # Web root (public files)
+└── var/                    # Runtime (logs, cache, temp)
+```
 
-- [Swagger UI](https://swagger.io/tools/swagger-ui/) + [themes](https://github.com/ostranme/swagger-ui-themes)
-- [ReDoc](https://github.com/Redocly/redoc)
-- other
+## Adding API Documentation UI
 
-## Features
+The project provides an OpenAPI specification at `/api/public/v1/openapi/meta`. To add a visual documentation interface, you can use:
 
-Here is a list of all features you can find in this project.
+- [Swagger UI](https://swagger.io/tools/swagger-ui/) - Interactive API explorer
+- [ReDoc](https://github.com/Redocly/redoc) - Clean, responsive documentation
 
-- PHP 8.2+
-- :package: Packages
-    - Nette 3+
-    - Contributte
-- :deciduous_tree: Structure
-    - `app`
-        - `config` - configuration files
-            - `env` - prod/dev/test environments
-            - `app` - application configs
-            - `ext` - extensions configs
-            - `local.neon` - local runtime config
-            - `local.neon.dist` - template for local config
-        - `domain` - business logic and domain specific classes
-        - `model` - application backbone
-        - `module` - API module
-        - `resources` - static content for mails and others
-        - `bootstrap.php` - Nette entrypoint
-    - `bin` - console entrypoint (`bin/console`)
-    - `db` - database files
-        - `fixtures` - PHP fixtures
-        - `migrations` - migrations files
-    - `docs` - documentation
-    - `vae`
-        - `log` - runtime and error logs
-        - `tmp` - temp files and cache
-    - `tests` - test engine and many cases
-        - `tests/cases/E2E` - PhpStorm's requests files (`api.http`)
-        - `tests/cases/Integration`
-        - `tests/cases/Unit`
-    - `vendor` - composer's folder
-    - `www` - public content
-- :exclamation: Tracy
-    - Cool error 500 page
+Simply add the UI files to your `www/` directory and point them to the OpenAPI endpoint.
 
-### Composer packages
+## Tech Stack
 
-Take a detailed look :eyes: at each single package.
+| Category | Technologies |
+|----------|--------------|
+| **Framework** | Nette 3+, Apitte (PSR-7 REST API) |
+| **Database** | Doctrine ORM via Nettrine |
+| **Validation** | Symfony Validator |
+| **Serialization** | Symfony Serializer |
+| **Testing** | Nette Tester, Mockery |
+| **Code Quality** | PHPStan, CodeSniffer |
+| **Logging** | Monolog |
+| **Debugging** | Tracy |
 
-- [contributte/bootstrap](https://contributte.org/packages/contributte/bootstrap.html)
-- [contributte/di](https://contributte.org/packages/contributte/di.html)
-- [contributte/http](https://contributte.org/packages/contributte/http.html)
-- [contributte/security](https://contributte.org/packages/contributte/security.html)
-- [contributte/utils](https://contributte.org/packages/contributte/utils.html)
-- [contributte/tracy](https://contributte.org/packages/contributte/tracy.html)
-- [contributte/console](https://contributte.org/packages/contributte/console.html)
-- [contributte/neonizer](https://contributte.org/packages/contributte/neonizer.html)
-- [contributte/monolog](https://contributte.org/packages/contributte/monolog.html)
-- [contributte/apitte](https://contributte.org/packages/contributte/apitte.html)
+## Useful Commands
 
-**Doctrine**
+```bash
+make init           # Create local.neon from template
+make setup          # Create var/ directories
+make dev            # Start development server
+make build          # Run migrations and load fixtures
+make tests          # Run test suite
+make phpstan        # Run static analysis
+make cs             # Check coding standards
+make csf            # Fix coding standards
+make docker-postgres   # Start PostgreSQL container
+make docker-mariadb    # Start MariaDB container
+```
 
-- [contributte/doctrine-orm](https://contributte.org/packages/contributte/doctrine-orm.html)
-- [contributte/doctrine-dbal](https://contributte.org/packages/contributte/doctrine-dbal.html)
-- [contributte/doctrine-migrations](https://contributte.org/packages/contributte/doctrine-migrations.html)
-- [contributte/doctrine-fixtures](https://contributte.org/packages/contributte/doctrine-fixtures.html)
+## Need Help?
 
-**Nette**
+- Check out the [Contributte documentation](https://contributte.org)
+- Join the [Gitter chat](https://bit.ly/ctteg) for community support
+- Visit the [forum](https://bit.ly/cttfo) for discussions
+- Browse [Apitte documentation](https://contributte.org/packages/contributte/apitte.html) for API-specific features
 
-- [nette/finder](https://github.com/nette/finder)
-- [nette/robot-loader](https://github.com/nette/robot-loader)
-
-**Symfony**
-
-- [symfony/serializer](https://github.com/symfony/serializer)
-- [symfony/validator](https://github.com/symfony/validator)
-
-## Demo
-
-![](.docs/assets/screenshot1.png)
-![](.docs/assets/screenshot2.png)
-![](.docs/assets/screenshot3.png)
-
-## Development
+## Contributing
 
 See [how to contribute](https://contributte.org/contributing.html) to this package.
 
-This package is currently maintaining by these authors.
+This package is currently maintained by:
 
 <a href="https://github.com/f3l1x">
     <img width="80" height="80" src="https://avatars2.githubusercontent.com/u/538058?v=3&s=80">
@@ -271,5 +269,4 @@ This package is currently maintaining by these authors.
 
 -----
 
-Consider to [support](https://contributte.org/partners.html) **contributte** development team.
-Also thank you for using this project.
+Consider [supporting](https://contributte.org/partners.html) the **contributte** development team. Thank you for using this project!
