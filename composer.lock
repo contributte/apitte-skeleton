@@ -6420,16 +6420,16 @@
         },
         {
             "name": "nelmio/alice",
-            "version": "3.16.0",
+            "version": "3.16.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nelmio/alice.git",
-                "reference": "a1101609a2d78cadbc0dfea54a763c233fe474a6"
+                "reference": "56dd770a6ba7f43cea91375f4b7d1b4bed80d6b9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nelmio/alice/zipball/a1101609a2d78cadbc0dfea54a763c233fe474a6",
-                "reference": "a1101609a2d78cadbc0dfea54a763c233fe474a6",
+                "url": "https://api.github.com/repos/nelmio/alice/zipball/56dd770a6ba7f43cea91375f4b7d1b4bed80d6b9",
+                "reference": "56dd770a6ba7f43cea91375f4b7d1b4bed80d6b9",
                 "shasum": ""
             },
             "require": {
@@ -6439,7 +6439,7 @@
                 "sebastian/comparator": "^3.0 || ^4.0 || ^5.0 || ^6.0 || ^7.0",
                 "symfony/polyfill-php84": "^1.31",
                 "symfony/property-access": "^7.4 || ^8.0",
-                "symfony/yaml": "^6.0 || ^7.4"
+                "symfony/yaml": "^7.4 || ^8.0"
             },
             "conflict": {
                 "symfony/framework-bundle": "<7.4.0"
@@ -6503,7 +6503,7 @@
             ],
             "support": {
                 "issues": "https://github.com/nelmio/alice/issues",
-                "source": "https://github.com/nelmio/alice/tree/3.16.0"
+                "source": "https://github.com/nelmio/alice/tree/3.16.1"
             },
             "funding": [
                 {
@@ -6511,7 +6511,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-12-09T12:44:34+00:00"
+            "time": "2025-12-17T08:56:35+00:00"
         },
         {
             "name": "nette/tester",
