@@ -16,7 +16,7 @@
   "require": {
     "php": ">=8.2",
 
-    "contributte/bootstrap": "^0.6.0",
+    "contributte/bootstrap": "^0.7.0",
     "contributte/console": "^0.10.1",
     "contributte/di": "^0.5.6",
     "contributte/http": "^0.5.0",
