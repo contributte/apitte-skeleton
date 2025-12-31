@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "dac6341b8654378261710223f3b45167",
+    "content-hash": "5d7cc9069f6c7583a74ab46a8903a15c",
     "packages": [
         {
             "name": "contributte/apitte",
@@ -543,16 +543,16 @@
         },
         {
             "name": "contributte/neonizer",
-            "version": "v0.6.0",
+            "version": "v0.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/neonizer.git",
-                "reference": "7b5454b086326becd43cbe9c2716951daa6ab538"
+                "reference": "777f9e1c818fb9b17f9b2f07975683053d917086"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/neonizer/zipball/7b5454b086326becd43cbe9c2716951daa6ab538",
-                "reference": "7b5454b086326becd43cbe9c2716951daa6ab538",
+                "url": "https://api.github.com/repos/contributte/neonizer/zipball/777f9e1c818fb9b17f9b2f07975683053d917086",
+                "reference": "777f9e1c818fb9b17f9b2f07975683053d917086",
                 "shasum": ""
             },
             "require": {
@@ -561,10 +561,10 @@
             },
             "require-dev": {
                 "composer/composer": "^2.6.6",
-                "contributte/phpstan": "^0.1",
-                "contributte/qa": "^0.4",
-                "contributte/tester": "^0.3",
-                "mockery/mockery": "^1.5.1"
+                "contributte/phpstan": "^0.2.0",
+                "contributte/qa": "^0.4.0",
+                "contributte/tester": "^0.3.0",
+                "mockery/mockery": "^1.6.12"
             },
             "type": "library",
             "extra": {
@@ -598,7 +598,7 @@
             ],
             "support": {
                 "issues": "https://github.com/contributte/neonizer/issues",
-                "source": "https://github.com/contributte/neonizer/tree/v0.6.0"
+                "source": "https://github.com/contributte/neonizer/tree/v0.7.0"
             },
             "funding": [
                 {
@@ -610,7 +610,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-02-05T20:07:16+00:00"
+            "time": "2025-12-30T17:30:57+00:00"
         },
         {
             "name": "contributte/openapi",
