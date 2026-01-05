@@ -24,164 +24,94 @@ Website 🚀 <a href="https://contributte.org">contributte.org</a> | Contact �
 
 -----
 
-## Goal
+## What is this project?
 
-Main goal is to provide best prepared API starter-kit project for Nette-Apitte developers.
+Apitte Skeleton is a batteries-included starter kit for building REST APIs on top of Nette 3 and [contributte/apitte](https://contributte.org/packages/contributte/apitte.html). It ships with Doctrine ORM, sensible defaults, and developer tooling so you can focus on shipping features instead of wiring infrastructure.
 
-Focused on:
+Key features:
 
-- PHP 8.2+
-- `nette/*` packages
-- build PSR-7 API via `contributte/apitte`
-- Doctrine ORM via `nettrine/*`
-- Symfony components via `contributte/*`
-- codestyle checking via **CodeSniffer** and `contributte/qa`
-- static analysing via **phpstan** and `contributte/phpstan`
-- unit / integration tests via **Nette Tester** and `contributte/tester`
+- PHP 8.2+ with Nette 3 and Contributte integrations
+- PSR-7 API stack via Apitte
+- Doctrine ORM with migrations and fixtures
+- Symfony Serializer/Validator support
+- QA tools preconfigured (CodeSniffer, PHPStan, Nette Tester)
 
-You can try it out yourself either by running it with docker, or more easily with docker-compose.
+Explore the live demo: https://examples.contributte.org/apitte-skeleton/
 
-## Demo
+## Quick start
 
-https://examples.contributte.org/apitte-skeleton/
+If you want the fastest way to try the API locally, use Docker Compose:
 
-## Install with [docker](https://github.com/docker/docker/)
+```bash
+composer create-project -s dev contributte/apitte-skeleton
+cd apitte-skeleton
+cp config/local.neon.dist config/local.neon  # adjust DB credentials if needed
+docker-compose up
+```
 
-1) At first, use composer to install this project.
+Once the containers are up, open http://localhost:8000 and browse the sample endpoints:
+
+- [GET] `/api/public/v1/openapi/meta` – OpenAPI JSON
+- [GET] `/api/v1/users` – list users
+- [POST] `/api/v1/users/create` – create a user
+
+## Manual setup (no Docker)
+
+1. Install the project:
 
    ```bash
    composer create-project -s dev contributte/apitte-skeleton
+   cd apitte-skeleton
    ```
 
-2) After that, you have to setup database.
+2. Configure your database by copying the template and setting connection details (PostgreSQL or MariaDB):
 
-    1. Setup PostgreSQL 10. You can start it manually or use docker image `dockette/postgres:15`.
-
-       ```bash
-       docker run -it -p 5432:5432 -e POSTGRES_PASSWORD=contributte -e POSTGRES_USER=contributte dockette/postgres:15
-       ```
-
-       Or use make task, `make docker-postgres`.
-
-    2. Setup MariaDB 10.4. You can start it manually or use docker image `mariadb:10.4`.
-
-       ```bash
-       docker run -it -d -p 3306:3306 -e MARIADB_ROOT_PASSWORD=contributte -e MARIADB_PASSWORD=contributte -e MARIADB_USER=contributte -e MARIADB_DATABASE=contributte mariadb:10.4
-       ```
-
-       Or use make task, `make docker-mariadb`.
-
-3) Custom configuration file is located at `config/local.neon`. Edit it if you want.
-
-   Default configuration should look like this. Pick PostgreSQL or MariaDB.
+   ```bash
+   cp config/local.neon.dist config/local.neon
+   ```
 
    ```neon
-   # Host Config
    parameters:
-
-       # Database
        database:
-
-           # Postgres
-           driver: pdo_pgsql
-           host: database
+           driver: pdo_pgsql # or pdo_mysql
+           host: 127.0.0.1
            dbname: contributte
            user: contributte
            password: contributte
-           port: 5432
-
-           # MariaDB
-           driver: pdo_mysql
-           host: database
-           dbname: contributte
-           user: contributte
-           password: contributte
-           port: 3306
+           port: 5432 # or 3306 for MariaDB
    ```
 
-4) Ok database is now running and application is configured to connect to it. Let's create initial data.
+3. Start your database (examples):
 
-   Run `NETTE_DEBUG=1 bin/console migrations:migrate` to create tables.
-   Run `NETTE_DEBUG=1 bin/console doctrine:fixtures:load --append` to create first user(s).
-
-   Or via task `make build`.
-
-5) Start your devstack or use PHP local development server.
-
-   You can start PHP server by running `php -S localhost:8000 -t www` or use prepared make task `make dev`.
-
-6) Open http://localhost and enjoy!
-
-   Take a look at:
-    - [GET] http://localhost:8000/api/public/v1/openapi/meta (Swagger format)
-    - [GET] http://localhost:8000/api/v1/users
-    - [GET] http://localhost:8000/api/v1/users?_access_token=admin
-    - [GET] http://localhost:8000/api/v1/users/1?_access_token=admin
-    - [GET] http://localhost:8000/api/v1/users/999?_access_token=admin
-    - [GET] http://localhost:8000/api/v1/users/email?email=admin@admin.cz&_access_token=admin
-    - [GET] http://localhost:8000/api/v1/static/text
-    - [POST] http://localhost:8000/api/v1/users/create
-
-## Install with [docker compose](https://github.com/docker/compose)
-
-1) At first, use composer to install this project.
-
-   ```
-   composer create-project -s dev contributte/apitte-skeleton
+   ```bash
+docker run -p 5432:5432 -e POSTGRES_PASSWORD=contributte -e POSTGRES_USER=contributte dockette/postgres:15
+# or
+docker run -p 3306:3306 -e MARIADB_ROOT_PASSWORD=contributte -e MARIADB_USER=contributte -e MARIADB_PASSWORD=contributte -e MARIADB_DATABASE=contributte mariadb:10.4
    ```
 
-2) Modify `config/local.neon` and set host to `postgres` or `mariadb`
+4. Prepare the schema and seed data:
 
-   Default configuration should look like this. There is preconfigured database. Pick PostgreSQL or MariaDB.
-
-   ```neon
-   # Host Config
-   parameters:
-
-       # Database
-       database:
-
-           # Postgres
-           driver: pdo_pgsql
-           host: database
-           dbname: contributte
-           user: contributte
-           password: contributte
-           port: 5432
-
-           # MariaDB
-           driver: pdo_mysql
-           host: database
-           dbname: contributte
-           user: contributte
-           password: contributte
-           port: 3306
+   ```bash
+   NETTE_DEBUG=1 bin/console migrations:migrate
+   NETTE_DEBUG=1 bin/console doctrine:fixtures:load --append
    ```
 
-3) Run `docker-compose up`
+5. Run the development server:
 
-4) Open http://localhost and enjoy!
+   ```bash
+   make dev    # or: php -S localhost:8000 -t www
+   ```
 
-   Take a look at:
-    - [GET] http://localhost:8000/api/public/v1/openapi/meta (Swagger format)
-    - [GET] http://localhost:8000/api/v1/users
-    - [GET] http://localhost:8000/api/v1/users?_access_token=admin
-    - [GET] http://localhost:8000/api/v1/users/1?_access_token=admin
-    - [GET] http://localhost:8000/api/v1/users/999?_access_token=admin
-    - [GET] http://localhost:8000/api/v1/users/email?email=admin@admin.cz&_access_token=admin
-    - [POST] http://localhost:8000/api/v1/users/create
-    - [GET] http://localhost:8000/api/v1/static/text?_access_token=admin
-    - [GET] http://localhost:8000/api/v1/error/exception?_access_token=admin
+## Useful commands
 
-## (Optional) REST API documentation
+- `make docker-postgres` / `make docker-mariadb` – start helper DB containers
+- `make build` – run migrations, load fixtures, and warm up cache
+- `make qa` – run static analysis and code style checks
+- `make tests` – execute the test suite
 
-Since we have OpenAPI specification available at `/api/public/v1/openapi/meta` you just need to add UI for it (e.g. to `www/doc` directory or as a standalone application).
+## API discovery
 
-Available options are:
-
-- [Swagger UI](https://swagger.io/tools/swagger-ui/) + [themes](https://github.com/ostranme/swagger-ui-themes)
-- [ReDoc](https://github.com/Redocly/redoc)
-- other
+OpenAPI metadata is available at `/api/public/v1/openapi/meta`, so you can plug in your favorite viewer (Swagger UI, ReDoc, etc.). The repository also includes `tests/cases/E2E/api.http` with ready-to-use HTTP requests for tools like PhpStorm.
 
 ## Features
 
