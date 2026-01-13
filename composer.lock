@@ -6008,28 +6008,28 @@
         },
         {
             "name": "contributte/tester",
-            "version": "v0.4.0",
+            "version": "v0.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/tester.git",
-                "reference": "06757baef46c13ec09cafe35fabf6b250fc47a3e"
+                "reference": "7fef916ebdcc579cb9934c8a84cd46008f8a27ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/tester/zipball/06757baef46c13ec09cafe35fabf6b250fc47a3e",
-                "reference": "06757baef46c13ec09cafe35fabf6b250fc47a3e",
+                "url": "https://api.github.com/repos/contributte/tester/zipball/7fef916ebdcc579cb9934c8a84cd46008f8a27ca",
+                "reference": "7fef916ebdcc579cb9934c8a84cd46008f8a27ca",
                 "shasum": ""
             },
             "require": {
-                "nette/tester": "^2.5.4",
+                "nette/tester": "^2.5.7",
                 "php": ">=8.2"
             },
             "require-dev": {
-                "contributte/phpstan": "^0.1.0",
-                "contributte/qa": "^0.4.0",
-                "nette/di": "^3.2.4",
-                "nette/neon": "^3.4.4",
-                "nette/robot-loader": "^4.0.3"
+                "contributte/phpstan": "^0.3.0",
+                "contributte/qa": "^0.5.0",
+                "nette/di": "^3.2.5",
+                "nette/neon": "^3.4.6",
+                "nette/robot-loader": "^4.1.0"
             },
             "suggest": {
                 "nette/di": "for NEON handling",
@@ -6066,7 +6066,7 @@
             ],
             "support": {
                 "issues": "https://github.com/contributte/tester/issues",
-                "source": "https://github.com/contributte/tester/tree/v0.4.0"
+                "source": "https://github.com/contributte/tester/tree/v0.4.1"
             },
             "funding": [
                 {
@@ -6078,7 +6078,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-03-28T15:51:55+00:00"
+            "time": "2026-01-12T16:40:09+00:00"
         },
         {
             "name": "dealerdirect/phpcodesniffer-composer-installer",
@@ -6512,24 +6512,24 @@
         },
         {
             "name": "nette/tester",
-            "version": "v2.5.4",
+            "version": "v2.5.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/tester.git",
-                "reference": "c11863785779e87b40adebf150364f2e5938c111"
+                "reference": "dc02e7811f3491a72e87538044586cee2f483d58"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/tester/zipball/c11863785779e87b40adebf150364f2e5938c111",
-                "reference": "c11863785779e87b40adebf150364f2e5938c111",
+                "url": "https://api.github.com/repos/nette/tester/zipball/dc02e7811f3491a72e87538044586cee2f483d58",
+                "reference": "dc02e7811f3491a72e87538044586cee2f483d58",
                 "shasum": ""
             },
             "require": {
-                "php": "8.0 - 8.4"
+                "php": "8.0 - 8.5"
             },
             "require-dev": {
                 "ext-simplexml": "*",
-                "phpstan/phpstan": "^1.0"
+                "phpstan/phpstan-nette": "^2.0@stable"
             },
             "bin": [
                 "src/tester"
@@ -6541,6 +6541,9 @@
                 }
             },
             "autoload": {
+                "psr-4": {
+                    "Tester\\": "src"
+                },
                 "classmap": [
                     "src/"
                 ]
@@ -6581,9 +6584,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nette/tester/issues",
-                "source": "https://github.com/nette/tester/tree/v2.5.4"
+                "source": "https://github.com/nette/tester/tree/v2.5.7"
             },
-            "time": "2024-10-23T23:57:10+00:00"
+            "time": "2025-11-22T18:50:53+00:00"
         },
         {
             "name": "phpstan/phpdoc-parser",
