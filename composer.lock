@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ea5d50c1e4c0eb2bc6c8e4a9dedee430",
+    "content-hash": "eed3679e5b862c312d40d114bb030002",
     "packages": [
         {
             "name": "contributte/apitte",
@@ -5728,22 +5728,22 @@
         },
         {
             "name": "tracy/tracy",
-            "version": "v2.10.9",
+            "version": "v2.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/tracy.git",
-                "reference": "e7af75205b184ca8895bc57fafd331f8d5022d26"
+                "reference": "eec57bcf2ff11d79f519a19da9d7ae1e2c63c42e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/tracy/zipball/e7af75205b184ca8895bc57fafd331f8d5022d26",
-                "reference": "e7af75205b184ca8895bc57fafd331f8d5022d26",
+                "url": "https://api.github.com/repos/nette/tracy/zipball/eec57bcf2ff11d79f519a19da9d7ae1e2c63c42e",
+                "reference": "eec57bcf2ff11d79f519a19da9d7ae1e2c63c42e",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "ext-session": "*",
-                "php": "8.0 - 8.4"
+                "php": "8.2 - 8.5"
             },
             "conflict": {
                 "nette/di": "<3.0"
@@ -5755,19 +5755,22 @@
                 "nette/mail": "^3.0 || ^4.0",
                 "nette/tester": "^2.2",
                 "nette/utils": "^3.0 || ^4.0",
-                "phpstan/phpstan": "^1.0",
+                "phpstan/phpstan-nette": "^2.0@stable",
                 "psr/log": "^1.0 || ^2.0 || ^3.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.10-dev"
+                    "dev-master": "2.11-dev"
                 }
             },
             "autoload": {
                 "files": [
                     "src/Tracy/functions.php"
                 ],
+                "psr-4": {
+                    "Tracy\\": "src"
+                },
                 "classmap": [
                     "src"
                 ]
@@ -5797,29 +5800,29 @@
             ],
             "support": {
                 "issues": "https://github.com/nette/tracy/issues",
-                "source": "https://github.com/nette/tracy/tree/v2.10.9"
+                "source": "https://github.com/nette/tracy/tree/v2.11.0"
             },
-            "time": "2024-11-07T14:48:00+00:00"
+            "time": "2025-10-31T00:12:50+00:00"
         }
     ],
     "packages-dev": [
         {
             "name": "contributte/dev",
-            "version": "v0.5.0",
+            "version": "v0.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/dev.git",
-                "reference": "06d386f519b57ded20a2468fa696779a2d349e00"
+                "reference": "6efddab1a94cdf326e117132731fbd8a883f1d8f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/dev/zipball/06d386f519b57ded20a2468fa696779a2d349e00",
-                "reference": "06d386f519b57ded20a2468fa696779a2d349e00",
+                "url": "https://api.github.com/repos/contributte/dev/zipball/6efddab1a94cdf326e117132731fbd8a883f1d8f",
+                "reference": "6efddab1a94cdf326e117132731fbd8a883f1d8f",
                 "shasum": ""
             },
             "require": {
                 "nette/utils": "^4.0.3",
-                "php": ">=8.1",
+                "php": ">=8.2",
                 "tracy/tracy": "^2.10.2"
             },
             "require-dev": {
@@ -5862,7 +5865,7 @@
             ],
             "support": {
                 "issues": "https://github.com/contributte/dev/issues",
-                "source": "https://github.com/contributte/dev/tree/v0.5.0"
+                "source": "https://github.com/contributte/dev/tree/v0.6.0"
             },
             "funding": [
                 {
@@ -5874,7 +5877,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-11-17T15:55:03+00:00"
+            "time": "2025-12-30T18:02:35+00:00"
         },
         {
             "name": "contributte/phpstan",
