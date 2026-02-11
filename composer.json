@@ -26,7 +26,7 @@
     "contributte/tracy": "^0.6.0",
     "contributte/utils": "^0.7.0",
 
-    "contributte/apitte": "^0.13.0",
+    "contributte/apitte": "^0.14.0",
 
     "nettrine/annotations": "^0.7.0",
     "nettrine/orm": "^0.8.4",

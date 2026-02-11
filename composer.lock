@@ -4,50 +4,47 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "eed3679e5b862c312d40d114bb030002",
+    "content-hash": "b4c8ab2d2a25ac9efb073e0f974372c3",
     "packages": [
         {
             "name": "contributte/apitte",
-            "version": "v0.13.0",
+            "version": "v0.14.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/apitte.git",
-                "reference": "7a2fafc33b09fd1d31aab021dfe50557cc8c9ebc"
+                "reference": "c6cb21b8ab1c4e61c962d8c9d10b7908dd3da529"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/apitte/zipball/7a2fafc33b09fd1d31aab021dfe50557cc8c9ebc",
-                "reference": "7a2fafc33b09fd1d31aab021dfe50557cc8c9ebc",
+                "url": "https://api.github.com/repos/contributte/apitte/zipball/c6cb21b8ab1c4e61c962d8c9d10b7908dd3da529",
+                "reference": "c6cb21b8ab1c4e61c962d8c9d10b7908dd3da529",
                 "shasum": ""
             },
             "require": {
-                "contributte/middlewares": "^0.11.0 || ^0.12.0",
+                "contributte/middlewares": "^0.11.0 || ^0.12.0 || ^0.13.0",
                 "contributte/openapi": "^0.1.0",
-                "contributte/psr7-http-message": "^0.9.0 || ^0.10.0",
-                "doctrine/annotations": "^1.14.3 || ^2.0.0",
+                "contributte/psr7-http-message": "^0.9.0 || ^0.10.0 || ^0.11.0",
                 "ext-json": "*",
-                "koriym/attributes": "^1.0.5",
                 "nette/di": "^3.1.8",
-                "nette/utils": "^4.0.0",
-                "php": ">=8.1"
+                "nette/utils": "^4.1.0",
+                "php": ">=8.2"
             },
             "provide": {
                 "psr/http-message-implementation": "1.0"
             },
             "require-dev": {
-                "contributte/dev": "^0.4",
-                "contributte/phpstan": "^0.1",
+                "contributte/dev": "^0.5",
+                "contributte/phpstan": "^0.3.1",
                 "contributte/qa": "^0.4",
-                "contributte/tester": "^0.3",
-                "mockery/mockery": "^1.6.6",
+                "contributte/tester": "^0.4.1",
+                "mockery/mockery": "^1.6.12",
                 "nette/application": "^3.1.4",
-                "nette/di": "^3.1.8",
                 "nette/http": "^3.2.3",
                 "psr/log": "^2.0.0 || ^3.0.0",
-                "symfony/console": "^6.4.0 || ^7.0.0",
-                "symfony/translation": "^6.4.0 | ^7.0.0",
-                "symfony/validator": "^6.4.0 || ^7.0.0",
-                "symfony/yaml": "^6.4.0 || ^7.0.0",
+                "symfony/console": "^6.4.0 || ^7.0.0 || ^8.0.0",
+                "symfony/translation": "^6.4.0 | ^7.0.0 || ^8.0.0",
+                "symfony/validator": "^6.4.0 || ^7.0.0 || ^8.0.0",
+                "symfony/yaml": "^6.4.0 || ^7.0.0 || ^8.0.0",
                 "tracy/tracy": "^2.10.5"
             },
             "type": "library",
@@ -71,19 +68,19 @@
                     "homepage": "https://f3l1x.io"
                 }
             ],
-            "description": "An opinionated and enjoyable API framework based on Nette Framework. Supporting content negotiation, debugging, middlewares, attributes, annotations and loving openapi/swagger.",
+            "description": "An opinionated and enjoyable API framework based on Nette Framework. Supporting content negotiation, debugging, middlewares, attributes and loving openapi/swagger.",
             "homepage": "https://github.com/contributte/apitte",
             "keywords": [
-                "annotation",
                 "api",
                 "apitte",
+                "attribute",
                 "http",
                 "nette",
                 "rest"
             ],
             "support": {
                 "issues": "https://github.com/contributte/apitte/issues",
-                "source": "https://github.com/contributte/apitte/tree/v0.13.0"
+                "source": "https://github.com/contributte/apitte/tree/v0.14.0"
             },
             "funding": [
                 {
@@ -95,7 +92,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-11-30T15:21:15+00:00"
+            "time": "2026-01-14T07:08:06+00:00"
         },
         {
             "name": "contributte/bootstrap",
@@ -390,33 +387,33 @@
         },
         {
             "name": "contributte/middlewares",
-            "version": "v0.12.1",
+            "version": "v0.13.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/middlewares.git",
-                "reference": "0b6c80bf0601d9a4788b24178e34014e51596e13"
+                "reference": "cf5a4e04dd36d0e551aa17b7a5b7dc21f0255dea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/middlewares/zipball/0b6c80bf0601d9a4788b24178e34014e51596e13",
-                "reference": "0b6c80bf0601d9a4788b24178e34014e51596e13",
+                "url": "https://api.github.com/repos/contributte/middlewares/zipball/cf5a4e04dd36d0e551aa17b7a5b7dc21f0255dea",
+                "reference": "cf5a4e04dd36d0e551aa17b7a5b7dc21f0255dea",
                 "shasum": ""
             },
             "require": {
-                "contributte/psr7-http-message": "^0.9.0 || ^0.10.0",
+                "contributte/psr7-http-message": "^0.9.0 || ^0.10.0 || ^0.11.0",
                 "nette/di": "^3.1.8",
-                "php": ">=8.1"
+                "php": ">=8.2"
             },
             "conflict": {
                 "nette/application": "<3.2.0"
             },
             "require-dev": {
-                "contributte/phpstan": "^0.1",
-                "contributte/qa": "^0.4",
-                "contributte/tester": "^0.4",
+                "contributte/phpstan": "^0.3.1",
+                "contributte/qa": "^0.4.0",
+                "contributte/tester": "^0.4.1",
                 "nette/application": "^3.2.0",
                 "nette/http": "^3.2.3",
-                "psr/log": "^2.0|^3.0",
+                "psr/log": "^2.0 || ^3.0",
                 "tracy/tracy": "^2.10.5"
             },
             "suggest": {
@@ -454,7 +451,7 @@
             ],
             "support": {
                 "issues": "https://github.com/contributte/middlewares/issues",
-                "source": "https://github.com/contributte/middlewares/tree/v0.12.1"
+                "source": "https://github.com/contributte/middlewares/tree/v0.13.1"
             },
             "funding": [
                 {
@@ -466,7 +463,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-02-23T15:28:39+00:00"
+            "time": "2026-01-13T16:45:36+00:00"
         },
         {
             "name": "contributte/monolog",
@@ -683,22 +680,22 @@
         },
         {
             "name": "contributte/psr7-http-message",
-            "version": "v0.10.0",
+            "version": "v0.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/psr7-http-message.git",
-                "reference": "d8d59f429dec7c7eaf093173077a098b004fd1d5"
+                "reference": "e269badb77aeb2ea36ebe2a21a17af89385e6d76"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/psr7-http-message/zipball/d8d59f429dec7c7eaf093173077a098b004fd1d5",
-                "reference": "d8d59f429dec7c7eaf093173077a098b004fd1d5",
+                "url": "https://api.github.com/repos/contributte/psr7-http-message/zipball/e269badb77aeb2ea36ebe2a21a17af89385e6d76",
+                "reference": "e269badb77aeb2ea36ebe2a21a17af89385e6d76",
                 "shasum": ""
             },
             "require": {
                 "guzzlehttp/psr7": "^2.6.1",
                 "nette/utils": "^v4.0.2",
-                "php": ">=8.1"
+                "php": ">=8.2"
             },
             "conflict": {
                 "nette/di": "<3.0.7",
@@ -707,8 +704,8 @@
             "require-dev": {
                 "contributte/phpstan": "^0.1",
                 "contributte/qa": "^0.3.1",
-                "contributte/tester": "^0.2.0",
-                "nette/application": "^v3.1.14",
+                "contributte/tester": "^0.4.0",
+                "nette/application": "^3.1.14",
                 "nette/di": "^3.1.8",
                 "nette/http": "^3.2.3"
             },
@@ -750,7 +747,7 @@
             ],
             "support": {
                 "issues": "https://github.com/contributte/psr7-http-message/issues",
-                "source": "https://github.com/contributte/psr7-http-message/tree/v0.10.0"
+                "source": "https://github.com/contributte/psr7-http-message/tree/v0.11.0"
             },
             "funding": [
                 {
@@ -762,7 +759,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-12-15T15:54:41+00:00"
+            "time": "2025-12-15T09:23:28+00:00"
         },
         {
             "name": "contributte/security",
@@ -2340,66 +2337,6 @@
             "time": "2025-08-23T21:21:41+00:00"
         },
         {
-            "name": "koriym/attributes",
-            "version": "1.0.7",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/koriym/Koriym.Attributes.git",
-                "reference": "6a8b270bec6ef98e2c817fc91ffc7bc07c5c734c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/koriym/Koriym.Attributes/zipball/6a8b270bec6ef98e2c817fc91ffc7bc07c5c734c",
-                "reference": "6a8b270bec6ef98e2c817fc91ffc7bc07c5c734c",
-                "shasum": ""
-            },
-            "require": {
-                "doctrine/annotations": "^1.12 || ^2.0",
-                "php": "^7.2 || ^8.0"
-            },
-            "require-dev": {
-                "bamarni/composer-bin-plugin": "^1.4",
-                "ext-pdo": "*",
-                "phpunit/phpunit": "^8.5.24 || ^9.5"
-            },
-            "suggest": {
-                "koriym/param-reader": "An attribute/annotation reader for parameters"
-            },
-            "type": "library",
-            "extra": {
-                "bamarni-bin": {
-                    "bin-links": true,
-                    "forward-command": true,
-                    "target-directory": "vendor-bin"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Koriym\\Attributes\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Akihito Koriyama",
-                    "email": "akihito.koriyama@gmail.com"
-                }
-            ],
-            "description": "An annotation/attribute reader",
-            "keywords": [
-                "annotation",
-                "attribute"
-            ],
-            "support": {
-                "issues": "https://github.com/koriym/Koriym.Attributes/issues",
-                "source": "https://github.com/koriym/Koriym.Attributes/tree/1.0.7"
-            },
-            "time": "2025-08-08T21:14:03+00:00"
-        },
-        {
             "name": "monolog/monolog",
             "version": "3.10.0",
             "source": {
@@ -2819,16 +2756,16 @@
         },
         {
             "name": "nette/php-generator",
-            "version": "v4.2.0",
+            "version": "v4.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/php-generator.git",
-                "reference": "4707546a1f11badd72f5d82af4f8a6bc64bd56ac"
+                "reference": "52aff4d9b12f20ca9f3e31a559b646d2fd21dd61"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/php-generator/zipball/4707546a1f11badd72f5d82af4f8a6bc64bd56ac",
-                "reference": "4707546a1f11badd72f5d82af4f8a6bc64bd56ac",
+                "url": "https://api.github.com/repos/nette/php-generator/zipball/52aff4d9b12f20ca9f3e31a559b646d2fd21dd61",
+                "reference": "52aff4d9b12f20ca9f3e31a559b646d2fd21dd61",
                 "shasum": ""
             },
             "require": {
@@ -2837,9 +2774,9 @@
             },
             "require-dev": {
                 "jetbrains/phpstorm-attributes": "^1.2",
-                "nette/tester": "^2.4",
+                "nette/tester": "^2.6",
                 "nikic/php-parser": "^5.0",
-                "phpstan/phpstan-nette": "^2.0@stable",
+                "phpstan/phpstan": "^2.0@stable",
                 "tracy/tracy": "^2.8"
             },
             "suggest": {
@@ -2885,22 +2822,22 @@
             ],
             "support": {
                 "issues": "https://github.com/nette/php-generator/issues",
-                "source": "https://github.com/nette/php-generator/tree/v4.2.0"
+                "source": "https://github.com/nette/php-generator/tree/v4.2.1"
             },
-            "time": "2025-08-06T18:24:31+00:00"
+            "time": "2026-02-09T05:43:31+00:00"
         },
         {
             "name": "nette/robot-loader",
-            "version": "v4.1.0",
+            "version": "v4.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/robot-loader.git",
-                "reference": "805fb81376c24755d50bdb8bc69ca4db3def71d1"
+                "reference": "fb255f5da2676d58863bef1716baf52993c7ffec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/robot-loader/zipball/805fb81376c24755d50bdb8bc69ca4db3def71d1",
-                "reference": "805fb81376c24755d50bdb8bc69ca4db3def71d1",
+                "url": "https://api.github.com/repos/nette/robot-loader/zipball/fb255f5da2676d58863bef1716baf52993c7ffec",
+                "reference": "fb255f5da2676d58863bef1716baf52993c7ffec",
                 "shasum": ""
             },
             "require": {
@@ -2909,8 +2846,8 @@
                 "php": "8.1 - 8.5"
             },
             "require-dev": {
-                "nette/tester": "^2.4",
-                "phpstan/phpstan-nette": "^2.0@stable",
+                "nette/tester": "^2.6",
+                "phpstan/phpstan": "^2.0@stable",
                 "tracy/tracy": "^2.9"
             },
             "type": "library",
@@ -2954,22 +2891,22 @@
             ],
             "support": {
                 "issues": "https://github.com/nette/robot-loader/issues",
-                "source": "https://github.com/nette/robot-loader/tree/v4.1.0"
+                "source": "https://github.com/nette/robot-loader/tree/v4.1.1"
             },
-            "time": "2025-08-06T18:34:21+00:00"
+            "time": "2026-02-08T03:51:26+00:00"
         },
         {
             "name": "nette/schema",
-            "version": "v1.3.3",
+            "version": "v1.3.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/schema.git",
-                "reference": "2befc2f42d7c715fd9d95efc31b1081e5d765004"
+                "reference": "086497a2f34b82fede9b5a41cc8e131d087cd8f7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/schema/zipball/2befc2f42d7c715fd9d95efc31b1081e5d765004",
-                "reference": "2befc2f42d7c715fd9d95efc31b1081e5d765004",
+                "url": "https://api.github.com/repos/nette/schema/zipball/086497a2f34b82fede9b5a41cc8e131d087cd8f7",
+                "reference": "086497a2f34b82fede9b5a41cc8e131d087cd8f7",
                 "shasum": ""
             },
             "require": {
@@ -2977,8 +2914,8 @@
                 "php": "8.1 - 8.5"
             },
             "require-dev": {
-                "nette/tester": "^2.5.2",
-                "phpstan/phpstan-nette": "^2.0@stable",
+                "nette/tester": "^2.6",
+                "phpstan/phpstan": "^2.0@stable",
                 "tracy/tracy": "^2.8"
             },
             "type": "library",
@@ -3019,9 +2956,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nette/schema/issues",
-                "source": "https://github.com/nette/schema/tree/v1.3.3"
+                "source": "https://github.com/nette/schema/tree/v1.3.4"
             },
-            "time": "2025-10-30T22:57:59+00:00"
+            "time": "2026-02-08T02:54:00+00:00"
         },
         {
             "name": "nette/security",
@@ -3099,16 +3036,16 @@
         },
         {
             "name": "nette/utils",
-            "version": "v4.1.1",
+            "version": "v4.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/utils.git",
-                "reference": "c99059c0315591f1a0db7ad6002000288ab8dc72"
+                "reference": "f76b5dc3d6c6d3043c8d937df2698515b99cbaf5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/utils/zipball/c99059c0315591f1a0db7ad6002000288ab8dc72",
-                "reference": "c99059c0315591f1a0db7ad6002000288ab8dc72",
+                "url": "https://api.github.com/repos/nette/utils/zipball/f76b5dc3d6c6d3043c8d937df2698515b99cbaf5",
+                "reference": "f76b5dc3d6c6d3043c8d937df2698515b99cbaf5",
                 "shasum": ""
             },
             "require": {
@@ -3121,7 +3058,7 @@
             "require-dev": {
                 "jetbrains/phpstorm-attributes": "^1.2",
                 "nette/tester": "^2.5",
-                "phpstan/phpstan-nette": "^2.0@stable",
+                "phpstan/phpstan": "^2.0@stable",
                 "tracy/tracy": "^2.9"
             },
             "suggest": {
@@ -3182,9 +3119,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nette/utils/issues",
-                "source": "https://github.com/nette/utils/tree/v4.1.1"
+                "source": "https://github.com/nette/utils/tree/v4.1.2"
             },
-            "time": "2025-12-22T12:14:32+00:00"
+            "time": "2026-02-03T17:21:09+00:00"
         },
         {
             "name": "nettrine/annotations",
