@@ -8,10 +8,8 @@ use Apitte\Core\Http\ApiResponse;
 use Apitte\OpenApi\ISchemaBuilder;
 use Psr\Http\Message\ResponseInterface;
 
-/**
- * @Apitte\Path("/openapi")
- * @Apitte\Tag("OpenApi")
- */
+#[Apitte\Path('/openapi')]
+#[Apitte\Tag('OpenApi')]
 class OpenApiController extends BasePubV1Controller
 {
 
@@ -22,13 +20,9 @@ class OpenApiController extends BasePubV1Controller
 		$this->schemaBuilder = $schemaBuilder;
 	}
 
-	/**
-	 * @Apitte\OpenApi("
-	 *   summary: Get OpenAPI definition.
-	 * ")
-	 * @Apitte\Path("/meta")
-	 * @Apitte\Method("GET")
-	 */
+	#[Apitte\OpenApi('summary: Get OpenAPI definition.')]
+	#[Apitte\Path('/meta')]
+	#[Apitte\Method('GET')]
 	public function meta(ApiRequest $request, ApiResponse $response): ResponseInterface
 	{
 		return $response

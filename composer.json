@@ -14,7 +14,7 @@
   "license": "MIT",
   "type": "project",
   "require": {
-    "php": ">=8.2",
+    "php": ">=8.4",
 
     "contributte/bootstrap": "^0.7.0",
     "contributte/console": "^0.10.1",
@@ -23,22 +23,23 @@
     "contributte/monolog": "^0.6.0",
     "contributte/neonizer": "^0.7.0",
     "contributte/security": "^0.5.0",
-    "contributte/tracy": "^0.6.0",
+    "contributte/tracy": "^0.7.0",
     "contributte/utils": "^0.7.0",
 
     "contributte/apitte": "^0.14.0",
+    "doctrine/annotations": "^2.0",
 
-    "nettrine/annotations": "^0.7.0",
-    "nettrine/orm": "^0.8.4",
-    "nettrine/dbal": "^0.8.2",
-    "nettrine/cache": "^0.3.0",
+    "nettrine/orm": "^0.10.0",
+    "nettrine/dbal": "^0.10.1",
+    "nettrine/cache": "^0.5.0",
     "nettrine/migrations": "^0.10.0",
-    "nettrine/fixtures": "^0.7.2",
+    "nettrine/fixtures": "^0.9.0",
 
     "symfony/serializer": "^7.2.3",
     "symfony/validator": "^7.2.3",
     "symfony/property-info": "^7.2.3",
-    "symfony/cache": "^7.2.3"
+    "symfony/cache": "^7.2.3",
+    "symfony/var-exporter": "^7.0"
   },
   "require-dev": {
     "contributte/qa": "^0.4",

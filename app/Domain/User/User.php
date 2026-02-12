@@ -11,11 +11,9 @@ use App\Model\Utils\DateTime;
 use Doctrine\ORM\Mapping as ORM;
 use Nette\Utils\Random;
 
-/**
- * @ORM\Entity(repositoryClass="UserRepository")
- * @ORM\Table(name="`user`")
- * @ORM\HasLifecycleCallbacks
- */
+#[ORM\Entity(repositoryClass: UserRepository::class)]
+#[ORM\Table(name: '`user`')]
+#[ORM\HasLifecycleCallbacks]
 class User extends AbstractEntity
 {
 
@@ -32,34 +30,31 @@ class User extends AbstractEntity
 
 	public const STATES = [self::STATE_FRESH, self::STATE_BLOCKED, self::STATE_ACTIVATED];
 
-	/** @ORM\Column(type="string", length=255, nullable=FALSE, unique=false) */
+	#[ORM\Column(type: 'string', length: 255, nullable: false, unique: false)]
 	private string $name;
 
-	/** @ORM\Column(type="string", length=255, nullable=FALSE, unique=false) */
+	#[ORM\Column(type: 'string', length: 255, nullable: false, unique: false)]
 	private string $surname;
 
-	/** @ORM\Column(type="string", length=255, nullable=FALSE, unique=TRUE) */
+	#[ORM\Column(type: 'string', length: 255, nullable: false, unique: true)]
 	private string $email;
 
-	/** @ORM\Column(type="string", length=255, nullable=FALSE, unique=TRUE) */
+	#[ORM\Column(type: 'string', length: 255, nullable: false, unique: true)]
 	private string $username;
 
-	/** @ORM\Column(type="integer", length=10, nullable=FALSE) */
+	#[ORM\Column(type: 'integer', length: 10, nullable: false)]
 	private int $state;
 
-	/** @ORM\Column(type="string", length=255, nullable=FALSE) */
+	#[ORM\Column(type: 'string', length: 255, nullable: false)]
 	private string $password;
 
-	/** @ORM\Column(type="string", length=255, nullable=FALSE) */
+	#[ORM\Column(type: 'string', length: 255, nullable: false)]
 	private string $role;
 
-	/** @ORM\Column(type="string", length=255, nullable=FALSE) */
+	#[ORM\Column(type: 'string', length: 255, nullable: false)]
 	private string $apikey;
 
-	/**
-	 * @var DateTime|NULL
-	 * @ORM\Column(type="datetime", nullable=TRUE)
-	 */
+	#[ORM\Column(type: 'datetime', nullable: true)]
 	private ?DateTime $lastLoggedAt = null;
 
 	public function __construct(string $name, string $surname, string $email, string $username, string $passwordHash)

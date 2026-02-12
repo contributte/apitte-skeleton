@@ -72,7 +72,7 @@ final class UsersFacade
 		);
 
 		$this->em->persist($user);
-		$this->em->flush($user);
+		$this->em->flush();
 
 		return $user;
 	}

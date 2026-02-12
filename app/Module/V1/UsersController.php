@@ -8,10 +8,8 @@ use App\Domain\Api\Facade\UsersFacade;
 use App\Domain\Api\Response\UserResDto;
 use App\Model\Utils\Caster;
 
-/**
- * @Apitte\Path("/users")
- * @Apitte\Tag("Users")
- */
+#[Apitte\Path('/users')]
+#[Apitte\Tag('Users')]
 class UsersController extends BaseV1Controller
 {
 
@@ -22,18 +20,10 @@ class UsersController extends BaseV1Controller
 		$this->usersFacade = $usersFacade;
 	}
 
-	/**
-	 * @Apitte\OpenApi("
-	 *   summary: List users.
-	 * ")
-	 * @Apitte\Path("/")
-	 * @Apitte\Method("GET")
-	 * @Apitte\RequestParameters({
-	 * 		@Apitte\RequestParameter(name="limit", type="int", in="query", required=false, description="Data limit"),
-	 * 		@Apitte\RequestParameter(name="offset", type="int", in="query", required=false, description="Data offset")
-	 * })
-	 * @return UserResDto[]
-	 */
+	/** @return UserResDto[] */
+	#[Apitte\OpenApi('summary: List users.')]
+	#[Apitte\Path('/')]
+	#[Apitte\Method('GET')]
 	public function index(ApiRequest $request): array
 	{
 		return $this->usersFacade->findAll(

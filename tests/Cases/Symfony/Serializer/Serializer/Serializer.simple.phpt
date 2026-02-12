@@ -3,7 +3,6 @@
 namespace Tests\Cases\Unit\Symfony\Serializer;
 
 use Contributte\Tester\Toolkit;
-use Doctrine\Common\Annotations\AnnotationRegistry;
 use Symfony\Component\PropertyInfo\Extractor\ReflectionExtractor;
 use Symfony\Component\Serializer\Encoder\JsonEncoder;
 use Symfony\Component\Serializer\Mapping\Factory\ClassMetadataFactory;
@@ -18,8 +17,6 @@ use Tests\Cases\Symfony\Serializer\Mocks\SuperUser;
 use Tests\Cases\Symfony\Serializer\Mocks\User;
 
 require_once __DIR__ . '/../../../../bootstrap.php';
-
-AnnotationRegistry::registerUniqueLoader('class_exists');
 
 Toolkit::test(function (): void {
 	$serializer = new Serializer(
