@@ -9,7 +9,7 @@ parameters:
 		dbname: contributte
 		user: contributte
 		password: contributte
-		serverVersion: 13
+		serverVersion: "15"
 
 	# Database (mariadb)
 	# database:

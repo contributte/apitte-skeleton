@@ -11,10 +11,8 @@ use App\Model\Exception\Runtime\Database\EntityNotFoundException;
 use App\Model\Utils\Caster;
 use Nette\Http\IResponse;
 
-/**
- * @Apitte\Path("/users")
- * @Apitte\Tag("Users")
- */
+#[Apitte\Path('/users')]
+#[Apitte\Tag('Users')]
 class UsersOneController extends BaseV1Controller
 {
 
@@ -25,16 +23,9 @@ class UsersOneController extends BaseV1Controller
 		$this->usersFacade = $usersFacade;
 	}
 
-	/**
-	 * @Apitte\OpenApi("
-	 *   summary: Get user by email.
-	 * ")
-	 * @Apitte\Path("/email")
-	 * @Apitte\Method("GET")
-	 * @Apitte\RequestParameters({
-	 *      @Apitte\RequestParameter(name="email", in="query", type="string", description="User e-mail address")
-	 * })
-	 */
+	#[Apitte\OpenApi('summary: Get user by email.')]
+	#[Apitte\Path('/email')]
+	#[Apitte\Method('GET')]
 	public function byEmail(ApiRequest $request): UserResDto
 	{
 		try {
@@ -46,16 +37,9 @@ class UsersOneController extends BaseV1Controller
 		}
 	}
 
-	/**
-	 * @Apitte\OpenApi("
-	 *   summary: Get user by id.
-	 * ")
-	 * @Apitte\Path("/{id}")
-	 * @Apitte\Method("GET")
-	 * @Apitte\RequestParameters({
-	 *      @Apitte\RequestParameter(name="id", in="path", type="int", description="User ID")
-	 * })
-	 */
+	#[Apitte\OpenApi('summary: Get user by id.')]
+	#[Apitte\Path('/{id}')]
+	#[Apitte\Method('GET')]
 	public function byId(ApiRequest $request): UserResDto
 	{
 		try {

@@ -11,10 +11,8 @@ use App\Domain\Api\Request\CreateUserReqDto;
 use Doctrine\DBAL\Exception\DriverException;
 use Nette\Http\IResponse;
 
-/**
- * @Apitte\Path("/users")
- * @Apitte\Tag("Users")
- */
+#[Apitte\Path('/users')]
+#[Apitte\Tag('Users')]
 class UserCreateController extends BaseV1Controller
 {
 
@@ -25,14 +23,10 @@ class UserCreateController extends BaseV1Controller
 		$this->usersFacade = $usersFacade;
 	}
 
-	/**
-	 * @Apitte\OpenApi("
-	 *   summary: Create new user.
-	 * ")
-	 * @Apitte\Path("/create")
-	 * @Apitte\Method("POST")
-	 * @Apitte\RequestBody(entity="App\Domain\Api\Request\CreateUserReqDto")
-	 */
+	#[Apitte\OpenApi('summary: Create new user.')]
+	#[Apitte\Path('/create')]
+	#[Apitte\Method('POST')]
+	#[Apitte\RequestBody(entity: 'App\\Domain\\Api\\Request\\CreateUserReqDto')]
 	public function create(ApiRequest $request, ApiResponse $response): ApiResponse
 	{
 		/** @var CreateUserReqDto $dto */
