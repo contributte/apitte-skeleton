@@ -23,7 +23,7 @@
     "contributte/monolog": "^0.6.0",
     "contributte/neonizer": "^0.7.0",
     "contributte/security": "^0.5.0",
-    "contributte/tracy": "^0.6.0",
+    "contributte/tracy": "^0.7.0",
     "contributte/utils": "^0.7.0",
 
     "contributte/apitte": "^0.14.0",
