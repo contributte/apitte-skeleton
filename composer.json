@@ -37,7 +37,7 @@
 
     "symfony/serializer": "^7.2.3",
     "symfony/validator": "^8.0.5",
-    "symfony/property-info": "^7.2.3",
+    "symfony/property-info": "^8.0.5",
     "symfony/cache": "^7.2.3",
     "symfony/var-exporter": "^7.0"
   },
