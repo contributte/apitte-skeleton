@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3edfe425edd17c18b5f9b5712b67052b",
+    "content-hash": "5bdee53d5b71a0dd1d13dae756081e94",
     "packages": [
         {
             "name": "contributte/apitte",
@@ -165,35 +165,35 @@
         },
         {
             "name": "contributte/console",
-            "version": "v0.10.1",
+            "version": "v0.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/console.git",
-                "reference": "dc2b84fb8dd795ea9988f396311aeed435aed495"
+                "reference": "70dd8a6661756158473b4fafc16ddb7130079dbe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/console/zipball/dc2b84fb8dd795ea9988f396311aeed435aed495",
-                "reference": "dc2b84fb8dd795ea9988f396311aeed435aed495",
+                "url": "https://api.github.com/repos/contributte/console/zipball/70dd8a6661756158473b4fafc16ddb7130079dbe",
+                "reference": "70dd8a6661756158473b4fafc16ddb7130079dbe",
                 "shasum": ""
             },
             "require": {
                 "nette/di": "^3.1.8",
-                "php": ">=8.1",
-                "symfony/console": "^6.4.2 || ^7.0.2"
+                "php": ">=8.2",
+                "symfony/console": "^7.2.0 || ^8.0.0"
             },
             "require-dev": {
-                "contributte/phpstan": "^0.1",
-                "contributte/qa": "^0.4",
-                "contributte/tester": "^0.4",
-                "mockery/mockery": "^1.6.7",
+                "contributte/phpstan": "^0.2.0",
+                "contributte/qa": "^0.4.0",
+                "contributte/tester": "^0.4.0",
+                "mockery/mockery": "^1.6.12",
                 "nette/http": "^3.2.3",
-                "symfony/event-dispatcher": "^6.4.2 || ^7.0.2"
+                "symfony/event-dispatcher": "^7.2.0 || ^8.0.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.11.x-dev"
+                    "dev-master": "0.12.x-dev"
                 }
             },
             "autoload": {
@@ -220,7 +220,7 @@
             ],
             "support": {
                 "issues": "https://github.com/contributte/console/issues",
-                "source": "https://github.com/contributte/console/tree/v0.10.1"
+                "source": "https://github.com/contributte/console/tree/v0.11.0"
             },
             "funding": [
                 {
@@ -232,7 +232,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-01-04T20:10:58+00:00"
+            "time": "2026-01-07T08:24:33+00:00"
         },
         {
             "name": "contributte/di",
@@ -2908,16 +2908,16 @@
         },
         {
             "name": "nette/utils",
-            "version": "v4.1.2",
+            "version": "v4.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/utils.git",
-                "reference": "f76b5dc3d6c6d3043c8d937df2698515b99cbaf5"
+                "reference": "bb3ea637e3d131d72acc033cfc2746ee893349fe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/utils/zipball/f76b5dc3d6c6d3043c8d937df2698515b99cbaf5",
-                "reference": "f76b5dc3d6c6d3043c8d937df2698515b99cbaf5",
+                "url": "https://api.github.com/repos/nette/utils/zipball/bb3ea637e3d131d72acc033cfc2746ee893349fe",
+                "reference": "bb3ea637e3d131d72acc033cfc2746ee893349fe",
                 "shasum": ""
             },
             "require": {
@@ -2929,8 +2929,10 @@
             },
             "require-dev": {
                 "jetbrains/phpstorm-attributes": "^1.2",
+                "nette/phpstan-rules": "^1.0",
                 "nette/tester": "^2.5",
-                "phpstan/phpstan": "^2.0@stable",
+                "phpstan/extension-installer": "^1.4@stable",
+                "phpstan/phpstan": "^2.1@stable",
                 "tracy/tracy": "^2.9"
             },
             "suggest": {
@@ -2991,9 +2993,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nette/utils/issues",
-                "source": "https://github.com/nette/utils/tree/v4.1.2"
+                "source": "https://github.com/nette/utils/tree/v4.1.3"
             },
-            "time": "2026-02-03T17:21:09+00:00"
+            "time": "2026-02-13T03:05:33+00:00"
         },
         {
             "name": "nettrine/cache",
@@ -3861,47 +3863,39 @@
         },
         {
             "name": "symfony/console",
-            "version": "v7.4.4",
+            "version": "v8.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "41e38717ac1dd7a46b6bda7d6a82af2d98a78894"
+                "reference": "ace03c4cf9805080ff40cbeec69fca180c339a3b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/41e38717ac1dd7a46b6bda7d6a82af2d98a78894",
-                "reference": "41e38717ac1dd7a46b6bda7d6a82af2d98a78894",
+                "url": "https://api.github.com/repos/symfony/console/zipball/ace03c4cf9805080ff40cbeec69fca180c339a3b",
+                "reference": "ace03c4cf9805080ff40cbeec69fca180c339a3b",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.2",
-                "symfony/deprecation-contracts": "^2.5|^3",
-                "symfony/polyfill-mbstring": "~1.0",
+                "php": ">=8.4",
+                "symfony/polyfill-mbstring": "^1.0",
                 "symfony/service-contracts": "^2.5|^3",
-                "symfony/string": "^7.2|^8.0"
-            },
-            "conflict": {
-                "symfony/dependency-injection": "<6.4",
-                "symfony/dotenv": "<6.4",
-                "symfony/event-dispatcher": "<6.4",
-                "symfony/lock": "<6.4",
-                "symfony/process": "<6.4"
+                "symfony/string": "^7.4|^8.0"
             },
             "provide": {
                 "psr/log-implementation": "1.0|2.0|3.0"
             },
             "require-dev": {
                 "psr/log": "^1|^2|^3",
-                "symfony/config": "^6.4|^7.0|^8.0",
-                "symfony/dependency-injection": "^6.4|^7.0|^8.0",
-                "symfony/event-dispatcher": "^6.4|^7.0|^8.0",
-                "symfony/http-foundation": "^6.4|^7.0|^8.0",
-                "symfony/http-kernel": "^6.4|^7.0|^8.0",
-                "symfony/lock": "^6.4|^7.0|^8.0",
-                "symfony/messenger": "^6.4|^7.0|^8.0",
-                "symfony/process": "^6.4|^7.0|^8.0",
-                "symfony/stopwatch": "^6.4|^7.0|^8.0",
-                "symfony/var-dumper": "^6.4|^7.0|^8.0"
+                "symfony/config": "^7.4|^8.0",
+                "symfony/dependency-injection": "^7.4|^8.0",
+                "symfony/event-dispatcher": "^7.4|^8.0",
+                "symfony/http-foundation": "^7.4|^8.0",
+                "symfony/http-kernel": "^7.4|^8.0",
+                "symfony/lock": "^7.4|^8.0",
+                "symfony/messenger": "^7.4|^8.0",
+                "symfony/process": "^7.4|^8.0",
+                "symfony/stopwatch": "^7.4|^8.0",
+                "symfony/var-dumper": "^7.4|^8.0"
             },
             "type": "library",
             "autoload": {
@@ -3935,7 +3929,7 @@
                 "terminal"
             ],
             "support": {
-                "source": "https://github.com/symfony/console/tree/v7.4.4"
+                "source": "https://github.com/symfony/console/tree/v8.0.4"
             },
             "funding": [
                 {
@@ -3955,7 +3949,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-01-13T11:36:38+00:00"
+            "time": "2026-01-13T13:06:50+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",
