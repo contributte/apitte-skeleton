@@ -39,7 +39,7 @@
     "symfony/validator": "^8.0.5",
     "symfony/property-info": "^7.2.3",
     "symfony/cache": "^7.2.3",
-    "symfony/var-exporter": "^7.0"
+    "symfony/var-exporter": "^8.0"
   },
   "require-dev": {
     "contributte/qa": "^0.4",
