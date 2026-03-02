@@ -1,0 +1,12 @@
+# Default local config used in CI
+parameters:
+
+	# Database (postgres)
+	database:
+		driver: pdo_pgsql
+		host: 0.0.0.0
+		port: 5432
+		dbname: contributte
+		user: contributte
+		password: contributte
+		serverVersion: "15"
