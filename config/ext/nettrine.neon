@@ -29,6 +29,7 @@ nettrine.orm:
 		default:
 			connection: default
 			entityManagerDecoratorClass: App\Model\Database\EntityManagerDecorator
+			lazyNativeObjects: true
 			autoGenerateProxyClasses: %debugMode%
 			mapping:
 				App\Domain:
