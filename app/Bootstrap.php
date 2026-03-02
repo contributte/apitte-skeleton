@@ -44,7 +44,8 @@ class Bootstrap
 			$configurator->addConfig(__DIR__ . '/../config/env/prod.neon');
 		}
 
-		$configurator->addConfig(__DIR__ . '/../config/local.neon');
+		$localConfig = __DIR__ . '/../config/local.neon';
+		$configurator->addConfig(is_file($localConfig) ? $localConfig : __DIR__ . '/../config/local.neon.example');
 
 		return $configurator;
 	}
