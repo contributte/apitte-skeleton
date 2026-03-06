@@ -14,7 +14,7 @@ class UserPojo
 	public static function loadValidatorMetadata(ClassMetadata $metadata): void
 	{
 		$metadata->addPropertyConstraint('username', new NotBlank());
-		$metadata->addPropertyConstraint('username', new Length(['min' => 10, 'max' => 20]));
+		$metadata->addPropertyConstraint('username', new Length(min: 10, max: 20));
 	}
 
 	public function getUsername(): string

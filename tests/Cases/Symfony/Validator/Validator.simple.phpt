@@ -15,7 +15,7 @@ require_once __DIR__ . '/../../../bootstrap.php';
 Toolkit::test(function (): void {
 	$validator = Validation::createValidator();
 	$violations = $validator->validate('Felix', [
-		new Length(['min' => 10]),
+		new Length(min: 10),
 		new NotBlank(),
 	]);
 
