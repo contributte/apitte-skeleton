@@ -14,6 +14,7 @@ jobs:
   coverage:
     name: "Nette Tester"
     uses: contributte/.github/.github/workflows/nette-tester-coverage-v2.yml@master
+    secrets: inherit
     with:
       php: "8.4"
       make: "init coverage"
