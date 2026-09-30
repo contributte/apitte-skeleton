@@ -7,7 +7,7 @@ use App\Model\Database\Entity\TCreatedAt;
 use App\Model\Database\Entity\TId;
 use App\Model\Database\Entity\TUpdatedAt;
 use App\Model\Exception\Logic\InvalidArgumentException;
-use App\Model\Utils\DateTime;
+use DateTime;
 use Doctrine\ORM\Mapping as ORM;
 use Nette\Utils\Random;
 
