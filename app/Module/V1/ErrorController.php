@@ -12,6 +12,7 @@ class ErrorController extends BaseV1Controller
 
 	#[Apitte\Path('/exception')]
 	#[Apitte\Method('GET')]
+	#[Apitte\Response(description: 'Example error', code: '500')]
 	public function exception(ApiRequest $request): string
 	{
 		throw new \RuntimeException('This is example');

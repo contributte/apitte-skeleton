@@ -27,6 +27,9 @@ class UserCreateController extends BaseV1Controller
 	#[Apitte\Path('/create')]
 	#[Apitte\Method('POST')]
 	#[Apitte\RequestBody(entity: 'App\\Domain\\Api\\Request\\CreateUserReqDto')]
+	#[Apitte\Response(description: 'User created', code: '201')]
+	#[Apitte\Response(description: 'Invalid request data', code: '422')]
+	#[Apitte\Response(description: 'Cannot create user', code: '500')]
 	public function create(ApiRequest $request, ApiResponse $response): ApiResponse
 	{
 		/** @var CreateUserReqDto $dto */

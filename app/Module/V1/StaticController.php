@@ -20,6 +20,7 @@ class StaticController extends BaseV1Controller
 	#[Apitte\OpenApi('summary: Get static text')]
 	#[Apitte\Path('/text')]
 	#[Apitte\Method('GET')]
+	#[Apitte\Response(description: 'Static text', code: '200')]
 	public function text(ApiRequest $request): string
 	{
 		return $this->text;
