@@ -24,6 +24,7 @@ class UsersController extends BaseV1Controller
 	#[Apitte\OpenApi('summary: List users.')]
 	#[Apitte\Path('/')]
 	#[Apitte\Method('GET')]
+	#[Apitte\Response(description: 'List of users', code: '200', entity: 'App\\Domain\\Api\\Response\\UserResDto[]')]
 	public function index(ApiRequest $request): array
 	{
 		return $this->usersFacade->findAll(

@@ -26,6 +26,8 @@ class UsersOneController extends BaseV1Controller
 	#[Apitte\OpenApi('summary: Get user by email.')]
 	#[Apitte\Path('/email')]
 	#[Apitte\Method('GET')]
+	#[Apitte\Response(description: 'User', code: '200', entity: 'App\\Domain\\Api\\Response\\UserResDto')]
+	#[Apitte\Response(description: 'User not found', code: '404')]
 	public function byEmail(ApiRequest $request): UserResDto
 	{
 		try {
@@ -40,6 +42,8 @@ class UsersOneController extends BaseV1Controller
 	#[Apitte\OpenApi('summary: Get user by id.')]
 	#[Apitte\Path('/{id}')]
 	#[Apitte\Method('GET')]
+	#[Apitte\Response(description: 'User', code: '200', entity: 'App\\Domain\\Api\\Response\\UserResDto')]
+	#[Apitte\Response(description: 'User not found', code: '404')]
 	public function byId(ApiRequest $request): UserResDto
 	{
 		try {
